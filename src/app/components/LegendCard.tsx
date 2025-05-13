@@ -11,12 +11,13 @@ interface Props {
 export default function LegendCard({ legend }: Props) {
   return (
     <div className={styles.legendWrap}>
-      <div className='legend-img'>
+      <div className={styles.legendImg}>
         <Image
           src={legend.image}
           alt={legend.name}
-          width={500}
-          height={500}
+          fill
+          className={styles.imageContain}
+          sizes='(max-width: 767px) 343px, (max-width: 1023px) calc(100vw - 64px), 500px'
         />
       </div>
       <div className={styles.legendName}>
