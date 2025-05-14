@@ -1,6 +1,8 @@
 export interface Legend {
   name: string
+  slug: string
   realName: string
+  title: string
   class: string
   passive: string
   tactical: string
@@ -9,4 +11,5 @@ export interface Legend {
   releaseSeason: number
   difficulty: string
   image: string
+  imageProfile: string
 }

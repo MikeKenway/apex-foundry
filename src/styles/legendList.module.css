@@ -1,0 +1,50 @@
+
+.cardWrap {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background-color: white;
+    padding: 16px;
+    width: 100%;
+}
+
+.cardImg {
+    position: relative;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+}
+
+.imageCover {
+    object-fit: cover;
+}
+
+.listWrap {
+    display: grid;
+    max-width: 1200px;
+    grid-template-columns: repeat(auto-fill, minmax(256px, 1fr));
+    gap: 16px;
+}
+
+.legendName {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+.legendTitle {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: gray;
+}
+
+.legendInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+
+.imageProfile {
+    display: flex;
+}

@@ -20,7 +20,7 @@ export default function Home() {
     <main className='main'>
       <button
         onClick={handleSelection}
-        className='legend-button'
+        className='primaryBtn'
       >
         Choose Your Legend!
       </button>
