@@ -21,9 +21,8 @@ export function Navbar() {
             />
           </Link>
           <Link href="/" className="hover:text-red-400 transition">Home</Link>
-          <Link href="/squad-randomizer" className="hover:text-red-400 transition">Squad Randomizer</Link>
           <Link href="/legends" className="hover:text-red-400 transition">Legends</Link>
-          <Link href="/about" className="hover:text-red-400 transition">About</Link>
+          <Link href="/squad-randomizer" className="hover:text-red-400 transition">Squad Randomizer</Link>
         </div>
 
         {/* Right: Contact button */}

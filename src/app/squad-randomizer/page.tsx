@@ -77,7 +77,6 @@ export default function SquadRandomizerPage() {
     const updatedClassSelections = [...legendClassSelections]
     updatedClassSelections[positionIndex] = selectedClass
     setLegendClassSelections(updatedClassSelections)
-    setSelectedLegends([]) // Clear current squad when changing class
   }
 
   /**
