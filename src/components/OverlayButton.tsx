@@ -29,7 +29,7 @@ export function OverlayButton({ onClick, children, position, disabled }: Overlay
         opacity-0
         group-hover:opacity-100
         transition-all duration-200
-        hover:bg-white hover:text-black
+        hover:bg-white hover:text-black hover:border-black
         disabled:opacity-0 disabled:cursor-not-allowed
       `}
     >

@@ -1,8 +1,10 @@
 import { Legend } from '@/types/legend'
 import { LegendCard } from './LegendCard'
 import { useState, useRef, useEffect } from 'react'
-import { FiPlus, FiMinus } from 'react-icons/fi'
+import { FiPlus, FiMinus, FiRefreshCw } from 'react-icons/fi'
 import { OverlayButton } from './OverlayButton'
+import { getRandomLegend } from '@/app/utils/getRandomLegend'
+import legends from '@/data/legends.json'
 
 type LegendClass = 'Assault' | 'Skirmisher' | 'Support' | 'Controller' | 'Recon' | 'Any'
 
@@ -12,6 +14,7 @@ interface RandomizerCardProps {
   onClassChange: (legendClass: LegendClass) => void
   onAdd?: () => void
   onRemove?: () => void
+  onReroll?: (newLegend: Legend) => void
   canAdd?: boolean
   canRemove?: boolean
 }
@@ -24,6 +27,7 @@ export function RandomizerCard({
   onClassChange,
   onAdd,
   onRemove,
+  onReroll,
   canAdd = false,
   canRemove = false
 }: RandomizerCardProps) {
@@ -40,6 +44,16 @@ export function RandomizerCard({
     document.addEventListener('mousedown', handleClickOutside)
     return () => document.removeEventListener('mousedown', handleClickOutside)
   }, [])
+
+  const handleReroll = () => {
+    if (onReroll) {
+      const filteredLegends = selectedClass === 'Any' 
+        ? legends 
+        : legends.filter(l => l.class === selectedClass)
+      const newLegend = getRandomLegend(filteredLegends as Legend[])
+      onReroll(newLegend)
+    }
+  }
 
   return (
     <div className="w-[350px] bg-black/50 border-2 border-white/10 rounded-none group hover:border-white/20 transition-colors">
@@ -65,9 +79,17 @@ export function RandomizerCard({
                 <FiPlus size={20} />
               </OverlayButton>
             )}
+            {onReroll && (
+              <OverlayButton
+                position="bottom-right"
+                onClick={handleReroll}
+              >
+                <FiRefreshCw size={20} />
+              </OverlayButton>
+            )}
           </div>
         ) : (
-          <div className="bg-gradient-to-b from-zinc-900 to-black text-white border-b-2 border-white/10 overflow-hidden flex flex-col group">
+          <div className="bg-gradient-to-b from-zinc-900 to-black text-white overflow-hidden flex flex-col group">
             <div className="relative w-full aspect-square bg-gradient-to-br from-zinc-900 via-black to-zinc-900 flex items-center justify-center">
               <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.1)_0%,transparent_70%)] opacity-0 group-hover:opacity-100 transition-opacity" />
               <div className="text-zinc-400 font-[ElectronicArtsText] text-lg group-hover:text-white transition-colors">
@@ -104,7 +126,7 @@ export function RandomizerCard({
         )}
       </div>
       
-      <div className="relative border-t-2 border-white/10" ref={dropdownRef}>
+      <div className="relative" ref={dropdownRef}>
         <button
           onClick={() => setIsOpen(!isOpen)}
           className="w-full bg-gradient-to-b from-zinc-900 to-black text-white px-4 py-3 text-left font-[ElectronicArtsText] text-sm hover:from-zinc-800 hover:to-zinc-900 transition-all duration-200 flex items-center justify-between group/button"

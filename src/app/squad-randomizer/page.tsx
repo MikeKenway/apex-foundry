@@ -60,6 +60,12 @@ export default function SquadRandomizerPage() {
     setSquad([]) // Clear current squad when changing class
   }
 
+  function handleReroll(index: number, newLegend: Legend) {
+    const newSquad = [...squad]
+    newSquad[index] = newLegend
+    setSquad(newSquad)
+  }
+
   return (
     <div className="max-w-6xl mx-auto px-4 py-12 text-white text-center">
       <h1 className="text-4xl font-[Duke] mb-12">Squad Randomizer</h1>
@@ -76,6 +82,7 @@ export default function SquadRandomizerPage() {
             onClassChange={(legendClass) => handleClassChange(index, legendClass)}
             onAdd={index === squadSize - 1 ? handleAddMember : undefined}
             onRemove={handleRemoveMember}
+            onReroll={squad[index] ? (newLegend) => handleReroll(index, newLegend) : undefined}
             canAdd={squadSize < 3}
             canRemove={squadSize > 1}
           />
@@ -84,7 +91,7 @@ export default function SquadRandomizerPage() {
 
       <div>
         <PrimaryButton variant="button" onClick={handleRoll}>
-          Get Random Squad
+          {squadSize === 1 ? 'Randomize Legend' : 'Randomize Squad'}
         </PrimaryButton>
       </div>
     </div>
