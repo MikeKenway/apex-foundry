@@ -7,7 +7,7 @@ export default function Home() {
     <div className="relative min-h-screen flex items-center justify-center px-4 py-12 text-white">
       <div className="relative z-10 w-full max-w-2xl mx-auto">
         <div className="bg-[#18181b] border-l-4 border-[#FF4655] shadow-xl px-10 py-12 flex flex-col items-start gap-8 text-left">
-          <div className="flex flex-col gap-4 mb-2">
+          <div className="flex flex-col gap-8 mb-2">
             <h1 className="text-4xl md:text-5xl font-medium font-[Duke] text-white tracking-wide uppercase" >
               Welcome to
             </h1>
