@@ -20,7 +20,7 @@ export function OverlayButton({ onClick, children, position, disabled }: Overlay
       disabled={disabled}
       className={`
         absolute ${positionClasses[position]}
-        w-8 h-8
+        w-10 h-10
         bg-black/80
         border border-white/20
         rounded-none

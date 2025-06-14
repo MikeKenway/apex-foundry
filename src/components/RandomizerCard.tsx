@@ -97,7 +97,7 @@ export function RandomizerCard({
                 Random {selectedClass !== 'Any' ? selectedClass : 'Legend'}
               </h2>
               <p className="text-sm font-[ElectronicArtsText] tracking-wider text-zinc-400 group-hover:text-zinc-300 transition-colors">
-                Click to generate
+                The Apex Legend
               </p>
             </div>
           </div>
