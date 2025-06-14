@@ -4,13 +4,16 @@ import { useState } from 'react'
 import legends from '@/data/legends.json'
 import type { Legend } from '@/types/legend'
 import { getRandomLegend } from '@/app/utils/getRandomLegend'
-import { LegendCard } from '@/components/LegendCard'
 import { PrimaryButton } from '@/components/PrimaryButton'
 import { FiPlus, FiMinus } from 'react-icons/fi'
+import { RandomizerCard } from '@/components/RandomizerCard'
+
+type LegendClass = 'Assault' | 'Skirmisher' | 'Support' | 'Controller' | 'Recon' | 'Any'
 
 export default function SquadRandomizerPage() {
   const [squad, setSquad] = useState<Legend[]>([])
   const [squadSize, setSquadSize] = useState(1)
+  const [selectedClasses, setSelectedClasses] = useState<LegendClass[]>(['Any'])
 
   function handleRoll() {
     const newSquad: Legend[] = []
@@ -18,7 +21,12 @@ export default function SquadRandomizerPage() {
 
     // Generate legends based on squad size
     while (newSquad.length < squadSize) {
-      const legend = getRandomLegend(legends as Legend[])
+      const selectedClass = selectedClasses[newSquad.length]
+      const filteredLegends = selectedClass === 'Any' 
+        ? legends 
+        : legends.filter(legend => legend.class === selectedClass)
+      
+      const legend = getRandomLegend(filteredLegends as Legend[])
       const legendIndex = legends.findIndex(l => l.slug === legend.slug)
       
       if (!usedIndices.has(legendIndex)) {
@@ -33,6 +41,7 @@ export default function SquadRandomizerPage() {
   function handleAddMember() {
     if (squadSize < 3) {
       setSquadSize(squadSize + 1)
+      setSelectedClasses([...selectedClasses, 'Any'])
       setSquad([]) // Clear current squad when changing size
     }
   }
@@ -40,33 +49,33 @@ export default function SquadRandomizerPage() {
   function handleRemoveMember() {
     if (squadSize > 1) {
       setSquadSize(squadSize - 1)
+      setSelectedClasses(selectedClasses.slice(0, -1))
       setSquad([]) // Clear current squad when changing size
     }
+  }
+
+  function handleClassChange(index: number, legendClass: LegendClass) {
+    const newClasses = [...selectedClasses]
+    newClasses[index] = legendClass
+    setSelectedClasses(newClasses)
+    setSquad([]) // Clear current squad when changing class
   }
 
   return (
     <div className="max-w-6xl mx-auto px-4 py-12 text-white text-center">
       <h1 className="text-4xl font-[Duke] mb-12">Squad Randomizer</h1>
 
-      <div className="flex justify-center gap-6 mb-8">
+      <div className="grid gap-6 mb-8 justify-items-center" style={{ 
+        gridTemplateColumns: `repeat(${squadSize}, 350px)`,
+        justifyContent: 'center'
+      }}>
         {Array.from({ length: squadSize }).map((_, index) => (
-          <div key={index} className="w-[350px] bg-zinc-900/50 border border-zinc-800 rounded-none">
-            {squad[index] ? (
-              <LegendCard legend={squad[index]} />
-            ) : (
-              <div className="bg-white text-black border border-zinc-300 rounded-none overflow-hidden flex flex-col">
-                <div className="relative w-full aspect-square bg-black flex items-center justify-center">
-                  <div className="text-zinc-600 font-[ElectronicArtsText] text-lg">
-                    Random Legend
-                  </div>
-                </div>
-                <div className="p-4 text-left space-y-1">
-                  <h2 className="text-xl font-[ElectronicArtsText] uppercase tracking-wider font-semibold">Random Legend</h2>
-                  <p className="text-sm font-[ElectronicArtsText] tracking-wider text-zinc-500">Click to generate</p>
-                </div>
-              </div>
-            )}
-          </div>
+          <RandomizerCard
+            key={index}
+            legend={squad[index] || null}
+            selectedClass={selectedClasses[index]}
+            onClassChange={(legendClass) => handleClassChange(index, legendClass)}
+          />
         ))}
       </div>
 
