@@ -1,15 +1,11 @@
 'use client'
 
 import Image from 'next/image'
-import Link from 'next/link'
 import type { Legend } from '@/types/legend'
 
 export function LegendCard({ legend }: { legend: Legend }) {
   return (
-    <Link
-      href={`/legends/${legend.slug}`}
-      className="bg-white text-black border border-zinc-300 rounded-none overflow-hidden transition hover:shadow-lg flex flex-col"
-    >
+    <div className="bg-white text-black border border-zinc-300 rounded-none overflow-hidden transition hover:shadow-lg flex flex-col">
       {/* Image block */}
       <div className="relative w-full aspect-square bg-black">
         <Image
@@ -27,6 +23,6 @@ export function LegendCard({ legend }: { legend: Legend }) {
         <h2 className="text-xl font-[ElectronicArtsText] uppercase tracking-wider font-semibold">{legend.name}</h2>
         <p className="text-sm font-[ElectronicArtsText] tracking-wider text-zinc-500">{legend.title}</p>
       </div>
-    </Link>
+    </div>
   )
 }

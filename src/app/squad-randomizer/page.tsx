@@ -5,7 +5,6 @@ import legends from '@/data/legends.json'
 import type { Legend } from '@/types/legend'
 import { getRandomLegend } from '@/app/utils/getRandomLegend'
 import { PrimaryButton } from '@/components/PrimaryButton'
-import { FiPlus, FiMinus } from 'react-icons/fi'
 import { RandomizerCard } from '@/components/RandomizerCard'
 
 type LegendClass = 'Assault' | 'Skirmisher' | 'Support' | 'Controller' | 'Recon' | 'Any'
@@ -75,19 +74,17 @@ export default function SquadRandomizerPage() {
             legend={squad[index] || null}
             selectedClass={selectedClasses[index]}
             onClassChange={(legendClass) => handleClassChange(index, legendClass)}
+            onAdd={index === squadSize - 1 ? handleAddMember : undefined}
+            onRemove={handleRemoveMember}
+            canAdd={squadSize < 3}
+            canRemove={squadSize > 1}
           />
         ))}
       </div>
 
-      <div className="space-x-4">
+      <div>
         <PrimaryButton variant="button" onClick={handleRoll}>
           Get Random Squad
-        </PrimaryButton>
-        <PrimaryButton variant="button" onClick={handleAddMember} disabled={squadSize >= 3}>
-          <FiPlus size={20} />
-        </PrimaryButton>
-        <PrimaryButton variant="button" onClick={handleRemoveMember} disabled={squadSize <= 1}>
-          <FiMinus size={20} />
         </PrimaryButton>
       </div>
     </div>

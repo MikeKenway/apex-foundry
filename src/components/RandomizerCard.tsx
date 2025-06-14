@@ -1,6 +1,8 @@
 import { Legend } from '@/types/legend'
 import { LegendCard } from './LegendCard'
 import { useState, useRef, useEffect } from 'react'
+import { FiPlus, FiMinus } from 'react-icons/fi'
+import { OverlayButton } from './OverlayButton'
 
 type LegendClass = 'Assault' | 'Skirmisher' | 'Support' | 'Controller' | 'Recon' | 'Any'
 
@@ -8,11 +10,23 @@ interface RandomizerCardProps {
   legend: Legend | null
   selectedClass: LegendClass
   onClassChange: (legendClass: LegendClass) => void
+  onAdd?: () => void
+  onRemove?: () => void
+  canAdd?: boolean
+  canRemove?: boolean
 }
 
 const legendClasses: LegendClass[] = ['Any', 'Assault', 'Skirmisher', 'Support', 'Controller', 'Recon']
 
-export function RandomizerCard({ legend, selectedClass, onClassChange }: RandomizerCardProps) {
+export function RandomizerCard({ 
+  legend, 
+  selectedClass, 
+  onClassChange,
+  onAdd,
+  onRemove,
+  canAdd = false,
+  canRemove = false
+}: RandomizerCardProps) {
   const [isOpen, setIsOpen] = useState(false)
   const dropdownRef = useRef<HTMLDivElement>(null)
 
@@ -31,14 +45,52 @@ export function RandomizerCard({ legend, selectedClass, onClassChange }: Randomi
     <div className="w-[350px] bg-black/50 border-2 border-white/10 rounded-none group hover:border-white/20 transition-colors">
       <div className="relative">
         {legend ? (
-          <LegendCard legend={legend} />
+          <div className="group relative">
+            <LegendCard legend={legend} />
+            {onRemove && (
+              <OverlayButton
+                position="top-left"
+                onClick={onRemove}
+                disabled={!canRemove}
+              >
+                <FiMinus size={20} />
+              </OverlayButton>
+            )}
+            {onAdd && (
+              <OverlayButton
+                position="top-right"
+                onClick={onAdd}
+                disabled={!canAdd}
+              >
+                <FiPlus size={20} />
+              </OverlayButton>
+            )}
+          </div>
         ) : (
-          <div className="bg-gradient-to-b from-zinc-900 to-black text-white border-b-2 border-white/10 overflow-hidden flex flex-col">
+          <div className="bg-gradient-to-b from-zinc-900 to-black text-white border-b-2 border-white/10 overflow-hidden flex flex-col group">
             <div className="relative w-full aspect-square bg-gradient-to-br from-zinc-900 via-black to-zinc-900 flex items-center justify-center">
               <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.1)_0%,transparent_70%)] opacity-0 group-hover:opacity-100 transition-opacity" />
               <div className="text-zinc-400 font-[ElectronicArtsText] text-lg group-hover:text-white transition-colors">
                 Random {selectedClass !== 'Any' ? selectedClass : 'Legend'}
               </div>
+              {onRemove && (
+                <OverlayButton
+                  position="top-left"
+                  onClick={onRemove}
+                  disabled={!canRemove}
+                >
+                  <FiMinus size={20} />
+                </OverlayButton>
+              )}
+              {onAdd && (
+                <OverlayButton
+                  position="top-right"
+                  onClick={onAdd}
+                  disabled={!canAdd}
+                >
+                  <FiPlus size={20} />
+                </OverlayButton>
+              )}
             </div>
             <div className="p-4 text-left space-y-1">
               <h2 className="text-xl font-[ElectronicArtsText] uppercase tracking-wider font-semibold text-white">
