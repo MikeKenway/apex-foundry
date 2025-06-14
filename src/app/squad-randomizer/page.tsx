@@ -93,16 +93,16 @@ export default function SquadRandomizerPage() {
       {/* Title Section */}
       <div className="bg-[#1A1A1A] border border-[#333333] rounded-lg p-8 mb-12 text-left relative overflow-hidden" style={{ width: '1098px', margin: '0 auto 3rem auto' }}>
         {/* Industrial/tech decorative elements */}
-        <div className="absolute top-0 right-0 w-full h-1 bg-gradient-to-r from-[#FF4655] to-transparent"></div>
-        <div className="absolute top-0 right-0 w-1 h-full bg-gradient-to-b from-[#FF4655] to-transparent"></div>
-        <div className="absolute bottom-0 left-0 w-1/2 h-1 bg-gradient-to-l from-[#FF4655] to-transparent"></div>
+        <div className="absolute top-0 right-0 w-full h-1 bg-gradient-to-r from-primary to-transparent"></div>
+        <div className="absolute top-0 right-0 w-1 h-full bg-gradient-to-b from-primary to-transparent"></div>
+        <div className="absolute bottom-0 left-0 w-1/2 h-1 bg-gradient-to-l from-primary to-transparent"></div>
         
         <div className="relative">
           <div className="flex items-center gap-4 mb-4">
             <h1 className="text-6xl font-[Duke] tracking-tight">
-              <span className="text-[#FF4655]">SQUAD</span> RANDOMIZER
+              <span className="text-primary">SQUAD</span> RANDOMIZER
             </h1>
-            <div className="h-1 flex-1 bg-gradient-to-r from-[#FF4655] to-transparent"></div>
+            <div className="h-1 flex-1 bg-gradient-to-r from-primary to-transparent"></div>
           </div>
           <p className="text-[#CCCCCC] text-lg max-w-2xl font-light tracking-wide">
             Assemble the ultimate trio. Pick your squad one legend at a time, or let chaos take the wheel. Filter by class to build the perfect comp or roll the dice and let fate decide.
