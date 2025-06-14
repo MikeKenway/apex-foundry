@@ -24,7 +24,9 @@ export default function LegendsPage() {
         {/* Grid of legends */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {(legends as Legend[]).map((legend) => (
-            <LegendCard key={legend.slug} legend={legend} />
+            <div key={legend.slug} className="transition-all duration-200 border-2 border-transparent hover:border-primary">
+              <LegendCard legend={legend} />
+            </div>
           ))}
         </div>
         
