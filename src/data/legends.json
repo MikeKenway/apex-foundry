@@ -41,11 +41,6 @@
       "career_before_games": "She stole, fought, and took mercenary work across realities, remaining a mystery even to her victims.",
       "joining_apex": "Entered the Apex Games to track Horizon and her connection to world‑ending events."
     },
-    "personality": {
-      "traits": ["Chaotic", "Unpredictable", "Villainous"],
-      "insecurities": null,
-      "hobbies": []
-    },
     "notable_quotes": ["Who am I? I am the one who is there at the end."],
     "fun_facts": [
       "Speaks Cantonese and is of Chinese descent.",
@@ -76,7 +71,7 @@
       },
       "passive": {
         "name": "Marked for Death",
-        "description": "Ash’s map shows the location of recent deathboxes. Press on a deathbox to mark surviving attackers."
+        "description": "Ash's map shows the location of recent deathboxes. Press on a deathbox to mark surviving attackers."
       },
       "ultimate": {
         "name": "Phase Breach",
@@ -100,11 +95,6 @@
       "early_life": "Dr. Ashleigh Reid was a brilliant scientist working with Horizon on gravitational research. Her ambition and betrayal led to her transformation into the simulacrum assassin known as Ash.",
       "career_before_games": "Worked for the IMC and became a top-level scientist before being presumed dead and later rebuilt as a simulacrum by Vinson Dynamics.",
       "joining_apex": "After regaining fragments of her past, Ash entered the Apex Games to assert control over her dual identities and prove her dominance."
-    },
-    "personality": {
-      "traits": ["Calculating", "Cold", "Efficient"],
-      "insecurities": "Struggles with the remnants of her humanity (Dr. Reid) trying to resurface.",
-      "hobbies": []
     },
     "notable_quotes": [
       "I am the hunter the Gods have sent.",
@@ -134,7 +124,7 @@
     "abilities": {
       "tactical": {
         "name": "Whistler",
-        "description": "Shoots a projectile that heats up an enemy’s gun as they shoot, eventually overheating and damaging the user."
+        "description": "Shoots a projectile that heats up an enemy's gun as they shoot, eventually overheating and damaging the user."
       },
       "passive": {
         "name": "Sling",
@@ -162,15 +152,6 @@
       "early_life": "Born into a wealthy family on Gaea, August Brinkman lived a privileged but rebellious life, drawn to the thrill of combat sports.",
       "career_before_games": "Joined the Thunderdome Games in his youth, becoming a famous and reckless competitor. Retired after the death of his brother-in-law due to his actions.",
       "joining_apex": "Came out of retirement to protect his son from joining the Games. Joined the Apex Games himself in a last attempt to keep his family safe."
-    },
-    "personality": {
-      "traits": ["Suave", "Protective", "Haunted"],
-      "insecurities": "Guilt over his past mistakes, especially the loss of close friends and family.",
-      "hobbies": [
-        "Fine wine collecting",
-        "Classical music",
-        "Marksmanship training"
-      ]
     },
     "notable_quotes": [
       "This old dog still has a few tricks.",
@@ -251,18 +232,9 @@
       "career_before_games": "Excelled in the IMC as a top-tier soldier and weapons expert. Went missing after a mission went wrong and her brother disappeared.",
       "joining_apex": "Entered the Apex Games to earn enough money to return home and find her lost brother."
     },
-    "personality": {
-      "traits": ["Disciplined", "Focused", "Resilient"],
-      "insecurities": "Carries guilt over her brother's disappearance and unresolved feelings about her role in the war.",
-      "hobbies": [
-        "Weapon maintenance",
-        "Military drills",
-        "Tactical strategy games"
-      ]
-    },
     "notable_quotes": [
-      "We’ve got a job to do, so shift your carcass.",
-      "If you see me coming, my advice? Don’t.",
+      "We've got a job to do, so shift your carcass.",
+      "If you see me coming, my advice? Don't.",
       "This is what I was built for."
     ],
     "fun_facts": [
@@ -317,17 +289,12 @@
     "backstory": {
       "early_life": "Tressa grew up on the moon Boreas, where she faced discrimination as a transgender woman. She found comfort in working with ferrofluid and arcane sciences.",
       "career_before_games": "Worked as a terraformer to help stabilize the collapsing moon, and was part of a resistance movement against corporate exploitation.",
-      "joining_apex": "Joined the Games to draw attention to Boreas’s plight and to take control of her own destiny."
-    },
-    "personality": {
-      "traits": ["Mysterious", "Protective", "Resilient"],
-      "insecurities": "Struggles with isolation and the pressure of representing her home and identity.",
-      "hobbies": ["Alchemy", "Astrology", "Ferrofluid manipulation"]
+      "joining_apex": "Joined the Games to draw attention to Boreas's plight and to take control of her own destiny."
     },
     "notable_quotes": [
       "Change is coming... and I will be its catalyst.",
-      "Stand back. I’m crafting a barrier.",
-      "They’ll never see us coming through the veil."
+      "Stand back. I'm crafting a barrier.",
+      "They'll never see us coming through the veil."
     ],
     "fun_facts": [
       "First openly transgender Legend in Apex Games.",
@@ -382,11 +349,6 @@
       "early_life": "Alexander Nox was a brilliant scientist working for Humbert Labs, developing pesticides. His obsession with testing on living subjects led him to darker experiments.",
       "career_before_games": "Worked as a chemical engineer. Faked his own death in a lab fire to escape persecution for unethical experimentation.",
       "joining_apex": "Joined the Games to continue his research on human exposure to toxic substances in live combat."
-    },
-    "personality": {
-      "traits": ["Calculating", "Cold", "Obsessive"],
-      "insecurities": "Believes emotion is weakness, but is haunted by past attachment to his mother.",
-      "hobbies": ["Gas experimentation", "Philosophy", "Chess"]
     },
     "notable_quotes": [
       "I don't concern myself with the ambitions of insects.",
@@ -451,22 +413,17 @@
     "backstory": {
       "early_life": "Grew up in a war-torn Solace, where she witnessed firsthand the devastation of the Frontier Wars.",
       "career_before_games": "Worked odd jobs to support her family, eventually volunteering for experimental IMC tech to gain powers.",
-      "joining_apex": "Joined the Apex Games to provide for her family and redeem her sister’s failed dream of heroism."
-    },
-    "personality": {
-      "traits": ["Loyal", "Energetic", "Impulsive"],
-      "insecurities": "Worries she's not strong enough to protect the ones she loves.",
-      "hobbies": ["Street racing", "Drawing comics", "Listening to punk rock"]
+      "joining_apex": "Joined the Apex Games to provide for her family and redeem her sister's failed dream of heroism."
     },
     "notable_quotes": [
       "I'll carry the weight for all of us.",
-      "This armor? It’s hope, not just hardware.",
+      "This armor? It's hope, not just hardware.",
       "Let's light it up!"
     ],
     "fun_facts": [
       "Her power source is a salvaged Monarch Titan battery.",
       "She often acts before thinking, especially in defense of friends.",
-      "Has a strong connection to her hometown despite the war’s damage."
+      "Has a strong connection to her hometown despite the war's damage."
     ],
     "image": "/images/legend-portraits/conduit.webp",
     "sources": [
@@ -524,19 +481,10 @@
       "career_before_games": "Worked for the Syndicate as a computer engineer before being framed and going on the run.",
       "joining_apex": "Entered the Games under the alias Crypto to uncover who set him up and to search for Mila."
     },
-    "personality": {
-      "traits": ["Stoic", "Focused", "Clever"],
-      "insecurities": "Keeps people at a distance out of fear of betrayal.",
-      "hobbies": [
-        "Drone racing",
-        "Codebreaking",
-        "Listening to classical music"
-      ]
-    },
     "notable_quotes": [
       "The hunt begins.",
       "I am watching. Always.",
-      "I know what I’m doing. Trust me."
+      "I know what I'm doing. Trust me."
     ],
     "fun_facts": [
       "Never seen without his drone, which he affectionately calls 'Hack'.",
@@ -596,18 +544,13 @@
     },
     "backstory": {
       "early_life": "Grew up on Salvo in a rough-and-tumble environment where survival often meant blowing something up.",
-      "career_before_games": "A cage fighter and mercenary, Fuse rose to fame as Salvo’s champion before joining the Apex Games.",
+      "career_before_games": "A cage fighter and mercenary, Fuse rose to fame as Salvo's champion before joining the Apex Games.",
       "joining_apex": "Left Salvo (and Maggie) to join the Games, seeking a bigger stage for his explosive personality."
-    },
-    "personality": {
-      "traits": ["Brash", "Charismatic", "Loyal"],
-      "insecurities": "Carries guilt over his falling out with Maggie and the harm it caused.",
-      "hobbies": ["Guitar", "Drinking", "Blowing things up for fun"]
     },
     "notable_quotes": [
       "Time to rock 'n' load!",
-      "Fusey’s in the ring, and he’s ready to sing!",
-      "You better hope I don’t find you first."
+      "Fusey's in the ring, and he's ready to sing!",
+      "You better hope I don't find you first."
     ],
     "fun_facts": [
       "Has a robotic arm after an accident with Maggie.",
@@ -663,15 +606,10 @@
       "career_before_games": "Worked in search and rescue alongside his father before becoming a legend.",
       "joining_apex": "Joined the Games not for fame, but to protect the people of the Outlands in his own way."
     },
-    "personality": {
-      "traits": ["Protective", "Warm", "Courageous"],
-      "insecurities": "Feels pressure to live up to his ideals of protection and strength.",
-      "hobbies": ["Barbecuing", "Volunteering", "Fixing bikes"]
-    },
     "notable_quotes": [
-      "I’ve got your back. Remember me tellin’ you that.",
-      "We’ve got this. Just watch my back.",
-      "Let’s show these fools why their moms told them to stay in school."
+      "I've got your back. Remember me tellin' you that.",
+      "We've got this. Just watch my back.",
+      "Let's show these fools why their moms told them to stay in school."
     ],
     "fun_facts": [
       "Openly gay and a role model for Outlands youth.",
@@ -701,7 +639,7 @@
       },
       "passive": {
         "name": "Spacewalk",
-        "description": "Increased air control and reduced fall impacts with Horizon’s custom spacesuit."
+        "description": "Increased air control and reduced fall impacts with Horizon's custom spacesuit."
       },
       "ultimate": {
         "name": "Black Hole",
@@ -733,11 +671,6 @@
       "early_life": "A brilliant astrophysicist from Psamathe who specialized in black hole research.",
       "career_before_games": "Conducted experiments on gravitational anomalies and developed AI tech with her son Newton.",
       "joining_apex": "Joined the Apex Games to fund her research and reconnect with Newton, having returned decades after her disappearance due to time dilation."
-    },
-    "personality": {
-      "traits": ["Clever", "Driven", "Motherly"],
-      "insecurities": "Haunted by the time she lost with her son and her guilt over leaving him behind.",
-      "hobbies": ["Theoretical physics", "Star-gazing", "AI tinkering"]
     },
     "notable_quotes": [
       "A wee gravity lift here, mates.",
@@ -805,15 +738,6 @@
       "career_before_games": "Worked as a combat medic providing humanitarian aid in war zones.",
       "joining_apex": "Entered the Apex Games to fund medical supplies and humanitarian efforts for the Frontier Corps."
     },
-    "personality": {
-      "traits": ["Altruistic", "Witty", "Tough"],
-      "insecurities": "Wrestles with the guilt of her family's legacy and her ongoing use of violence to fund aid.",
-      "hobbies": [
-        "Playing drums",
-        "Volunteering",
-        "Sneaking into medical black sites"
-      ]
-    },
     "notable_quotes": [
       "Never quit. That's how you win.",
       "Don't worry, I got a prosthetic for that.",
@@ -842,7 +766,7 @@
     "title": "Translocating Thief",
     "abilities": {
       "tactical": {
-        "name": "Burglar’s Best Friend",
+        "name": "Burglar's Best Friend",
         "description": "Teleport to hard-to-reach places or escape trouble quickly by throwing your jump drive bracelet."
       },
       "passive": {
@@ -874,15 +798,10 @@
       "career_before_games": "Became one of the most accomplished thieves in the Outlands, using her skills to survive.",
       "joining_apex": "Joined the Apex Games to gain access to powerful technology and seek revenge on Revenant."
     },
-    "personality": {
-      "traits": ["Stylish", "Calculating", "Resilient"],
-      "insecurities": "Struggles with trust due to betrayal and trauma from her youth.",
-      "hobbies": ["High fashion", "Antique collecting", "Infiltration"]
-    },
     "notable_quotes": [
       "Don't worry, you'll be all right. I have your back. And your front.",
-      "I know what I’m doing. Well, most of the time.",
-      "You can’t outrun me!"
+      "I know what I'm doing. Well, most of the time.",
+      "You can't outrun me!"
     ],
     "fun_facts": [
       "Has a complex love-hate relationship with Revenant.",
@@ -911,7 +830,7 @@
         "description": "Fire a drill that burns enemies through obstacles."
       },
       "passive": {
-        "name": "Warlord’s Ire",
+        "name": "Warlord's Ire",
         "description": "Highlight enemies you've damaged and move faster with shotguns."
       },
       "ultimate": {
@@ -945,14 +864,9 @@
       "career_before_games": "Led guerrilla campaigns and uprisings on Salvo, earning her a reputation as a ruthless rebel.",
       "joining_apex": "Was sentenced to death but survived and was forced into the Apex Games as a political pawn."
     },
-    "personality": {
-      "traits": ["Fierce", "Loud", "Unapologetic"],
-      "insecurities": "Internally conflicted about the violence her actions have caused.",
-      "hobbies": ["Shouting propaganda", "Explosives", "Insulting authority"]
-    },
     "notable_quotes": [
       "You're either with me, or you're meat.",
-      "C’mon, let’s cause a scene!",
+      "C'mon, let's cause a scene!",
       "Salvo stands strong!"
     ],
     "fun_facts": [
@@ -1026,11 +940,6 @@
       "career_before_games": "Worked as a bartender and night shift manager. Owned the Paradise Lounge.",
       "joining_apex": "Encouraged by his mother, he joined the Apex Games to showcase his holographic talents and support them both financially."
     },
-    "personality": {
-      "traits": ["Witty", "Charismatic", "Insecure"],
-      "insecurities": "Struggles with loneliness and self-worth beneath his showy exterior.",
-      "hobbies": ["Mixology", "Piano", "Hologram design"]
-    },
     "notable_quotes": [
       "You got bamboozled!",
       "I'm not afraid of heights. I'm afraid of falling... and dying.",
@@ -1097,11 +1006,6 @@
       "career_before_games": "Assumed the identity of Newcastle to keep his town safe and repay debts.",
       "joining_apex": "Entered the Apex Games under the guise of Newcastle to protect his town and eventually revealed his identity to Bangalore."
     },
-    "personality": {
-      "traits": ["Protective", "Self-sacrificing", "Calm under pressure"],
-      "insecurities": "Feels the weight of living up to the role of hero and protecting his secret.",
-      "hobbies": ["Mechanics", "Community service", "Chess"]
-    },
     "notable_quotes": [
       "Time to break some hearts... and some heads.",
       "If I die, it's just an older brother thing.",
@@ -1162,14 +1066,9 @@
       "career_before_games": "Lost his legs during a stunt using a grenade to boost a race time. Persuaded Ajay (Lifeline) to forge bionic replacements.",
       "joining_apex": "Joined the Games for the ultimate thrill-seeking opportunity."
     },
-    "personality": {
-      "traits": ["Hyperactive", "Impulsive", "Energetic"],
-      "insecurities": "Hides his pain and self-doubt behind non-stop motion and humor.",
-      "hobbies": ["Stunts", "Speed trials", "Annoying Lifeline"]
-    },
     "notable_quotes": [
       "Whoa! What a rush!",
-      "You think I’m afraid of you? I blew off my own legs!",
+      "You think I'm afraid of you? I blew off my own legs!",
       "Faster, faster, faster!"
     ],
     "fun_facts": [
@@ -1216,7 +1115,7 @@
       "father": {
         "name": "Dr. Franklin Humbert",
         "status": "Unknown",
-        "notes": "Another scientist possibly tied to Pathfinder’s origins."
+        "notes": "Another scientist possibly tied to Pathfinder's origins."
       },
       "brothers": [],
       "sisters": [],
@@ -1227,13 +1126,8 @@
       "career_before_games": "Wandered the Outlands trying to learn who created him and why.",
       "joining_apex": "Entered the Games hoping to attract the attention of his creator."
     },
-    "personality": {
-      "traits": ["Optimistic", "Loyal", "Curious"],
-      "insecurities": "Wants to understand his origin and be part of a family.",
-      "hobbies": ["High-fives", "Cooking (badly)", "Making new friends"]
-    },
     "notable_quotes": [
-      "Losing isn’t fun. That’s why I don’t do it.",
+      "Losing isn't fun. That's why I don't do it.",
       "Hi, friends!",
       "Did I tell you I like climbing things?"
     ],
@@ -1289,13 +1183,8 @@
     },
     "backstory": {
       "early_life": "Grew up in the underbelly of Gaea, fixing weapons and tech from a young age.",
-      "career_before_games": "Ran a modding shop in Gaea’s underground until it was destroyed by a gang. Gained notoriety from underground fight mods.",
+      "career_before_games": "Ran a modding shop in Gaea's underground until it was destroyed by a gang. Gained notoriety from underground fight mods.",
       "joining_apex": "Joined the Apex Games for fame, fortune, and to rebuild her shop—and her name."
-    },
-    "personality": {
-      "traits": ["Brash", "Resourceful", "Sarcastic"],
-      "insecurities": "Worries she’ll never be taken seriously as a professional.",
-      "hobbies": ["Weapon modding", "Tinkering", "Trash-talking"]
     },
     "notable_quotes": [
       "Time to turn crap into gold!",
@@ -1329,7 +1218,7 @@
         "description": "Leap forward with a powerful pounce to close the distance."
       },
       "passive": {
-        "name": "Assassin’s Instinct",
+        "name": "Assassin's Instinct",
         "description": "See low-health enemies and move faster while crouching."
       },
       "ultimate": {
@@ -1363,13 +1252,8 @@
       "career_before_games": "Top-tier assassin before and after his conversion into a deadly machine.",
       "joining_apex": "Entered the Games after regaining memory of his human past, now driven by vengeance against his creators."
     },
-    "personality": {
-      "traits": ["Vengeful", "Cold", "Efficient"],
-      "insecurities": "Haunted by the loss of his humanity.",
-      "hobbies": ["Hunting", "Silencing foes", "Hating Hammond"]
-    },
     "notable_quotes": [
-      "I’m not a man. I’m a killing machine.",
+      "I'm not a man. I'm a killing machine.",
       "They made me a monster. I'll be their nightmare.",
       "Your life ends with me."
     ],
@@ -1405,7 +1289,7 @@
       },
       "ultimate": {
         "name": "Exhibit",
-        "description": "Create a sphere that reveals enemies’ movements within it."
+        "description": "Create a sphere that reveals enemies' movements within it."
       }
     },
     "family": {
@@ -1417,7 +1301,7 @@
       "father": {
         "name": "Dr. Obi Edolasim Sr.",
         "status": "Alive",
-        "notes": "A skilled engineer and inventor who supported Obi’s talents."
+        "notes": "A skilled engineer and inventor who supported Obi's talents."
       },
       "brothers": [],
       "sisters": [],
@@ -1427,11 +1311,6 @@
       "early_life": "Born during a celestial anomaly, marked as cursed but raised with love.",
       "career_before_games": "Became a celebrated performer and underground sensation using his drones.",
       "joining_apex": "Entered the Games to reshape his narrative and prove beauty and truth belong on the battlefield."
-    },
-    "personality": {
-      "traits": ["Graceful", "Calm", "Observant"],
-      "insecurities": "Haunted by the cultural fear surrounding his birth prophecy.",
-      "hobbies": ["Spoken word", "Painting", "Designing drone choreography"]
     },
     "notable_quotes": [
       "With each victory, I become a little more whole.",
@@ -1491,11 +1370,6 @@
       "career_before_games": "null",
       "joining_apex": "null"
     },
-    "personality": {
-      "traits": ["Observant", "Stoic"],
-      "insecurities": "null",
-      "hobbies": ["Scouting", "Silent meditation"]
-    },
     "notable_quotes": [
       "I see what you don't.",
       "They won't know what hit them."
@@ -1530,7 +1404,7 @@
         "description": "Use your eyepiece to read tactical info on enemies."
       },
       "ultimate": {
-        "name": "Sniper’s Mark",
+        "name": "Sniper's Mark",
         "description": "Mark enemies and apply a damage boost for Vantage and her squad."
       }
     },
@@ -1551,11 +1425,6 @@
       "early_life": "Raised alone by her mother in the icy wastes of Págos.",
       "career_before_games": "Trained in survivalism and tracking animals.",
       "joining_apex": "Joined to help clear her mother's name and find the truth."
-    },
-    "personality": {
-      "traits": ["Naive", "Loyal", "Eager"],
-      "insecurities": "Feels out of place in civilized society.",
-      "hobbies": ["Tracking", "Climbing", "Communing with Echo"]
     },
     "notable_quotes": [
       "I'm just here to shoot the bad guys.",
@@ -1609,22 +1478,17 @@
       "brothers": []
     },
     "backstory": {
-      "early_life": "Raised in the Games’ arena, close to her father and surrounded by tech.",
-      "career_before_games": "Helped design the Apex Games’ ring systems.",
-      "joining_apex": "Entered the Games after her father’s death as a way to honor his legacy and find connection."
-    },
-    "personality": {
-      "traits": ["Brilliant", "Shy", "Loyal"],
-      "insecurities": "Struggles with social situations and loss of her father.",
-      "hobbies": ["Tinkering", "Reading", "Spending time with friends"]
+      "early_life": "Raised in the Games' arena, close to her father and surrounded by tech.",
+      "career_before_games": "Helped design the Apex Games' ring systems.",
+      "joining_apex": "Entered the Games after her father's death as a way to honor his legacy and find connection."
     },
     "notable_quotes": [
-      "Fences mean nothing to me if I can’t protect the people behind them.",
+      "Fences mean nothing to me if I can't protect the people behind them.",
       "This is more than a game to me."
     ],
     "fun_facts": [
       "Has a close friendship with Crypto and Wattson's plush Nessie is a fan favorite.",
-      "Her ultimate was inspired by her father’s work on energy shielding."
+      "Her ultimate was inspired by her father's work on energy shielding."
     ],
     "image": "/images/legend-portraits/wattson.webp",
     "sources": [
@@ -1649,7 +1513,7 @@
       },
       "passive": {
         "name": "Voices from the Void",
-        "description": "A voice warns you when danger approaches. As far as you can tell, it’s on your side."
+        "description": "A voice warns you when danger approaches. As far as you can tell, it's on your side."
       },
       "ultimate": {
         "name": "Dimensional Rift",
@@ -1674,18 +1538,9 @@
       "career_before_games": "IMC scientist working on phase technology, later subjected to it in secret experiments.",
       "joining_apex": "Escaped captivity with the help of a mysterious alternate version of herself. Now fights to uncover her past."
     },
-    "personality": {
-      "traits": ["Brooding", "Focused", "Resilient"],
-      "insecurities": "Haunted by fragmented memories and her lost identity.",
-      "hobbies": [
-        "Meditation",
-        "Combat training",
-        "Seeking answers about her past"
-      ]
-    },
     "notable_quotes": [
       "There's a thin line between life and death. You'll find me there.",
-      "I know what I’m doing."
+      "I know what I'm doing."
     ],
     "fun_facts": [
       "One of the original legends introduced at launch.",

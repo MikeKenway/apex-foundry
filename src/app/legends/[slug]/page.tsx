@@ -1,17 +1,16 @@
 import Image from 'next/image'
 import { notFound } from 'next/navigation'
 import legends from '@/data/legends.json'
-import type { Legend } from '@/types/legend'
 
 export default function LegendPage({ params }: { params: { slug: string } }) {
-  const legend = legends.find((l: Legend) => l.slug === params.slug)
+  const legend = legends.find((l) => l.slug === params.slug)
 
   if (!legend) return notFound()
 
   return (
-    <main className="p-6 max-w-5xl mx-auto text-white space-y-16 font-[ElectronicArtsText]">
+    <main className="p-6 max-w-7xl mx-auto text-white space-y-10 font-[ElectronicArtsText]">
       {/* HEADER */}
-      <div className="relative flex flex-col md:flex-row items-center gap-8 bg-gradient-to-r from-zinc-900 to-zinc-800 p-6 rounded-2xl shadow-lg border border-zinc-700 overflow-hidden">
+      <div className="relative flex flex-col md:flex-row items-center gap-6 bg-gradient-to-r from-zinc-900 to-zinc-800 p-6 shadow-lg border border-zinc-700 overflow-hidden">
         <div className="absolute inset-0 opacity-10 blur-sm">
           <Image
             src={legend.image}
@@ -26,10 +25,10 @@ export default function LegendPage({ params }: { params: { slug: string } }) {
           alt={`${legend.name} portrait`}
           width={300}
           height={300}
-          className="rounded-2xl shadow-lg z-10"
+          className="shadow-lg z-10"
         />
 
-        <div className="z-10">
+        <div className="z-10 flex-1">
           <h1 className="text-5xl font-extrabold tracking-tight text-primary drop-shadow-md">
             {legend.name}
           </h1>
@@ -45,89 +44,89 @@ export default function LegendPage({ params }: { params: { slug: string } }) {
         </div>
       </div>
 
-      {/* ABILITIES */}
-      <section>
-        <h2 className="text-3xl font-bold text-primary mb-4 drop-shadow">
-          Abilities
-        </h2>
-        <div className="grid md:grid-cols-3 gap-6">
-          {Object.entries(legend.abilities).map(([key, ability]) => (
-            <div
-              key={key}
-              className="bg-zinc-900 border border-zinc-700 rounded-xl p-5 shadow-lg hover:shadow-primary/30 hover:scale-[1.02] transition-transform"
-            >
-              <h3 className="text-lg font-bold text-white mb-2 capitalize">
-                {ability.name}
-              </h3>
-              <p className="text-sm text-zinc-300">{ability.description}</p>
+      {/* GRID LAYOUT: LEFT + RIGHT */}
+      <div className="grid md:grid-cols-3 gap-6">
+        {/* LEFT COLUMN (2/3) */}
+        <div className="md:col-span-2 space-y-6">
+          {/* BACKSTORY */}
+          <section className="bg-zinc-900 border-l-4 border-primary pl-6 pr-4 py-4 shadow-inner space-y-4">
+            <h2 className="text-2xl font-bold text-primary">Backstory</h2>
+            <div>
+              <h3 className="text-sm uppercase tracking-wide text-zinc-400 mb-1">Early Life</h3>
+              <p className="text-sm text-zinc-300">{legend.backstory.early_life}</p>
             </div>
-          ))}
+            <div>
+              <h3 className="text-sm uppercase tracking-wide text-zinc-400 mb-1">Before Apex</h3>
+              <p className="text-sm text-zinc-300">{legend.backstory.career_before_games}</p>
+            </div>
+            <div>
+              <h3 className="text-sm uppercase tracking-wide text-zinc-400 mb-1">Joining Apex</h3>
+              <p className="text-sm text-zinc-300">{legend.backstory.joining_apex}</p>
+            </div>
+          </section>
+
+          {/* NOTABLE QUOTES */}
+          <section className="bg-zinc-900 border-l-4 border-primary pl-6 pr-4 py-4 shadow-inner">
+            <h2 className="text-xl font-semibold text-primary mb-2">Notable Quotes</h2>
+            <ul className="list-disc list-inside text-zinc-300 text-sm space-y-1">
+              {legend.notable_quotes.map((quote, i) => (
+                <li key={i} className="italic">&quot;{quote}&quot;</li>
+              ))}
+            </ul>
+          </section>
+
+          {/* FUN FACTS */}
+          <section className="bg-zinc-900 border-l-4 border-primary pl-6 pr-4 py-4 shadow-inner">
+            <h2 className="text-xl font-semibold text-primary mb-2">Fun Facts</h2>
+            <ul className="list-disc list-inside text-zinc-300 text-sm space-y-1">
+              {legend.fun_facts.map((fact, i) => (
+                <li key={i}>{fact}</li>
+              ))}
+            </ul>
+          </section>
+
+          {/* SOURCES */}
+          <section className="text-xs text-zinc-500 pt-2">
+            <h2 className="text-sm uppercase tracking-wide text-zinc-400 mb-1">Sources</h2>
+            <ul className="list-disc list-inside text-zinc-400 space-y-1">
+              {legend.sources.map((url, i) => (
+                <li key={i}>
+                  <a
+                    href={url}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="hover:text-primary hover:underline"
+                  >
+                    {url}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </section>
         </div>
-      </section>
 
-      {/* BACKSTORY */}
-      <section className="bg-zinc-900 border-l-4 border-primary pl-6 pr-4 py-6 rounded-xl shadow-inner">
-        <h2 className="text-2xl font-bold text-primary mb-4">Backstory</h2>
-        <ul className="space-y-3 text-zinc-300 text-sm">
-          <li><strong className="text-white">Early Life:</strong> {legend.backstory.early_life}</li>
-          <li><strong className="text-white">Before Apex:</strong> {legend.backstory.career_before_games}</li>
-          <li><strong className="text-white">Joining Apex:</strong> {legend.backstory.joining_apex}</li>
-        </ul>
-      </section>
-
-      {/* PERSONALITY */}
-      <section className="bg-zinc-900 p-6 rounded-xl border border-zinc-700 shadow">
-        <h2 className="text-2xl font-bold text-primary mb-4">Personality</h2>
-        <p className="text-sm text-zinc-300 mb-2">
-          <strong>Traits:</strong> {legend.personality.traits.join(', ')}
-        </p>
-        <p className="text-sm text-zinc-300 mb-2">
-          <strong>Insecurities:</strong> {legend.personality.insecurities}
-        </p>
-        <p className="text-sm text-zinc-300">
-          <strong>Hobbies:</strong> {legend.personality.hobbies.join(', ')}
-        </p>
-      </section>
-
-      {/* QUOTES + FUN FACTS */}
-      <section className="grid md:grid-cols-2 gap-6">
-        <div className="bg-zinc-900 p-6 rounded-xl border border-zinc-700 shadow">
-          <h2 className="text-xl font-semibold text-primary mb-3">Notable Quotes</h2>
-          <ul className="list-disc list-inside text-zinc-300 text-sm space-y-1">
-            {legend.notable_quotes.map((quote, i) => (
-              <li key={i} className="italic">"{quote}"</li>
-            ))}
-          </ul>
+        {/* RIGHT COLUMN (1/3) */}
+        <div className="space-y-6">
+          {/* ABILITIES */}
+          <section className="bg-zinc-900 p-5 border border-zinc-700 shadow">
+            <h2 className="text-2xl font-bold text-primary mb-4">Abilities</h2>
+            {(['tactical', 'passive', 'ultimate'] as const).map((type) => {
+              const ability = legend.abilities[type]
+              return (
+                <div key={type} className="mb-4">
+                  <h3 className="text-sm uppercase tracking-wide text-zinc-400 mb-1">
+                    {type.charAt(0).toUpperCase() + type.slice(1)}
+                  </h3>
+                  <div className="p-2">
+                    <span className="font-semibold text-white">{ability.name}</span>
+                    <div className="text-zinc-300 text-xs mt-1">{ability.description}</div>
+                  </div>
+                </div>
+              )
+            })}
+          </section>
         </div>
-
-        <div className="bg-zinc-900 p-6 rounded-xl border border-zinc-700 shadow">
-          <h2 className="text-xl font-semibold text-primary mb-3">Fun Facts</h2>
-          <ul className="list-disc list-inside text-zinc-300 text-sm space-y-1">
-            {legend.fun_facts.map((fact, i) => (
-              <li key={i}>{fact}</li>
-            ))}
-          </ul>
-        </div>
-      </section>
-
-      {/* SOURCES */}
-      <section className="text-xs text-gray-500">
-        <h2 className="text-sm uppercase tracking-wide text-zinc-400 mb-2">Sources</h2>
-        <ul className="list-disc list-inside text-zinc-400 space-y-1">
-          {legend.sources.map((url, i) => (
-            <li key={i}>
-              <a
-                href={url}
-                target="_blank"
-                rel="noreferrer"
-                className="hover:text-primary hover:underline"
-              >
-                {url}
-              </a>
-            </li>
-          ))}
-        </ul>
-      </section>
+      </div>
     </main>
   )
 }

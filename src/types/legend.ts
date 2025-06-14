@@ -44,7 +44,6 @@ export type Legend = {
   abilities: Abilities
   family: Family
   backstory: Backstory
-  personality: Personality
   notable_quotes: string[] | null
   fun_facts: string[] | null
   image: string
