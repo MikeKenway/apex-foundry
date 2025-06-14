@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className="relative min-h-screen flex items-center justify-center px-4 py-12 text-white">
       <div className="relative z-10 w-full max-w-2xl mx-auto">
-        <div className="bg-[#18181b] border-l-4 border-primary shadow-xl px-10 py-12 flex flex-col items-start gap-8 text-left">
+        <div className="bg-[#18181b] border-l-4 border-[#FF4655] shadow-xl px-10 py-12 flex flex-col items-start gap-8 text-left">
           <div className="flex flex-col gap-8 mb-2">
             <h1 className="text-4xl md:text-5xl font-medium font-[Duke] text-white tracking-wide uppercase" >
               Welcome to
@@ -20,7 +20,7 @@ export default function Home() {
               priority
             />
           </div>
-          <div className="h-1 w-24 bg-gradient-to-r from-primary to-transparent mb-2" />
+          <div className="h-1 w-24 bg-gradient-to-r from-[#FF4655] to-transparent mb-2" />
           <p className="text-lg md:text-xl text-zinc-200 max-w-2xl mb-2 leading-relaxed font-semibold">
             There isn&apos;t much here yet, but there will (hopefully) be more soon! 
           </p>
@@ -34,7 +34,7 @@ export default function Home() {
             href="https://github.com/mikekenway/apex-foundry"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 text-zinc-400 hover:text-primary text-sm font-mono border-b border-transparent hover:border-primary transition-colors"
+            className="flex items-center gap-2 text-zinc-400 hover:text-[#FF4655] text-sm font-mono border-b border-transparent hover:border-[#FF4655] transition-colors"
           >
             <FiGithub className="w-5 h-5" />
             Follow the project on GitHub
