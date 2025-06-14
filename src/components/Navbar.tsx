@@ -20,9 +20,9 @@ export function Navbar() {
               priority
             />
           </Link>
-          <Link href="/" className="hover:text-red-400 transition">Home</Link>
-          <Link href="/legends" className="hover:text-red-400 transition">Legends</Link>
-          <Link href="/squad-randomizer" className="hover:text-red-400 transition">Squad Randomizer</Link>
+          <Link href="/" className="hover:text-primary transition">Home</Link>
+          <Link href="/legends" className="hover:text-primary transition">Legends</Link>
+          <Link href="/squad-randomizer" className="hover:text-primary transition">Squad Randomizer</Link>
         </div>
 
         {/* Right: Contact button */}

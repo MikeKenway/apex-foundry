@@ -20,7 +20,7 @@ export function PrimaryButton({
   ...rest
 }: PrimaryButtonProps) {
   const baseStyles =
-    'bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded transition font-semibold'
+    'bg-primary hover:bg-red-600 text-white px-4 py-2 rounded transition font-semibold'
 
   if (variant === 'button') {
     return (

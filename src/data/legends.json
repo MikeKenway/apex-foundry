@@ -2,361 +2,1699 @@
   {
     "name": "Alter",
     "slug": "alter",
-    "realName": "YingLing Lui",
-    "title": "The Riftwalker",
+    "real_name": "YingLing Lui",
+    "age": null,
+    "homeworld": null,
     "class": "Skirmisher",
-    "passive": "Gift From The Rift",
-    "tactical": "Void Passage",
-    "ultimate": "Void Nexus",
-    "origin": "Unknown",
-    "releaseSeason": 21,
-    "difficulty": "Hard",
-    "image": "/images/legend-photos-transparent/alter.png",
-    "imageProfile": "/images/legend-portraits/alter.webp"
+    "voice_actor": "Crystal Yu",
+    "appearance_season": "Season 21",
+    "title": "Void Breacher",
+    "abilities": {
+      "tactical": {
+        "name": "Void Passage",
+        "description": "Create a portal on either side of any surface under 45 m away, lasting 15 s."
+      },
+      "passive": {
+        "name": "Gift from the Rift",
+        "description": "See and remotely take one non‑armor item from death boxes through walls."
+      },
+      "ultimate": {
+        "name": "Void Nexus",
+        "description": "Deploy a device that your squad can teleport back to via a one‑way portal."
+      }
+    },
+    "family": {
+      "mother": {
+        "name": null,
+        "status": null,
+        "notes": ""
+      },
+      "father": {
+        "name": null,
+        "status": null,
+        "notes": ""
+      },
+      "brothers": []
+    },
+    "backstory": {
+      "early_life": "Born in an alternate dimension, YingLing Lui traveled across worlds drawn to their destruction.",
+      "career_before_games": "She stole, fought, and took mercenary work across realities, remaining a mystery even to her victims.",
+      "joining_apex": "Entered the Apex Games to track Horizon and her connection to world‑ending events."
+    },
+    "personality": {
+      "traits": ["Chaotic", "Unpredictable", "Villainous"],
+      "insecurities": null,
+      "hobbies": []
+    },
+    "notable_quotes": ["Who am I? I am the one who is there at the end."],
+    "fun_facts": [
+      "Speaks Cantonese and is of Chinese descent.",
+      "Introduced as Apex Legends' first villainous Legend since Revenant.",
+      "Her name 'Alter' hints at alternate-dimension origins."
+    ],
+    "image": "/images/legend-portraits/alter.webp",
+    "sources": [
+      "https://apexlegends.fandom.com/wiki/Alter_(character)",
+      "https://en.wikipedia.org/wiki/List_of_Apex_Legends_characters"
+    ]
   },
+
   {
     "name": "Ash",
     "slug": "ash",
-    "realName": "Dr. Ashleigh Reid",
-    "title": "The Incisive Instigator",
-    "class": "Assault",
-    "passive": "Marked for Death",
-    "tactical": "Arc Snare",
-    "ultimate": "Phase Breach",
-    "origin": "Olympus",
-    "releaseSeason": 11,
-    "difficulty": "Hard",
-    "image": "/images/legend-photos-transparent/ash.png",
-    "imageProfile": "/images/legend-portraits/ash.webp"
+    "real_name": "Dr. Ashleigh Reid",
+    "age": "121",
+    "homeworld": "Unknown",
+    "class": "Skirmisher",
+    "voice_actor": "Anna Campbell",
+    "appearance_season": "Season 11",
+    "title": "Incisive Instigator",
+    "abilities": {
+      "tactical": {
+        "name": "Arc Snare",
+        "description": "Throw a spinning snare that damages and tethers the first enemy that gets too close."
+      },
+      "passive": {
+        "name": "Marked for Death",
+        "description": "Ash’s map shows the location of recent deathboxes. Press on a deathbox to mark surviving attackers."
+      },
+      "ultimate": {
+        "name": "Phase Breach",
+        "description": "Tear open a one-way portal to a targeted location."
+      }
+    },
+    "family": {
+      "mother": {
+        "name": null,
+        "status": null,
+        "notes": ""
+      },
+      "father": {
+        "name": null,
+        "status": null,
+        "notes": ""
+      },
+      "brothers": []
+    },
+    "backstory": {
+      "early_life": "Dr. Ashleigh Reid was a brilliant scientist working with Horizon on gravitational research. Her ambition and betrayal led to her transformation into the simulacrum assassin known as Ash.",
+      "career_before_games": "Worked for the IMC and became a top-level scientist before being presumed dead and later rebuilt as a simulacrum by Vinson Dynamics.",
+      "joining_apex": "After regaining fragments of her past, Ash entered the Apex Games to assert control over her dual identities and prove her dominance."
+    },
+    "personality": {
+      "traits": ["Calculating", "Cold", "Efficient"],
+      "insecurities": "Struggles with the remnants of her humanity (Dr. Reid) trying to resurface.",
+      "hobbies": []
+    },
+    "notable_quotes": [
+      "I am the hunter the Gods have sent.",
+      "I don't concern myself with the ambitions of insects."
+    ],
+    "fun_facts": [
+      "Ash was originally a boss in Titanfall 2.",
+      "She has a split personality between Ash and Dr. Reid.",
+      "Her simulacrum body was constructed by Vinson Dynamics."
+    ],
+    "image": "/images/legend-portraits/ash.webp",
+    "sources": [
+      "https://www.ea.com/games/apex-legends/about/characters/ash",
+      "https://apexlegends.fandom.com/wiki/Ash_(character)"
+    ]
   },
   {
     "name": "Ballistic",
     "slug": "ballistic",
-    "realName": "August Montgomery Brinkman",
-    "title": "The Refined Gunslinger",
+    "real_name": "August Montgomery Brinkman",
+    "age": "63",
+    "homeworld": "Gaea",
     "class": "Assault",
-    "passive": "Sling",
-    "tactical": "Whistler",
-    "ultimate": "Tempest",
-    "origin": "Gaea",
-    "releaseSeason": 17,
-    "difficulty": "Medium",
-    "image": "/images/legend-photos-transparent/ballistic.png",
-    "imageProfile": "/images/legend-portraits/ballistic.webp"
-  }, 
+    "voice_actor": "Robin Atkin Downes",
+    "appearance_season": "Season 17",
+    "title": "Refined Gunslinger",
+    "abilities": {
+      "tactical": {
+        "name": "Whistler",
+        "description": "Shoots a projectile that heats up an enemy’s gun as they shoot, eventually overheating and damaging the user."
+      },
+      "passive": {
+        "name": "Sling",
+        "description": "Store a third weapon in the sling. Access it via inventory or Character Utility Action. The sling weapon cannot take attachments."
+      },
+      "ultimate": {
+        "name": "Tempest",
+        "description": "Grants faster reloads, faster armed move speed, and unlimited ammo to Ballistic and nearby teammates. The sling weapon is equipped and upgraded to gold."
+      }
+    },
+    "family": {
+      "mother": {
+        "name": null,
+        "status": null,
+        "notes": ""
+      },
+      "father": {
+        "name": null,
+        "status": null,
+        "notes": ""
+      },
+      "brothers": []
+    },
+    "backstory": {
+      "early_life": "Born into a wealthy family on Gaea, August Brinkman lived a privileged but rebellious life, drawn to the thrill of combat sports.",
+      "career_before_games": "Joined the Thunderdome Games in his youth, becoming a famous and reckless competitor. Retired after the death of his brother-in-law due to his actions.",
+      "joining_apex": "Came out of retirement to protect his son from joining the Games. Joined the Apex Games himself in a last attempt to keep his family safe."
+    },
+    "personality": {
+      "traits": ["Suave", "Protective", "Haunted"],
+      "insecurities": "Guilt over his past mistakes, especially the loss of close friends and family.",
+      "hobbies": [
+        "Fine wine collecting",
+        "Classical music",
+        "Marksmanship training"
+      ]
+    },
+    "notable_quotes": [
+      "This old dog still has a few tricks.",
+      "Elegance in every shot.",
+      "Try not to embarrass yourselves."
+    ],
+    "fun_facts": [
+      "Wears a custom suit of reinforced combat attire styled like a gentleman's outfit.",
+      "Was a top competitor in the Thunderdome Games before the Apex Games existed.",
+      "His voice lines often reference vintage combat etiquette and refined manners."
+    ],
+    "image": "/images/legend-portraits/ballistic.webp",
+    "sources": [
+      "https://www.ea.com/games/apex-legends/about/characters/ballistic",
+      "https://apexlegends.fandom.com/wiki/Ballistic"
+    ]
+  },
   {
     "name": "Bangalore",
     "slug": "bangalore",
-    "title": "Professional Soldier",
-    "realName": "Anita Williams",
+    "real_name": "Anita Williams",
+    "age": "38",
+    "homeworld": "Gridiron",
     "class": "Assault",
-    "passive": "Double Time",
-    "tactical": "Smoke Launcher",
-    "ultimate": "Rolling Thunder",
-    "origin": "Gridiron",
-    "releaseSeason": 0,
-    "difficulty": "Easy",
-    "image": "/images/legend-photos-transparent/bangalore.png",
-    "imageProfile": "/images/legend-portraits/bangalore.webp"
-  },
-  {
-    "name": "Bloodhound",
-    "slug": "bloodhound",
-    "realName": "Blódhundr",
-    "title": "Technological Tracker",
-    "class": "Recon",
-    "passive": "Tracker",
-    "tactical": "Eye of the Allfather",
-    "ultimate": "Beast of the Hunt",
-    "origin": "Talos",
-    "releaseSeason": 0,
-    "difficulty": "Medium",
-    "image": "/images/legend-photos-transparent/bloodhound.png",
-    "imageProfile": "/images/legend-portraits/bloodhound.webp"
+    "voice_actor": "Erica Luttrell",
+    "appearance_season": "Preseason",
+    "title": "Professional Soldier",
+    "abilities": {
+      "tactical": {
+        "name": "Smoke Launcher",
+        "description": "Fire a high-velocity smoke canister that explodes into a smoke wall on impact."
+      },
+      "passive": {
+        "name": "Double Time",
+        "description": "Taking fire while sprinting makes you move faster for a brief time."
+      },
+      "ultimate": {
+        "name": "Rolling Thunder",
+        "description": "Call in an artillery strike that slowly creeps across the landscape."
+      }
+    },
+    "family": {
+      "mother": {
+        "name": "Cherisse Williams",
+        "status": "Deceased",
+        "notes": "Was in the IMC before Anita."
+      },
+      "father": {
+        "name": "Jackson Williams Sr.",
+        "status": "Deceased",
+        "notes": "Also served in the IMC."
+      },
+      "brothers": [
+        {
+          "name": "Jackson Williams",
+          "status": "Presumed Deceased",
+          "notes": "Went missing during a mission; later revealed to be Newcastle."
+        },
+        {
+          "name": null,
+          "status": null,
+          "notes": ""
+        },
+        {
+          "name": null,
+          "status": null,
+          "notes": ""
+        },
+        {
+          "name": null,
+          "status": null,
+          "notes": ""
+        }
+      ]
+    },
+    "backstory": {
+      "early_life": "Raised in a military family on Gridiron, Anita was one of five siblings trained for combat from a young age.",
+      "career_before_games": "Excelled in the IMC as a top-tier soldier and weapons expert. Went missing after a mission went wrong and her brother disappeared.",
+      "joining_apex": "Entered the Apex Games to earn enough money to return home and find her lost brother."
+    },
+    "personality": {
+      "traits": ["Disciplined", "Focused", "Resilient"],
+      "insecurities": "Carries guilt over her brother's disappearance and unresolved feelings about her role in the war.",
+      "hobbies": [
+        "Weapon maintenance",
+        "Military drills",
+        "Tactical strategy games"
+      ]
+    },
+    "notable_quotes": [
+      "We’ve got a job to do, so shift your carcass.",
+      "If you see me coming, my advice? Don’t.",
+      "This is what I was built for."
+    ],
+    "fun_facts": [
+      "Is known for her flawless weapon handling and battlefield tactics.",
+      "Often keeps others at a distance due to emotional trauma.",
+      "Has a deep loyalty to her family, despite appearing stoic."
+    ],
+    "image": "/images/legend-portraits/bangalore.webp",
+    "sources": [
+      "https://www.ea.com/games/apex-legends/about/characters/bangalore",
+      "https://apexlegends.fandom.com/wiki/Bangalore"
+    ]
   },
   {
     "name": "Catalyst",
     "slug": "catalyst",
-    "realName": "Tressa Crystal Smith",
-    "title": "Defensive Conjurer",
+    "real_name": "Tressa Crystal Smith",
+    "age": "29",
+    "homeworld": "Boreas",
     "class": "Controller",
-    "passive": "Barricade",
-    "tactical": "Piercing Spikes",
-    "ultimate": "Dark Veil",
-    "origin": "Boreas",
-    "releaseSeason": 15,
-    "difficulty": "Medium",
-    "image": "/images/legend-photos-transparent/catalyst.png",
-    "imageProfile": "/images/legend-portraits/catalyst.webp"
+    "voice_actor": "Meli Grant",
+    "appearance_season": "Season 15",
+    "title": "Defensive Conjurer",
+    "abilities": {
+      "tactical": {
+        "name": "Piercing Spikes",
+        "description": "Throw out a patch of ferrofluid which turns into spikes when enemies are near."
+      },
+      "passive": {
+        "name": "Barricade",
+        "description": "Reinforce doors, strengthening them and locking them to enemies."
+      },
+      "ultimate": {
+        "name": "Dark Veil",
+        "description": "Raise a permeable wall of ferrofluid that slows and blinds enemies who walk through it."
+      }
+    },
+    "family": {
+      "mother": {
+        "name": null,
+        "status": null,
+        "notes": ""
+      },
+      "father": {
+        "name": null,
+        "status": null,
+        "notes": ""
+      },
+      "brothers": [],
+      "sisters": []
+    },
+    "backstory": {
+      "early_life": "Tressa grew up on the moon Boreas, where she faced discrimination as a transgender woman. She found comfort in working with ferrofluid and arcane sciences.",
+      "career_before_games": "Worked as a terraformer to help stabilize the collapsing moon, and was part of a resistance movement against corporate exploitation.",
+      "joining_apex": "Joined the Games to draw attention to Boreas’s plight and to take control of her own destiny."
+    },
+    "personality": {
+      "traits": ["Mysterious", "Protective", "Resilient"],
+      "insecurities": "Struggles with isolation and the pressure of representing her home and identity.",
+      "hobbies": ["Alchemy", "Astrology", "Ferrofluid manipulation"]
+    },
+    "notable_quotes": [
+      "Change is coming... and I will be its catalyst.",
+      "Stand back. I’m crafting a barrier.",
+      "They’ll never see us coming through the veil."
+    ],
+    "fun_facts": [
+      "First openly transgender Legend in Apex Games.",
+      "Uses ferrofluid in creative, magical-seeming ways.",
+      "Views the battlefield as a ritual space."
+    ],
+    "image": "/images/legend-portraits/catalyst.webp",
+    "sources": [
+      "https://www.ea.com/games/apex-legends/about/characters/catalyst",
+      "https://apexlegends.fandom.com/wiki/Catalyst"
+    ]
   },
   {
     "name": "Caustic",
     "slug": "caustic",
-    "realName": "Alexander Nox",
-    "title": "Toxic Trapper",
+    "real_name": "Alexander Nox",
+    "age": "49",
+    "homeworld": "Gaea",
     "class": "Controller",
-    "passive": "Nox Vision",
-    "tactical": "Nox Gas Trap",
-    "ultimate": "Nox Gas Grenade",
-    "origin": "Gaea",
-    "releaseSeason": 0,
-    "difficulty": "Hard",
-    "image": "/images/legend-photos-transparent/caustic.png",
-    "imageProfile": "/images/legend-portraits/caustic.webp"
+    "voice_actor": "JB Blanc",
+    "appearance_season": "Preseason",
+    "title": "Toxic Trapper",
+    "abilities": {
+      "tactical": {
+        "name": "Nox Gas Trap",
+        "description": "Place up to six canisters that release deadly Nox gas when shot or triggered by enemies."
+      },
+      "passive": {
+        "name": "Nox Vision",
+        "description": "Allows you to see enemies through your gas."
+      },
+      "ultimate": {
+        "name": "Nox Gas Grenade",
+        "description": "Blanket a large area in Nox gas."
+      }
+    },
+    "family": {
+      "mother": {
+        "name": "Lillian Peck",
+        "status": "Alive",
+        "notes": "One of the few people Caustic held affection for; she believed he died years ago."
+      },
+      "father": {
+        "name": null,
+        "status": null,
+        "notes": ""
+      },
+      "brothers": [],
+      "sisters": []
+    },
+    "backstory": {
+      "early_life": "Alexander Nox was a brilliant scientist working for Humbert Labs, developing pesticides. His obsession with testing on living subjects led him to darker experiments.",
+      "career_before_games": "Worked as a chemical engineer. Faked his own death in a lab fire to escape persecution for unethical experimentation.",
+      "joining_apex": "Joined the Games to continue his research on human exposure to toxic substances in live combat."
+    },
+    "personality": {
+      "traits": ["Calculating", "Cold", "Obsessive"],
+      "insecurities": "Believes emotion is weakness, but is haunted by past attachment to his mother.",
+      "hobbies": ["Gas experimentation", "Philosophy", "Chess"]
+    },
+    "notable_quotes": [
+      "I don't concern myself with the ambitions of insects.",
+      "Life is meant to die. Accept your fates.",
+      "They made me a killing machine. Who am I to argue?"
+    ],
+    "fun_facts": [
+      "Regularly tests his gas on the battlefield for research purposes.",
+      "Wears a custom-designed respirator to withstand his own toxins.",
+      "Has a history of deception and hiding his true identity."
+    ],
+    "image": "/images/legend-portraits/caustic.webp",
+    "sources": [
+      "https://www.ea.com/games/apex-legends/about/characters/caustic",
+      "https://apexlegends.fandom.com/wiki/Caustic"
+    ]
   },
   {
     "name": "Conduit",
     "slug": "conduit",
-    "realName": "Rowenna Valentina Coffey Divina",
-    "title": "The Valiant Voltage",
+    "real_name": "Rowenna Valentina Coffey",
+    "age": "27",
+    "homeworld": "Samoa (Planet Solace)",
     "class": "Support",
-    "passive": "Capacitor",
-    "tactical": "Radiant Transfer",
-    "ultimate": "Energy Barricade",
-    "origin": "Nexus",
-    "releaseSeason": 19,
-    "difficulty": "Medium",
-    "image": "/images/legend-photos-transparent/conduit.png",
-    "imageProfile": "/images/legend-portraits/conduit.webp"
+    "voice_actor": "Alice Himora",
+    "appearance_season": "Season 19",
+    "title": "The Shield of Solace",
+    "abilities": {
+      "tactical": {
+        "name": "Radiant Transfer",
+        "description": "Send a surge of shields to a teammate, at the cost of your own."
+      },
+      "passive": {
+        "name": "Savior's Speed",
+        "description": "Gain a burst of speed when running toward a teammate out of tactical range."
+      },
+      "ultimate": {
+        "name": "Energy Barricade",
+        "description": "Deploy an array of shield jammers that damage and slow enemies."
+      }
+    },
+    "family": {
+      "mother": {
+        "name": "Anita Coffey",
+        "status": "Alive",
+        "notes": "Helped raise Rowenna and her siblings after the war."
+      },
+      "father": {
+        "name": "Malcolm Coffey",
+        "status": "Deceased",
+        "notes": "Died fighting in the war when Rowenna was young."
+      },
+      "brothers": [],
+      "sisters": [
+        {
+          "name": "Diwa Coffey",
+          "status": "Alive",
+          "notes": "Older sister whom Rowenna idolized and tried to support financially."
+        }
+      ]
+    },
+    "backstory": {
+      "early_life": "Grew up in a war-torn Solace, where she witnessed firsthand the devastation of the Frontier Wars.",
+      "career_before_games": "Worked odd jobs to support her family, eventually volunteering for experimental IMC tech to gain powers.",
+      "joining_apex": "Joined the Apex Games to provide for her family and redeem her sister’s failed dream of heroism."
+    },
+    "personality": {
+      "traits": ["Loyal", "Energetic", "Impulsive"],
+      "insecurities": "Worries she's not strong enough to protect the ones she loves.",
+      "hobbies": ["Street racing", "Drawing comics", "Listening to punk rock"]
+    },
+    "notable_quotes": [
+      "I'll carry the weight for all of us.",
+      "This armor? It’s hope, not just hardware.",
+      "Let's light it up!"
+    ],
+    "fun_facts": [
+      "Her power source is a salvaged Monarch Titan battery.",
+      "She often acts before thinking, especially in defense of friends.",
+      "Has a strong connection to her hometown despite the war’s damage."
+    ],
+    "image": "/images/legend-portraits/conduit.webp",
+    "sources": [
+      "https://www.ea.com/games/apex-legends/about/characters/conduit",
+      "https://apexlegends.fandom.com/wiki/Conduit"
+    ]
   },
   {
     "name": "Crypto",
     "slug": "crypto",
-    "realName": "Tae Joon Park",
-    "title": "Surveillance Expert",
+    "real_name": "Tae Joon Park",
+    "age": "31",
+    "homeworld": "Gaea",
     "class": "Recon",
-    "passive": "Neurolink",
-    "tactical": "Surveillance Drone",
-    "ultimate": "Drone EMP",
-    "origin": "Gaea",
-    "releaseSeason": 3,
-    "difficulty": "Hard",
-    "image": "/images/legend-photos-transparent/crypto.png",
-    "imageProfile": "/images/legend-portraits/crypto.webp"
+    "voice_actor": "Johnny Young",
+    "appearance_season": "Season 3",
+    "title": "Surveillance Expert",
+    "abilities": {
+      "tactical": {
+        "name": "Surveillance Drone",
+        "description": "Deploy an aerial drone to survey the area and mark enemies."
+      },
+      "passive": {
+        "name": "Neurolink",
+        "description": "Enemies detected by the drone within 30 meters are marked for you and your teammates."
+      },
+      "ultimate": {
+        "name": "Drone EMP",
+        "description": "Charge up and unleash an EMP blast from your drone, dealing shield damage and disabling traps."
+      }
+    },
+    "family": {
+      "mother": {
+        "name": null,
+        "status": null,
+        "notes": ""
+      },
+      "father": {
+        "name": null,
+        "status": null,
+        "notes": ""
+      },
+      "brothers": [],
+      "sisters": [],
+      "others": [
+        {
+          "name": "Mila Alexander",
+          "status": "Alive",
+          "notes": "His adoptive sister who disappeared under suspicious circumstances. Crypto is trying to find her."
+        }
+      ]
+    },
+    "backstory": {
+      "early_life": "Orphaned young, raised in the streets before being adopted. Excelled in tech and hacking.",
+      "career_before_games": "Worked for the Syndicate as a computer engineer before being framed and going on the run.",
+      "joining_apex": "Entered the Games under the alias Crypto to uncover who set him up and to search for Mila."
+    },
+    "personality": {
+      "traits": ["Stoic", "Focused", "Clever"],
+      "insecurities": "Keeps people at a distance out of fear of betrayal.",
+      "hobbies": [
+        "Drone racing",
+        "Codebreaking",
+        "Listening to classical music"
+      ]
+    },
+    "notable_quotes": [
+      "The hunt begins.",
+      "I am watching. Always.",
+      "I know what I’m doing. Trust me."
+    ],
+    "fun_facts": [
+      "Never seen without his drone, which he affectionately calls 'Hack'.",
+      "Operates under multiple aliases to stay hidden.",
+      "His calm demeanor hides a relentless pursuit of truth."
+    ],
+    "image": "/images/legend-portraits/crypto.webp",
+    "sources": [
+      "https://www.ea.com/games/apex-legends/about/characters/crypto",
+      "https://apexlegends.fandom.com/wiki/Crypto"
+    ]
   },
   {
     "name": "Fuse",
     "slug": "fuse",
-    "realName": "Walter Fitzroy",
-    "title": "Bombastic Explosives Expert",
+    "real_name": "Walter Fitzroy",
+    "age": "55",
+    "homeworld": "Salvo",
     "class": "Assault",
-    "passive": "Grenadier",
-    "tactical": "Knuckle Cluster",
-    "ultimate": "The Motherlode",
-    "origin": "Salvo",
-    "releaseSeason": 8,
-    "difficulty": "Medium",
-    "image": "/images/legend-photos-transparent/fuse.png",
-    "imageProfile": "/images/legend-portraits/fuse.webp"
+    "voice_actor": "Ben Prendergast",
+    "appearance_season": "Season 8",
+    "title": "Explosives Enthusiast",
+    "abilities": {
+      "tactical": {
+        "name": "Knuckle Cluster",
+        "description": "Launch a cluster bomb that continuously expels airburst explosives on impact."
+      },
+      "passive": {
+        "name": "Grenadier",
+        "description": "Stack an extra grenade per inventory slot. Fire grenades farther, faster, and more accurately."
+      },
+      "ultimate": {
+        "name": "The Motherlode",
+        "description": "Launch a bombardment that encircles a target area in a wall of flame."
+      }
+    },
+    "family": {
+      "mother": {
+        "name": null,
+        "status": null,
+        "notes": ""
+      },
+      "father": {
+        "name": null,
+        "status": null,
+        "notes": ""
+      },
+      "brothers": [],
+      "sisters": [],
+      "others": [
+        {
+          "name": "Maggie (Margaret Kōhere)",
+          "status": "Alive",
+          "notes": "Childhood friend turned enemy. They ruled Salvo's underworld together before falling out."
+        }
+      ]
+    },
+    "backstory": {
+      "early_life": "Grew up on Salvo in a rough-and-tumble environment where survival often meant blowing something up.",
+      "career_before_games": "A cage fighter and mercenary, Fuse rose to fame as Salvo’s champion before joining the Apex Games.",
+      "joining_apex": "Left Salvo (and Maggie) to join the Games, seeking a bigger stage for his explosive personality."
+    },
+    "personality": {
+      "traits": ["Brash", "Charismatic", "Loyal"],
+      "insecurities": "Carries guilt over his falling out with Maggie and the harm it caused.",
+      "hobbies": ["Guitar", "Drinking", "Blowing things up for fun"]
+    },
+    "notable_quotes": [
+      "Time to rock 'n' load!",
+      "Fusey’s in the ring, and he’s ready to sing!",
+      "You better hope I don’t find you first."
+    ],
+    "fun_facts": [
+      "Has a robotic arm after an accident with Maggie.",
+      "Loves 80s-style rock anthems.",
+      "Wields grenades better than almost anyone in the Outlands."
+    ],
+    "image": "/images/legend-portraits/fuse.webp",
+    "sources": [
+      "https://www.ea.com/games/apex-legends/about/characters/fuse",
+      "https://apexlegends.fandom.com/wiki/Fuse"
+    ]
   },
   {
     "name": "Gibraltar",
     "slug": "gibraltar",
-    "realName": "Makoa Gibraltar",
-    "title": "Shielded Fortress",
+    "real_name": "Makoa Gibraltar",
+    "age": "32",
+    "homeworld": "Solace",
     "class": "Support",
-    "passive": "Gun Shield",
-    "tactical": "Dome of Protection",
-    "ultimate": "Defensive Bombardment",
-    "origin": "Solace",
-    "releaseSeason": 0,
-    "difficulty": "Medium",
-    "image": "/images/legend-photos-transparent/gibraltar.png",
-    "imageProfile": "/images/legend-portraits/gibraltar.webp"
+    "voice_actor": "Branscombe Richmond",
+    "appearance_season": "Preseason",
+    "title": "Shielded Fortress",
+    "abilities": {
+      "tactical": {
+        "name": "Dome of Protection",
+        "description": "Throw down a dome shield that blocks attacks for 12 seconds."
+      },
+      "passive": {
+        "name": "Gun Shield",
+        "description": "Aiming down sights deploys a gun shield that blocks incoming fire."
+      },
+      "ultimate": {
+        "name": "Defensive Bombardment",
+        "description": "Call in a concentrated mortar strike on a marked position."
+      }
+    },
+    "family": {
+      "mother": {
+        "name": "Elena Gibraltar",
+        "status": "Alive",
+        "notes": "Helped raise Makoa with strong community values."
+      },
+      "father": {
+        "name": "Teina Gibraltar",
+        "status": "Alive",
+        "notes": "A SAR (Search and Rescue) volunteer who inspired Makoa's protective instincts."
+      },
+      "brothers": [],
+      "sisters": []
+    },
+    "backstory": {
+      "early_life": "Always a gentle giant, Makoa learned the importance of helping others after a near-death experience with his boyfriend.",
+      "career_before_games": "Worked in search and rescue alongside his father before becoming a legend.",
+      "joining_apex": "Joined the Games not for fame, but to protect the people of the Outlands in his own way."
+    },
+    "personality": {
+      "traits": ["Protective", "Warm", "Courageous"],
+      "insecurities": "Feels pressure to live up to his ideals of protection and strength.",
+      "hobbies": ["Barbecuing", "Volunteering", "Fixing bikes"]
+    },
+    "notable_quotes": [
+      "I’ve got your back. Remember me tellin’ you that.",
+      "We’ve got this. Just watch my back.",
+      "Let’s show these fools why their moms told them to stay in school."
+    ],
+    "fun_facts": [
+      "Openly gay and a role model for Outlands youth.",
+      "Has a strong bond with Caustic despite philosophical differences.",
+      "Nicknamed 'Big Gibby' by fans and teammates alike."
+    ],
+    "image": "/images/legend-portraits/gibraltar.webp",
+    "sources": [
+      "https://www.ea.com/games/apex-legends/about/characters/gibraltar",
+      "https://apexlegends.fandom.com/wiki/Gibraltar"
+    ]
   },
   {
     "name": "Horizon",
     "slug": "horizon",
-    "realName": "Dr. Mary Somers",
-    "title": "Gravitational Manipulator",
+    "real_name": "Dr. Mary Somers",
+    "age": "37",
+    "homeworld": "Psamathe",
     "class": "Skirmisher",
-    "passive": "Spacewalk",
-    "tactical": "Gravity Lift",
-    "ultimate": "Black Hole",
-    "origin": "Solace",
-    "releaseSeason": 7,
-    "difficulty": "Medium",
-    "image": "/images/legend-photos-transparent/horizon.png",
-    "imageProfile": "/images/legend-portraits/horizon.webp"
+    "voice_actor": "Elle Newlands",
+    "appearance_season": "Season 7",
+    "title": "Gravitational Manipulator",
+    "abilities": {
+      "tactical": {
+        "name": "Gravity Lift",
+        "description": "Reverses the flow of gravity, lifting players upward and boosting them outward when they exit."
+      },
+      "passive": {
+        "name": "Spacewalk",
+        "description": "Increased air control and reduced fall impacts with Horizon’s custom spacesuit."
+      },
+      "ultimate": {
+        "name": "Black Hole",
+        "description": "Deploy NEWT to create a micro black hole that pulls players in and damages them with a gravitational blast."
+      }
+    },
+    "family": {
+      "mother": {
+        "name": null,
+        "status": null,
+        "notes": ""
+      },
+      "father": {
+        "name": null,
+        "status": null,
+        "notes": ""
+      },
+      "brothers": [],
+      "sisters": [],
+      "others": [
+        {
+          "name": "Newton Somers",
+          "status": "Alive",
+          "notes": "Her son, who she was separated from after a black hole incident involving time dilation."
+        }
+      ]
+    },
+    "backstory": {
+      "early_life": "A brilliant astrophysicist from Psamathe who specialized in black hole research.",
+      "career_before_games": "Conducted experiments on gravitational anomalies and developed AI tech with her son Newton.",
+      "joining_apex": "Joined the Apex Games to fund her research and reconnect with Newton, having returned decades after her disappearance due to time dilation."
+    },
+    "personality": {
+      "traits": ["Clever", "Driven", "Motherly"],
+      "insecurities": "Haunted by the time she lost with her son and her guilt over leaving him behind.",
+      "hobbies": ["Theoretical physics", "Star-gazing", "AI tinkering"]
+    },
+    "notable_quotes": [
+      "A wee gravity lift here, mates.",
+      "Time to break some hearts... and some spines.",
+      "Let's not get too carried away now!"
+    ],
+    "fun_facts": [
+      "Speaks with a Scottish accent.",
+      "Has a robotic companion named NEWT.",
+      "Was betrayed by her assistant, Ash (now a legend), during a black hole mission."
+    ],
+    "image": "/images/legend-portraits/horizon.webp",
+    "sources": [
+      "https://www.ea.com/games/apex-legends/about/characters/horizon",
+      "https://apexlegends.fandom.com/wiki/Horizon"
+    ]
   },
   {
     "name": "Lifeline",
     "slug": "lifeline",
-    "realName": "Ajay Che",
-    "title": "Combat Medic",
+    "real_name": "Ajay Che",
+    "age": "26",
+    "homeworld": "Psamathe",
     "class": "Support",
-    "passive": "Combat Revive",
-    "tactical": "D.O.C. Heal Drone",
-    "ultimate": "Care Package",
-    "origin": "Psamathe",
-    "releaseSeason": 0,
-    "difficulty": "Easy",
-    "image": "/images/legend-photos-transparent/lifeline.png",
-    "imageProfile": "/images/legend-portraits/lifeline.webp"
+    "voice_actor": "Mela Lee",
+    "appearance_season": "Preseason",
+    "title": "Combat Medic",
+    "abilities": {
+      "tactical": {
+        "name": "D.O.C. Heal Drone",
+        "description": "Deploys a drone that automatically heals nearby teammates over time."
+      },
+      "passive": {
+        "name": "Combat Revive",
+        "description": "Deploy D.O.C. to revive teammates, freeing Lifeline to defend or assist others."
+      },
+      "ultimate": {
+        "name": "Care Package",
+        "description": "Call in a drop pod full of high-quality defensive gear."
+      }
+    },
+    "family": {
+      "mother": {
+        "name": null,
+        "status": "Alive",
+        "notes": "Part of the Che family, which profits from war through Silva Pharmaceuticals."
+      },
+      "father": {
+        "name": null,
+        "status": "Alive",
+        "notes": "A member of the powerful Che family."
+      },
+      "brothers": [],
+      "sisters": [],
+      "others": [
+        {
+          "name": "Octane (Octavio Silva)",
+          "status": "Alive",
+          "notes": "Childhood friend; their families are both part of the Syndicate elite."
+        }
+      ]
+    },
+    "backstory": {
+      "early_life": "Born into the wealthy Che family of war profiteers, Lifeline rejected their values and joined the Frontier Corps.",
+      "career_before_games": "Worked as a combat medic providing humanitarian aid in war zones.",
+      "joining_apex": "Entered the Apex Games to fund medical supplies and humanitarian efforts for the Frontier Corps."
+    },
+    "personality": {
+      "traits": ["Altruistic", "Witty", "Tough"],
+      "insecurities": "Wrestles with the guilt of her family's legacy and her ongoing use of violence to fund aid.",
+      "hobbies": [
+        "Playing drums",
+        "Volunteering",
+        "Sneaking into medical black sites"
+      ]
+    },
+    "notable_quotes": [
+      "Never quit. That's how you win.",
+      "Don't worry, I got a prosthetic for that.",
+      "Healing up. Give me a sec."
+    ],
+    "fun_facts": [
+      "Lifeline is a skilled drummer.",
+      "Once used Octane as a test subject for her medical tech.",
+      "Hides her family name to avoid judgment."
+    ],
+    "image": "/images/legend-portraits/lifeline.webp",
+    "sources": [
+      "https://www.ea.com/games/apex-legends/about/characters/lifeline",
+      "https://apexlegends.fandom.com/wiki/Lifeline"
+    ]
   },
   {
     "name": "Loba",
     "slug": "loba",
-    "realName": "Loba Andrade",
-    "title": "Translocating Thief",
+    "real_name": "Loba Andrade",
+    "age": "34",
+    "homeworld": "None (born in Solace, raised across the Outlands)",
     "class": "Support",
-    "passive": "Eye for Quality",
-    "tactical": "Burglar's Best Friend",
-    "ultimate": "Black Market Boutique",
-    "origin": "Unknown",
-    "releaseSeason": 5,
-    "difficulty": "Medium",
-    "image": "/images/legend-photos-transparent/loba.png",
-    "imageProfile": "/images/legend-portraits/loba.webp"
+    "voice_actor": "Fryda Wolff",
+    "appearance_season": "Season 5",
+    "title": "Translocating Thief",
+    "abilities": {
+      "tactical": {
+        "name": "Burglar’s Best Friend",
+        "description": "Teleport to hard-to-reach places or escape trouble quickly by throwing your jump drive bracelet."
+      },
+      "passive": {
+        "name": "Eye for Quality",
+        "description": "Nearby epic and legendary loot can be seen through walls."
+      },
+      "ultimate": {
+        "name": "Black Market Boutique",
+        "description": "Place a portable device that allows you to teleport nearby loot to your inventory."
+      }
+    },
+    "family": {
+      "mother": {
+        "name": null,
+        "status": "Deceased",
+        "notes": "Killed during a raid when Loba was young."
+      },
+      "father": {
+        "name": "Marcos Andrade",
+        "status": "Deceased",
+        "notes": "A famed thief murdered by Revenant when Loba was a child."
+      },
+      "brothers": [],
+      "sisters": [],
+      "others": []
+    },
+    "backstory": {
+      "early_life": "Witnessed her father's death at the hands of Revenant and grew up in the criminal underworld.",
+      "career_before_games": "Became one of the most accomplished thieves in the Outlands, using her skills to survive.",
+      "joining_apex": "Joined the Apex Games to gain access to powerful technology and seek revenge on Revenant."
+    },
+    "personality": {
+      "traits": ["Stylish", "Calculating", "Resilient"],
+      "insecurities": "Struggles with trust due to betrayal and trauma from her youth.",
+      "hobbies": ["High fashion", "Antique collecting", "Infiltration"]
+    },
+    "notable_quotes": [
+      "Don't worry, you'll be all right. I have your back. And your front.",
+      "I know what I’m doing. Well, most of the time.",
+      "You can’t outrun me!"
+    ],
+    "fun_facts": [
+      "Has a complex love-hate relationship with Revenant.",
+      "Frequently clashes with teammates due to her lone wolf tendencies.",
+      "Openly flirtatious, especially with Bangalore."
+    ],
+    "image": "/images/legend-portraits/loba.webp",
+    "sources": [
+      "https://www.ea.com/games/apex-legends/about/characters/loba",
+      "https://apexlegends.fandom.com/wiki/Loba"
+    ]
   },
   {
     "name": "Mad Maggie",
     "slug": "mad-maggie",
-    "realName": "Margaret Kōhere",
-    "title": "Rebel Warlord",
+    "real_name": "Margaret Kōhere",
+    "age": "55",
+    "homeworld": "Salvo",
     "class": "Assault",
-    "passive": "Warlord's Ire",
-    "tactical": "Riot Drill",
-    "ultimate": "Wrecking Ball",
-    "origin": "Salvo",
-    "releaseSeason": 12,
-    "difficulty": "Medium",
-    "image": "/images/legend-photos-transparent/madmaggie.png",
-    "imageProfile": "/images/legend-portraits/madmaggie.webp"
+    "voice_actor": "Nicola Kāwana",
+    "appearance_season": "Season 12",
+    "title": "Rebel Warlord",
+    "abilities": {
+      "tactical": {
+        "name": "Riot Drill",
+        "description": "Fire a drill that burns enemies through obstacles."
+      },
+      "passive": {
+        "name": "Warlord’s Ire",
+        "description": "Highlight enemies you've damaged and move faster with shotguns."
+      },
+      "ultimate": {
+        "name": "Wrecking Ball",
+        "description": "Throw a ball that releases speed-boosting pads and detonates near enemies."
+      }
+    },
+    "family": {
+      "mother": {
+        "name": null,
+        "status": null,
+        "notes": ""
+      },
+      "father": {
+        "name": null,
+        "status": null,
+        "notes": ""
+      },
+      "brothers": [],
+      "sisters": [],
+      "others": [
+        {
+          "name": "Walter 'Ballistic' Fitzroy",
+          "status": "Former ally",
+          "notes": "Fought together during the Battle of Gridiron, now estranged."
+        }
+      ]
+    },
+    "backstory": {
+      "early_life": "Grew up impoverished on Salvo and became a freedom fighter against the Syndicate.",
+      "career_before_games": "Led guerrilla campaigns and uprisings on Salvo, earning her a reputation as a ruthless rebel.",
+      "joining_apex": "Was sentenced to death but survived and was forced into the Apex Games as a political pawn."
+    },
+    "personality": {
+      "traits": ["Fierce", "Loud", "Unapologetic"],
+      "insecurities": "Internally conflicted about the violence her actions have caused.",
+      "hobbies": ["Shouting propaganda", "Explosives", "Insulting authority"]
+    },
+    "notable_quotes": [
+      "You're either with me, or you're meat.",
+      "C’mon, let’s cause a scene!",
+      "Salvo stands strong!"
+    ],
+    "fun_facts": [
+      "Was childhood friends with Fuse until his defection to the Syndicate.",
+      "Survived a public execution by faking her death.",
+      "Believes in total anarchy as justice."
+    ],
+    "image": "/images/legend-portraits/mad-maggie.webp",
+    "sources": [
+      "https://www.ea.com/games/apex-legends/about/characters/mad-maggie",
+      "https://apexlegends.fandom.com/wiki/Mad_Maggie"
+    ]
   },
   {
     "name": "Mirage",
     "slug": "mirage",
-    "realName": "Elliott Witt",
-    "title": "Holographic Trickster",
+    "real_name": "Elliott Rodger Witt",
+    "age": "32",
+    "homeworld": "Solace",
     "class": "Support",
-    "passive": "Now You See Me...",
-    "tactical": "Psyche Out",
-    "ultimate": "Life of the Party",
-    "origin": "Solace",
-    "releaseSeason": 0,
-    "difficulty": "Medium",
-    "image": "/images/legend-photos-transparent/mirage.png",
-    "imageProfile": "/images/legend-portraits/mirage.webp"
+    "voice_actor": "Roger Craig Smith",
+    "appearance_season": "Preseason",
+    "title": "Holographic Trickster",
+    "abilities": {
+      "tactical": {
+        "name": "Psyche Out",
+        "description": "Send out a holographic decoy to confuse the enemy."
+      },
+      "passive": {
+        "name": "Now You See Me...",
+        "description": "Automatically cloak when using Respawn Beacons and reviving teammates."
+      },
+      "ultimate": {
+        "name": "Life of the Party",
+        "description": "Deploy a team of decoys to distract enemies."
+      }
+    },
+    "family": {
+      "mother": {
+        "name": "Evelyn Witt",
+        "status": "Alive",
+        "notes": "Renowned holographic engineer who supported Mirage's career."
+      },
+      "father": {
+        "name": "Richard Witt",
+        "status": "Missing",
+        "notes": "Left the family during Mirage's youth."
+      },
+      "brothers": [
+        {
+          "name": "Elon Witt",
+          "status": "MIA",
+          "notes": "Lost when the Crimson crashed on Gaea."
+        },
+        {
+          "name": "Ricky Witt",
+          "status": "MIA",
+          "notes": "Lost when the Crimson crashed on Gaea."
+        },
+        {
+          "name": "Roger Witt",
+          "status": "MIA",
+          "notes": "Lost when the Crimson crashed on Gaea."
+        }
+      ],
+      "sisters": [],
+      "others": []
+    },
+    "backstory": {
+      "early_life": "Elliott grew up as the youngest of four brothers. He developed a close relationship with his mother after his father left and his brothers went missing during the Outlands Civil War.",
+      "career_before_games": "Worked as a bartender and night shift manager. Owned the Paradise Lounge.",
+      "joining_apex": "Encouraged by his mother, he joined the Apex Games to showcase his holographic talents and support them both financially."
+    },
+    "personality": {
+      "traits": ["Witty", "Charismatic", "Insecure"],
+      "insecurities": "Struggles with loneliness and self-worth beneath his showy exterior.",
+      "hobbies": ["Mixology", "Piano", "Hologram design"]
+    },
+    "notable_quotes": [
+      "You got bamboozled!",
+      "I'm not afraid of heights. I'm afraid of falling... and dying.",
+      "I make things look good. Literally, that's my job."
+    ],
+    "fun_facts": [
+      "Plays piano for his mother when she has trouble sleeping.",
+      "Known for his elaborate decoy gags and quips.",
+      "Has fictional merchandise like Witt's Whiskey."
+    ],
+    "image": "/images/legend-portraits/mirage.webp",
+    "sources": [
+      "https://www.ea.com/games/apex-legends/about/characters/mirage",
+      "https://apexlegends.fandom.com/wiki/Mirage"
+    ]
   },
   {
     "name": "Newcastle",
     "slug": "newcastle",
-    "realName": "Jackson Williams",
-    "title": "Mobile Guardian",
+    "real_name": "Lamont Craig",
+    "age": "40",
+    "homeworld": "Harris Valley, Solace",
     "class": "Support",
-    "passive": "Retrieve the Wounded",
-    "tactical": "Mobile Shield",
-    "ultimate": "Castle Wall",
-    "origin": "Gridiron",
-    "releaseSeason": 13,
-    "difficulty": "Medium",
-    "image": "/images/legend-photos-transparent/newcastle.png",
-    "imageProfile": "/images/legend-portraits/newcastle.webp"
+    "voice_actor": "Gabe Kunda",
+    "appearance_season": "Season 13",
+    "title": "Hero of Harris Valley",
+    "abilities": {
+      "tactical": {
+        "name": "Mobile Shield",
+        "description": "Throw a controllable drone that creates a moving energy shield."
+      },
+      "passive": {
+        "name": "Retrieve the Wounded",
+        "description": "Drag downed allies as you revive and protect them with your Revive Shield."
+      },
+      "ultimate": {
+        "name": "Castle Wall",
+        "description": "Leap to an ally or target area and slam down a shielded fortress wall."
+      }
+    },
+    "family": {
+      "mother": {
+        "name": null,
+        "status": null,
+        "notes": ""
+      },
+      "father": {
+        "name": null,
+        "status": null,
+        "notes": ""
+      },
+      "brothers": [],
+      "sisters": [],
+      "others": [
+        {
+          "name": "Bangalore (Anita Williams)",
+          "status": "Alive",
+          "notes": "His younger sister, unaware of his identity at first."
+        }
+      ]
+    },
+    "backstory": {
+      "early_life": "Grew up in Harris Valley alongside his sister Anita, training to protect his community.",
+      "career_before_games": "Assumed the identity of Newcastle to keep his town safe and repay debts.",
+      "joining_apex": "Entered the Apex Games under the guise of Newcastle to protect his town and eventually revealed his identity to Bangalore."
+    },
+    "personality": {
+      "traits": ["Protective", "Self-sacrificing", "Calm under pressure"],
+      "insecurities": "Feels the weight of living up to the role of hero and protecting his secret.",
+      "hobbies": ["Mechanics", "Community service", "Chess"]
+    },
+    "notable_quotes": [
+      "Time to break some hearts... and some heads.",
+      "If I die, it's just an older brother thing.",
+      "One shield, one goal: protect the squad."
+    ],
+    "fun_facts": [
+      "His suit was originally built for someone else—he took on the role of Newcastle unexpectedly.",
+      "Strong sense of community motivates every decision he makes.",
+      "Bangalore was shocked when she discovered his identity mid-match."
+    ],
+    "image": "/images/legend-portraits/newcastle.webp",
+    "sources": [
+      "https://www.ea.com/games/apex-legends/about/characters/newcastle",
+      "https://apexlegends.fandom.com/wiki/Newcastle"
+    ]
   },
   {
     "name": "Octane",
     "slug": "octane",
-    "realName": "Octavio Silva",
-    "title": "The Adrenaline Junkie",
+    "real_name": "Octavio Silva",
+    "age": "24",
+    "homeworld": "Psamathe",
     "class": "Skirmisher",
-    "passive": "Swift Mend",
-    "tactical": "Stim",
-    "ultimate": "Launch Pad",
-    "origin": "Psamathe",
-    "releaseSeason": 1,
-    "difficulty": "Easy",
-    "image": "/images/legend-photos-transparent/octane.png",
-    "imageProfile": "/images/legend-portraits/octane.webp"
+    "voice_actor": "Nicolas Roye",
+    "appearance_season": "Season 1",
+    "title": "The Adrenaline Junkie",
+    "abilities": {
+      "tactical": {
+        "name": "Stim",
+        "description": "Move 30% faster for 6 seconds. Costs health to use."
+      },
+      "passive": {
+        "name": "Swift Mend",
+        "description": "Automatically restores health over time."
+      },
+      "ultimate": {
+        "name": "Launch Pad",
+        "description": "Deploy a jump pad that catapults anyone who steps on it into the air."
+      }
+    },
+    "family": {
+      "mother": {
+        "name": null,
+        "status": null,
+        "notes": ""
+      },
+      "father": {
+        "name": "Duardo Silva",
+        "status": "Alive",
+        "notes": "A powerful executive at Silva Pharmaceuticals and a controversial political figure."
+      },
+      "brothers": [],
+      "sisters": [],
+      "others": []
+    },
+    "backstory": {
+      "early_life": "Born into wealth and privilege, Octavio sought thrills from a young age.",
+      "career_before_games": "Lost his legs during a stunt using a grenade to boost a race time. Persuaded Ajay (Lifeline) to forge bionic replacements.",
+      "joining_apex": "Joined the Games for the ultimate thrill-seeking opportunity."
+    },
+    "personality": {
+      "traits": ["Hyperactive", "Impulsive", "Energetic"],
+      "insecurities": "Hides his pain and self-doubt behind non-stop motion and humor.",
+      "hobbies": ["Stunts", "Speed trials", "Annoying Lifeline"]
+    },
+    "notable_quotes": [
+      "Whoa! What a rush!",
+      "You think I’m afraid of you? I blew off my own legs!",
+      "Faster, faster, faster!"
+    ],
+    "fun_facts": [
+      "Has synthetic legs with built-in speed boosts.",
+      "Close friends with Lifeline despite constantly annoying her.",
+      "His father secretly manipulates events in the Outlands."
+    ],
+    "image": "/images/legend-portraits/octane.webp",
+    "sources": [
+      "https://www.ea.com/games/apex-legends/about/characters/octane",
+      "https://apexlegends.fandom.com/wiki/Octane"
+    ]
   },
   {
     "name": "Pathfinder",
     "slug": "pathfinder",
-    "realName": "MRVN",    
-    "title": "Forward Scout",
+    "real_name": "MRVN (Mobile Robotic Versatile eNtity)",
+    "age": "75 (since activation)",
+    "homeworld": "Unknown",
     "class": "Skirmisher",
-    "passive": "Insider Knowledge",
-    "tactical": "Grappling Hook",
-    "ultimate": "Zipline Gun",
-    "origin": "Psamathe",
-    "releaseSeason": 0,
-    "difficulty": "Medium",
-    "image": "/images/legend-photos-transparent/pathfinder.png",
-    "imageProfile": "/images/legend-portraits/pathfinder.webp"
+    "voice_actor": "Chris Edgerly",
+    "appearance_season": "Preseason",
+    "title": "Forward Scout",
+    "abilities": {
+      "tactical": {
+        "name": "Grappling Hook",
+        "description": "Grapple to get to out-of-reach places quickly."
+      },
+      "passive": {
+        "name": "Insider Knowledge",
+        "description": "Scan a survey beacon to reduce your Ultimate cooldown."
+      },
+      "ultimate": {
+        "name": "Zipline Gun",
+        "description": "Create a zipline for everyone to use."
+      }
+    },
+    "family": {
+      "mother": {
+        "name": "Dr. Amelie Paquette",
+        "status": "Unknown",
+        "notes": "One of the scientists potentially involved in his creation."
+      },
+      "father": {
+        "name": "Dr. Franklin Humbert",
+        "status": "Unknown",
+        "notes": "Another scientist possibly tied to Pathfinder’s origins."
+      },
+      "brothers": [],
+      "sisters": [],
+      "others": []
+    },
+    "backstory": {
+      "early_life": "Activated decades ago in a now-abandoned laboratory with no memory of his purpose.",
+      "career_before_games": "Wandered the Outlands trying to learn who created him and why.",
+      "joining_apex": "Entered the Games hoping to attract the attention of his creator."
+    },
+    "personality": {
+      "traits": ["Optimistic", "Loyal", "Curious"],
+      "insecurities": "Wants to understand his origin and be part of a family.",
+      "hobbies": ["High-fives", "Cooking (badly)", "Making new friends"]
+    },
+    "notable_quotes": [
+      "Losing isn’t fun. That’s why I don’t do it.",
+      "Hi, friends!",
+      "Did I tell you I like climbing things?"
+    ],
+    "fun_facts": [
+      "Loves making dad jokes.",
+      "Competed in televised boxing for income before Apex.",
+      "Looks for family everywhere he goes."
+    ],
+    "image": "/images/legend-portraits/pathfinder.webp",
+    "sources": [
+      "https://www.ea.com/games/apex-legends/about/characters/pathfinder",
+      "https://apexlegends.fandom.com/wiki/Pathfinder"
+    ]
   },
   {
     "name": "Rampart",
     "slug": "rampart",
-    "realName": "Ramya Parekh",
-    "title": "Amped Modder",
-    "class": "Controller",
-    "passive": "Modded Loader",
-    "tactical": "Amped Cover",
-    "ultimate": "Emplaced Minigun 'Sheila'",
-    "origin": "Gaea",
-    "releaseSeason": 6,
-    "difficulty": "Medium",
-    "image": "/images/legend-photos-transparent/rampart.png",
-    "imageProfile": "/images/legend-portraits/rampart.webp"
+    "real_name": "Ramya Parekh",
+    "age": "21",
+    "homeworld": "Gaea",
+    "class": "Support",
+    "voice_actor": "Anjali Bhimani",
+    "appearance_season": "Season 6",
+    "title": "Base of Fire",
+    "abilities": {
+      "tactical": {
+        "name": "Amped Cover",
+        "description": "Build a crouch-cover wall that blocks incoming shots and amps outgoing shots."
+      },
+      "passive": {
+        "name": "Modded Loader",
+        "description": "Increased magazine size and faster reloads with LMGs and the Minigun."
+      },
+      "ultimate": {
+        "name": "Mobile Minigun 'Sheila'",
+        "description": "Deploy a mounted machine gun that anyone can use. Can also carry and fire it while mobile."
+      }
+    },
+    "family": {
+      "mother": {
+        "name": null,
+        "status": null,
+        "notes": ""
+      },
+      "father": {
+        "name": null,
+        "status": null,
+        "notes": ""
+      },
+      "brothers": [],
+      "sisters": [],
+      "others": []
+    },
+    "backstory": {
+      "early_life": "Grew up in the underbelly of Gaea, fixing weapons and tech from a young age.",
+      "career_before_games": "Ran a modding shop in Gaea’s underground until it was destroyed by a gang. Gained notoriety from underground fight mods.",
+      "joining_apex": "Joined the Apex Games for fame, fortune, and to rebuild her shop—and her name."
+    },
+    "personality": {
+      "traits": ["Brash", "Resourceful", "Sarcastic"],
+      "insecurities": "Worries she’ll never be taken seriously as a professional.",
+      "hobbies": ["Weapon modding", "Tinkering", "Trash-talking"]
+    },
+    "notable_quotes": [
+      "Time to turn crap into gold!",
+      "This is what happens when Sheila and I get angry.",
+      "Guns don't kill people—I mean, they do, but... you get the point."
+    ],
+    "fun_facts": [
+      "Refers to her minigun as 'Sheila'—with great affection.",
+      "Once won a modding tournament by rebuilding a weapon mid-fight.",
+      "Uses salvaged materials in all her builds."
+    ],
+    "image": "/images/legend-portraits/rampart.webp",
+    "sources": [
+      "https://www.ea.com/games/apex-legends/about/characters/rampart",
+      "https://apexlegends.fandom.com/wiki/Rampart"
+    ]
   },
   {
     "name": "Revenant",
     "slug": "revenant",
-    "realName": "Kaleb Cross",
-    "title": "Synthetic Nightmare",
+    "real_name": "Kaleb Cross",
+    "age": "313",
+    "homeworld": "Solace",
     "class": "Skirmisher",
-    "passive": "Assassin's Instinct",
-    "tactical": "Shadow Pounce",
-    "ultimate": "Forged Shadows",
-    "origin": "Unknown",
-    "releaseSeason": 4,
-    "difficulty": "Hard",
-    "image": "/images/legend-photos-transparent/revenant.png",
-    "imageProfile": "/images/legend-portraits/revenant.webp"
+    "voice_actor": "Darin De Paul",
+    "appearance_season": "Season 4",
+    "title": "Synthetic Nightmare",
+    "abilities": {
+      "tactical": {
+        "name": "Shadow Pounce",
+        "description": "Leap forward with a powerful pounce to close the distance."
+      },
+      "passive": {
+        "name": "Assassin’s Instinct",
+        "description": "See low-health enemies and move faster while crouching."
+      },
+      "ultimate": {
+        "name": "Forged Shadows",
+        "description": "Create shrouds of hardened shadows around you, blocking damage."
+      }
+    },
+    "family": {
+      "mother": {
+        "name": null,
+        "status": null,
+        "notes": ""
+      },
+      "father": {
+        "name": null,
+        "status": null,
+        "notes": ""
+      },
+      "brothers": [],
+      "sisters": [],
+      "others": [
+        {
+          "name": "Kaleb Cross (Original Human Form)",
+          "status": "Deceased",
+          "notes": "His human identity was erased when he was turned into a simulacrum by Hammond Robotics."
+        }
+      ]
+    },
+    "backstory": {
+      "early_life": "Once a human hitman, Kaleb Cross worked for Hammond Robotics until they turned him into a simulacrum without his consent.",
+      "career_before_games": "Top-tier assassin before and after his conversion into a deadly machine.",
+      "joining_apex": "Entered the Games after regaining memory of his human past, now driven by vengeance against his creators."
+    },
+    "personality": {
+      "traits": ["Vengeful", "Cold", "Efficient"],
+      "insecurities": "Haunted by the loss of his humanity.",
+      "hobbies": ["Hunting", "Silencing foes", "Hating Hammond"]
+    },
+    "notable_quotes": [
+      "I’m not a man. I’m a killing machine.",
+      "They made me a monster. I'll be their nightmare.",
+      "Your life ends with me."
+    ],
+    "fun_facts": [
+      "The only Legend who has been significantly reworked into a new form mid-game history.",
+      "Once ripped apart a Hammond facility on live broadcast.",
+      "Shadow Revenant form was used by other Legends in past events."
+    ],
+    "image": "/images/legend-portraits/revenant.webp",
+    "sources": [
+      "https://www.ea.com/games/apex-legends/about/characters/revenant",
+      "https://apexlegends.fandom.com/wiki/Revenant"
+    ]
   },
   {
     "name": "Seer",
     "slug": "seer",
-    "realName": "Obi Edolasim",
-    "title": "Ambush Artist",
+    "real_name": "Obi Edolasim",
+    "age": "26",
+    "homeworld": "Boreas",
     "class": "Recon",
-    "passive": "Heart Seeker",
-    "tactical": "Focus of Attention",
-    "ultimate": "Exhibit",
-    "origin": "Boreas",
-    "releaseSeason": 10,
-    "difficulty": "Hard",
-    "image": "/images/legend-photos-transparent/seer.png",
-    "imageProfile": "/images/legend-portraits/seer.webp"
+    "voice_actor": "Iké Amadi",
+    "appearance_season": "Season 10",
+    "title": "Ambush Artist",
+    "abilities": {
+      "tactical": {
+        "name": "Focus of Attention",
+        "description": "Send out micro-drones to reveal and interrupt enemies through walls."
+      },
+      "passive": {
+        "name": "Heart Seeker",
+        "description": "Hear and visualize enemy heartbeats when aiming down sights."
+      },
+      "ultimate": {
+        "name": "Exhibit",
+        "description": "Create a sphere that reveals enemies’ movements within it."
+      }
+    },
+    "family": {
+      "mother": {
+        "name": "Dr. Shelly Edolasim",
+        "status": "Alive",
+        "notes": "Known poet and artist who raised Seer with deep sensitivity."
+      },
+      "father": {
+        "name": "Dr. Obi Edolasim Sr.",
+        "status": "Alive",
+        "notes": "A skilled engineer and inventor who supported Obi’s talents."
+      },
+      "brothers": [],
+      "sisters": [],
+      "others": []
+    },
+    "backstory": {
+      "early_life": "Born during a celestial anomaly, marked as cursed but raised with love.",
+      "career_before_games": "Became a celebrated performer and underground sensation using his drones.",
+      "joining_apex": "Entered the Games to reshape his narrative and prove beauty and truth belong on the battlefield."
+    },
+    "personality": {
+      "traits": ["Graceful", "Calm", "Observant"],
+      "insecurities": "Haunted by the cultural fear surrounding his birth prophecy.",
+      "hobbies": ["Spoken word", "Painting", "Designing drone choreography"]
+    },
+    "notable_quotes": [
+      "With each victory, I become a little more whole.",
+      "They called me a curse. Now, I am a blessing.",
+      "Shh... I hear your heart."
+    ],
+    "fun_facts": [
+      "His aesthetic was inspired by Afrofuturism and street fashion.",
+      "Has a loyal fanbase in-universe from his earlier performances.",
+      "Regarded by other Legends as elegant but enigmatic."
+    ],
+    "image": "/images/legend-portraits/seer.webp",
+    "sources": [
+      "https://www.ea.com/games/apex-legends/about/characters/seer",
+      "https://apexlegends.fandom.com/wiki/Seer"
+    ]
   },
   {
     "name": "Sparrow",
     "slug": "sparrow",
-    "realName": "Enea Davide Guarino",
-    "title": "Precision Striker",
+    "real_name": "Lena Navarre",
+    "age": "28",
+    "homeworld": "Psamathe",
     "class": "Recon",
-    "passive": "Eagle Eye",
-    "tactical": "Drone Feather",
-    "ultimate": "Skyfall Barrage",
-    "origin": "Typhon",
-    "releaseSeason": 25,
-    "difficulty": "Hard",
-    "image": "/images/legend-photos-transparent/sparrow.png",
-    "imageProfile": "/images/legend-portraits/sparrow.webp"
+    "voice_actor": "null",
+    "appearance_season": "21",
+    "title": "Interdimensional Tracker",
+    "abilities": {
+      "tactical": {
+        "name": "Null Shot",
+        "description": "Fires a projectile that disables enemy abilities for a short time."
+      },
+      "passive": {
+        "name": "Echo Sense",
+        "description": "Highlights recent enemy movement trails."
+      },
+      "ultimate": {
+        "name": "Phase Collapse",
+        "description": "Creates a destabilized zone that pulls enemies and suppresses abilities."
+      }
+    },
+    "family": {
+      "mother": {
+        "name": "null",
+        "status": "null",
+        "notes": "null"
+      },
+      "father": {
+        "name": "null",
+        "status": "null",
+        "notes": "null"
+      },
+      "brothers": []
+    },
+    "backstory": {
+      "early_life": "null",
+      "career_before_games": "null",
+      "joining_apex": "null"
+    },
+    "personality": {
+      "traits": ["Observant", "Stoic"],
+      "insecurities": "null",
+      "hobbies": ["Scouting", "Silent meditation"]
+    },
+    "notable_quotes": [
+      "I see what you don't.",
+      "They won't know what hit them."
+    ],
+    "fun_facts": [
+      "Sparrow uses advanced Psamathean tracking tech.",
+      "First legend to suppress abilities with her kit."
+    ],
+    "image": "/images/legend-portraits/sparrow.webp",
+    "sources": [
+      "https://www.ea.com/games/apex-legends/about/characters/sparrow",
+      "https://apexlegends.fandom.com/wiki/Sparrow"
+    ]
+  },
+  {
+    "name": "Vantage",
+    "slug": "vantage",
+    "real_name": "Xiomara 'Mara' Contreras",
+    "age": "19",
+    "homeworld": "Págos",
+    "class": "Recon",
+    "voice_actor": "Natalie Canizares",
+    "appearance_season": "14",
+    "title": "Survivalist Sniper",
+    "abilities": {
+      "tactical": {
+        "name": "Echo Relocation",
+        "description": "Position your bat Echo, then launch toward him."
+      },
+      "passive": {
+        "name": "Spotter's Lens",
+        "description": "Use your eyepiece to read tactical info on enemies."
+      },
+      "ultimate": {
+        "name": "Sniper’s Mark",
+        "description": "Mark enemies and apply a damage boost for Vantage and her squad."
+      }
+    },
+    "family": {
+      "mother": {
+        "name": "Xenia Contreras",
+        "status": "Alive",
+        "notes": "Falsely imprisoned and later revealed as innocent."
+      },
+      "father": {
+        "name": "null",
+        "status": "null",
+        "notes": "null"
+      },
+      "brothers": []
+    },
+    "backstory": {
+      "early_life": "Raised alone by her mother in the icy wastes of Págos.",
+      "career_before_games": "Trained in survivalism and tracking animals.",
+      "joining_apex": "Joined to help clear her mother's name and find the truth."
+    },
+    "personality": {
+      "traits": ["Naive", "Loyal", "Eager"],
+      "insecurities": "Feels out of place in civilized society.",
+      "hobbies": ["Tracking", "Climbing", "Communing with Echo"]
+    },
+    "notable_quotes": [
+      "I'm just here to shoot the bad guys.",
+      "Echo and I got this!"
+    ],
+    "fun_facts": [
+      "Travels with her bat companion, Echo.",
+      "Wears a survival cloak made by her mother."
+    ],
+    "image": "/images/legend-portraits/vantage.webp",
+    "sources": [
+      "https://www.ea.com/games/apex-legends/about/characters/vantage",
+      "https://apexlegends.fandom.com/wiki/Vantage"
+    ]
+  },
+  {
+    "name": "Wattson",
+    "slug": "wattson",
+    "real_name": "Natalie Paquette",
+    "age": "24",
+    "homeworld": "Solace",
+    "class": "Controller",
+    "voice_actor": "Justine Huxley",
+    "appearance_season": "2",
+    "title": "Static Defender",
+    "abilities": {
+      "tactical": {
+        "name": "Perimeter Security",
+        "description": "Connect nodes to create electrified fences that damage and slow enemies."
+      },
+      "passive": {
+        "name": "Spark of Genius",
+        "description": "Ultimate Accelerants fully charge your ultimate. Standing near interception pylon recharges tactical faster."
+      },
+      "ultimate": {
+        "name": "Interception Pylon",
+        "description": "Place an electrified pylon that destroys incoming ordnance and repairs damaged shields."
+      }
+    },
+    "family": {
+      "mother": {
+        "name": "null",
+        "status": "null",
+        "notes": "null"
+      },
+      "father": {
+        "name": "Luc Paquette",
+        "status": "Deceased",
+        "notes": "Renowned electrical engineer and co-founder of the Apex Games."
+      },
+      "brothers": []
+    },
+    "backstory": {
+      "early_life": "Raised in the Games’ arena, close to her father and surrounded by tech.",
+      "career_before_games": "Helped design the Apex Games’ ring systems.",
+      "joining_apex": "Entered the Games after her father’s death as a way to honor his legacy and find connection."
+    },
+    "personality": {
+      "traits": ["Brilliant", "Shy", "Loyal"],
+      "insecurities": "Struggles with social situations and loss of her father.",
+      "hobbies": ["Tinkering", "Reading", "Spending time with friends"]
+    },
+    "notable_quotes": [
+      "Fences mean nothing to me if I can’t protect the people behind them.",
+      "This is more than a game to me."
+    ],
+    "fun_facts": [
+      "Has a close friendship with Crypto and Wattson's plush Nessie is a fan favorite.",
+      "Her ultimate was inspired by her father’s work on energy shielding."
+    ],
+    "image": "/images/legend-portraits/wattson.webp",
+    "sources": [
+      "https://www.ea.com/games/apex-legends/about/characters/wattson",
+      "https://apexlegends.fandom.com/wiki/Wattson"
+    ]
   },
   {
     "name": "Wraith",
     "slug": "wraith",
-    "realName": "Renee Hope Blasey",
-    "title": "Interdimensional Skirmisher",
+    "real_name": "Renee Hope Blasey",
+    "age": "32",
+    "homeworld": "Typhon",
     "class": "Skirmisher",
-    "passive": "Voices from the Void",
-    "tactical": "Into the Void",
-    "ultimate": "Dimensional Rift",
-    "origin": "Unknown",
-    "releaseSeason": 0,
-    "difficulty": "Hard",
-    "image": "/images/legend-photos-transparent/wraith.png",
-    "imageProfile": "/images/legend-portraits/wraith.webp"
+    "voice_actor": "Shantel VanSanten",
+    "appearance_season": "Preseason",
+    "title": "Interdimensional Skirmisher",
+    "abilities": {
+      "tactical": {
+        "name": "Into the Void",
+        "description": "Reposition quickly through the safety of void space, avoiding all damage."
+      },
+      "passive": {
+        "name": "Voices from the Void",
+        "description": "A voice warns you when danger approaches. As far as you can tell, it’s on your side."
+      },
+      "ultimate": {
+        "name": "Dimensional Rift",
+        "description": "Link two locations with portals for 60 seconds, allowing anyone to use them."
+      }
+    },
+    "family": {
+      "mother": {
+        "name": "null",
+        "status": "null",
+        "notes": "null"
+      },
+      "father": {
+        "name": "null",
+        "status": "null",
+        "notes": "null"
+      },
+      "brothers": []
+    },
+    "backstory": {
+      "early_life": "Renee Blasey was a senior science pilot for the IMC before being imprisoned and experimented on by the organization she worked for.",
+      "career_before_games": "IMC scientist working on phase technology, later subjected to it in secret experiments.",
+      "joining_apex": "Escaped captivity with the help of a mysterious alternate version of herself. Now fights to uncover her past."
+    },
+    "personality": {
+      "traits": ["Brooding", "Focused", "Resilient"],
+      "insecurities": "Haunted by fragmented memories and her lost identity.",
+      "hobbies": [
+        "Meditation",
+        "Combat training",
+        "Seeking answers about her past"
+      ]
+    },
+    "notable_quotes": [
+      "There's a thin line between life and death. You'll find me there.",
+      "I know what I’m doing."
+    ],
+    "fun_facts": [
+      "One of the original legends introduced at launch.",
+      "Her voice lines are often warnings from the void about nearby enemies."
+    ],
+    "image": "/images/legend-portraits/wraith.webp",
+    "sources": [
+      "https://www.ea.com/games/apex-legends/about/characters/wraith",
+      "https://apexlegends.fandom.com/wiki/Wraith"
+    ]
   }
 ]
