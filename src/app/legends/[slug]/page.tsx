@@ -4,13 +4,15 @@ import legends from '@/data/legends.json';
 import type { Legend } from '@/types/legend';
 
 type Props = {
-  params: {
-    slug: string;
-  };
+  params: Promise<Record<string, string>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function LegendPage({ params }: Props) {
-  const legend = (legends as Legend[]).find((l) => l.slug === params.slug);
+export default async function LegendPage({ params }: Props) {
+  const resolvedParams = await params;
+  const legend = (legends as Legend[]).find(
+    (l) => l.slug === resolvedParams.slug
+  );
   if (!legend) return notFound();
 
   return (
