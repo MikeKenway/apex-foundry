@@ -15,8 +15,8 @@ export async function POST(request: Request) {
     }
 
     const data = await resend.emails.send({
-      from: 'Contact Form <onboarding@resend.dev>',
-      to: ['your-email@example.com'], // Replace with your email
+      from: 'Apex Foundry <hello@apexfoundry.gg>',
+      to: 'hello@apexfoundry.gg',
       subject: `New Contact Form Submission: ${subject}`,
       react: ContactFormEmail({
         name,

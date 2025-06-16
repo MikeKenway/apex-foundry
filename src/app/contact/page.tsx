@@ -21,7 +21,9 @@ const subjects = [
 export default function ContactPage() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const [selectedContactSubject, setSelectedContactSubject] = useState('');
+  const [selectedContactSubject, setSelectedContactSubject] = useState(
+    subjects[0]
+  );
   const [formSubmissionStatus, setFormSubmissionStatus] = useState<{
     type: 'success' | 'error' | null;
     message: string;
@@ -36,6 +38,7 @@ export default function ContactPage() {
   } = useForm<ContactFormData>();
 
   const onSubmit = async (data: ContactFormData) => {
+    console.log('Form submitted!', data);
     setIsSubmitting(true);
     setFormSubmissionStatus({ type: null, message: '' });
 
@@ -59,7 +62,7 @@ export default function ContactPage() {
         message: 'Message sent successfully! We will get back to you soon.',
       });
       reset();
-      setSelectedContactSubject('');
+      setSelectedContactSubject(subjects[0]);
     } catch (error) {
       setFormSubmissionStatus({
         type: 'error',
@@ -180,6 +183,7 @@ export default function ContactPage() {
               </button>
               <input
                 type='hidden'
+                value={selectedContactSubject}
                 {...register('subject', { required: 'Subject is required' })}
               />
               {isDropdownOpen && (
@@ -226,6 +230,7 @@ export default function ContactPage() {
           </div>
 
           <PrimaryButton
+            variant='button'
             type='submit'
             disabled={isSubmitting}
             className='w-full'
