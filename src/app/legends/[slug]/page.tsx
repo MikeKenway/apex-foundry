@@ -22,7 +22,7 @@ export default async function LegendPage({ params }: Props) {
         {/* LEFT: Info */}
         <div className='flex-1 space-y-6'>
           <div>
-            <h1 className='text-5xl font-extrabold tracking-tight text-primary drop-shadow-md'>
+            <h1 className='text-7xl font-extrabold font-[Duke] tracking-wide text-primary drop-shadow-md'>
               {legend.name}
             </h1>
             <p className='text-xl italic text-zinc-300'>{legend.title}</p>
