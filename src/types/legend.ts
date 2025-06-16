@@ -49,8 +49,6 @@ export type Legend = {
   abilities: Abilities;
   family: Family;
   backstory: Backstory;
-  personality?: Personality;
   notable_quotes?: string[];
   fun_facts?: string[];
-  sources?: string[];
 };

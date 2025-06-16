@@ -187,26 +187,6 @@ export default async function LegendPage({ params }: Props) {
             </ul>
           </section>
 
-          {/* SOURCES */}
-          <section className='bg-zinc-800/40 px-6 py-4 shadow-inner'>
-            <h2 className='text-sm uppercase tracking-wide text-zinc-400 mb-2'>
-              Sources
-            </h2>
-            <ul className='list-disc list-inside text-zinc-400 space-y-1 text-xs'>
-              {(legend.sources || []).map((url, i) => (
-                <li key={i}>
-                  <a
-                    href={url}
-                    target='_blank'
-                    rel='noreferrer'
-                    className='hover:text-primary hover:underline'
-                  >
-                    {url}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </section>
         </div>
 
         {/* RIGHT COLUMN (1/3) */}
