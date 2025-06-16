@@ -3,6 +3,7 @@ import './globals.css' // Import Tailwind + global styles
 import { Navbar } from '@/components/Navbar'
 import { Footer } from '@/components/Footer'
 import type { ReactNode } from 'react'
+import { Analytics } from '@vercel/analytics/next';
 
 export const metadata = {
   title: 'Apex Legends App',
@@ -11,12 +12,13 @@ export const metadata = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en">
-      <body className="min-h-screen flex flex-col bg-gray-900 text-white">
+    <html lang='en'>
+      <Analytics />
+      <body className='min-h-screen flex flex-col bg-gray-900 text-white'>
         <Navbar />
-        <main className="flex-1 container mx-auto px-4 py-8">{children}</main>
+        <main className='flex-1 container mx-auto px-4 py-8'>{children}</main>
         <Footer />
       </body>
     </html>
-  )
+  );
 }
