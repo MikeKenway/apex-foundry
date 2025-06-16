@@ -2,6 +2,7 @@
 
 import { useForm } from 'react-hook-form';
 import { useState } from 'react';
+import { PrimaryButton } from '@/components/PrimaryButton';
 
 interface ContactFormData {
   name: string;
@@ -11,15 +12,16 @@ interface ContactFormData {
 }
 
 const subjects = [
-  'General Inquiry',
-  'Support',
-  'Partnership',
-  'Feedback',
-  'Other',
+  'Questions about Apex Foundry',
+  'Report a Bug',
+  'Feature Request',
+  'General Comments',
 ];
 
 export default function ContactPage() {
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+  const [selectedSubject, setSelectedSubject] = useState('');
   const [submitStatus, setSubmitStatus] = useState<{
     type: 'success' | 'error' | null;
     message: string;
@@ -29,6 +31,7 @@ export default function ContactPage() {
     register,
     handleSubmit,
     reset,
+    setValue,
     formState: { errors },
   } = useForm<ContactFormData>();
 
@@ -56,6 +59,7 @@ export default function ContactPage() {
         message: 'Message sent successfully! We will get back to you soon.',
       });
       reset();
+      setSelectedSubject('');
     } catch (error) {
       setSubmitStatus({
         type: 'error',
@@ -67,125 +71,169 @@ export default function ContactPage() {
     }
   };
 
+  const handleSubjectSelect = (subject: string) => {
+    setSelectedSubject(subject);
+    setValue('subject', subject);
+    setIsOpen(false);
+  };
+
   return (
     <div className='container mx-auto px-4 py-8 max-w-2xl'>
-      <h1 className='text-3xl font-bold mb-8'>Contact Us</h1>
+      <div className='bg-zinc-900 p-6 border border-zinc-800'>
+        <h1 className='text-2xl font-bold mb-6'>Contact Us</h1>
 
-      {submitStatus.type && (
-        <div
-          className={`p-4 mb-6 rounded ${
-            submitStatus.type === 'success'
-              ? 'bg-green-100 text-green-700'
-              : 'bg-red-100 text-red-700'
-          }`}
+        {submitStatus.type && (
+          <div
+            className={`p-4 mb-6 ${
+              submitStatus.type === 'success'
+                ? 'bg-green-900/50 text-green-400 border border-green-800'
+                : 'bg-red-900/50 text-red-400 border border-red-800'
+            }`}
+          >
+            {submitStatus.message}
+          </div>
+        )}
+
+        <form
+          onSubmit={handleSubmit(onSubmit)}
+          className='space-y-6'
         >
-          {submitStatus.message}
-        </div>
-      )}
+          <div>
+            <label
+              htmlFor='name'
+              className='block text-sm font-medium text-zinc-400 mb-1'
+            >
+              Name
+            </label>
+            <input
+              id='name'
+              type='text'
+              {...register('name', { required: 'Name is required' })}
+              className='w-full px-4 py-2 bg-zinc-800 border border-zinc-700 text-zinc-100 placeholder-zinc-500 focus:border-zinc-600 focus:outline-none'
+              placeholder='Your name'
+            />
+            {errors.name && (
+              <p className='mt-1 text-sm text-red-500'>{errors.name.message}</p>
+            )}
+          </div>
 
-      <form
-        onSubmit={handleSubmit(onSubmit)}
-        className='space-y-6'
-      >
-        <div>
-          <label
-            htmlFor='name'
-            className='block text-sm font-medium text-gray-700 mb-1'
-          >
-            Name
-          </label>
-          <input
-            id='name'
-            type='text'
-            {...register('name', { required: 'Name is required' })}
-            className='w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500'
-          />
-          {errors.name && (
-            <p className='mt-1 text-sm text-red-600'>{errors.name.message}</p>
-          )}
-        </div>
+          <div>
+            <label
+              htmlFor='email'
+              className='block text-sm font-medium text-zinc-400 mb-1'
+            >
+              Email
+            </label>
+            <input
+              id='email'
+              type='email'
+              {...register('email', {
+                required: 'Email is required',
+                pattern: {
+                  value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                  message: 'Invalid email address',
+                },
+              })}
+              className='w-full px-4 py-2 bg-zinc-800 border border-zinc-700 text-zinc-100 placeholder-zinc-500 focus:border-zinc-600 focus:outline-none'
+              placeholder='your.email@example.com'
+            />
+            {errors.email && (
+              <p className='mt-1 text-sm text-red-500'>
+                {errors.email.message}
+              </p>
+            )}
+          </div>
 
-        <div>
-          <label
-            htmlFor='email'
-            className='block text-sm font-medium text-gray-700 mb-1'
-          >
-            Email
-          </label>
-          <input
-            id='email'
-            type='email'
-            {...register('email', {
-              required: 'Email is required',
-              pattern: {
-                value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-                message: 'Invalid email address',
-              },
-            })}
-            className='w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500'
-          />
-          {errors.email && (
-            <p className='mt-1 text-sm text-red-600'>{errors.email.message}</p>
-          )}
-        </div>
-
-        <div>
-          <label
-            htmlFor='subject'
-            className='block text-sm font-medium text-gray-700 mb-1'
-          >
-            Subject
-          </label>
-          <select
-            id='subject'
-            {...register('subject', { required: 'Subject is required' })}
-            className='w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500'
-          >
-            <option value=''>Select a subject</option>
-            {subjects.map((subject) => (
-              <option
-                key={subject}
-                value={subject}
+          <div>
+            <label
+              htmlFor='subject'
+              className='block text-sm font-medium text-zinc-400 mb-1'
+            >
+              Subject
+            </label>
+            <div className='relative'>
+              <button
+                type='button'
+                onClick={() => setIsOpen(!isOpen)}
+                className='w-full px-4 py-2 bg-zinc-800 border border-zinc-700 text-zinc-100 text-left focus:border-zinc-600 focus:outline-none flex justify-between items-center'
               >
-                {subject}
-              </option>
-            ))}
-          </select>
-          {errors.subject && (
-            <p className='mt-1 text-sm text-red-600'>
-              {errors.subject.message}
-            </p>
-          )}
-        </div>
+                <span
+                  className={
+                    selectedSubject ? 'text-zinc-100' : 'text-zinc-500'
+                  }
+                >
+                  {selectedSubject || 'Select a subject'}
+                </span>
+                <svg
+                  className={`w-4 h-4 transition-transform ${isOpen ? 'rotate-180' : ''}`}
+                  fill='none'
+                  stroke='currentColor'
+                  viewBox='0 0 24 24'
+                >
+                  <path
+                    strokeLinecap='round'
+                    strokeLinejoin='round'
+                    strokeWidth={2}
+                    d='M19 9l-7 7-7-7'
+                  />
+                </svg>
+              </button>
+              <input
+                type='hidden'
+                {...register('subject', { required: 'Subject is required' })}
+              />
+              {isOpen && (
+                <div className='absolute z-10 w-full mt-1 bg-zinc-800 border border-zinc-700'>
+                  {subjects.map((subject) => (
+                    <button
+                      key={subject}
+                      type='button'
+                      onClick={() => handleSubjectSelect(subject)}
+                      className='w-full px-4 py-2 text-left text-zinc-100 hover:bg-zinc-700 focus:outline-none'
+                    >
+                      {subject}
+                    </button>
+                  ))}
+                </div>
+              )}
+            </div>
+            {errors.subject && (
+              <p className='mt-1 text-sm text-red-500'>
+                {errors.subject.message}
+              </p>
+            )}
+          </div>
 
-        <div>
-          <label
-            htmlFor='message'
-            className='block text-sm font-medium text-gray-700 mb-1'
+          <div>
+            <label
+              htmlFor='message'
+              className='block text-sm font-medium text-zinc-400 mb-1'
+            >
+              Message
+            </label>
+            <textarea
+              id='message'
+              rows={6}
+              {...register('message', { required: 'Message is required' })}
+              className='w-full px-4 py-2 bg-zinc-800 border border-zinc-700 text-zinc-100 placeholder-zinc-500 focus:border-zinc-600 focus:outline-none'
+              placeholder='Your message here...'
+            />
+            {errors.message && (
+              <p className='mt-1 text-sm text-red-500'>
+                {errors.message.message}
+              </p>
+            )}
+          </div>
+
+          <PrimaryButton
+            type='submit'
+            disabled={isSubmitting}
+            className='w-full'
           >
-            Message
-          </label>
-          <textarea
-            id='message'
-            rows={6}
-            {...register('message', { required: 'Message is required' })}
-            className='w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500'
-          />
-          {errors.message && (
-            <p className='mt-1 text-sm text-red-600'>
-              {errors.message.message}
-            </p>
-          )}
-        </div>
-
-        <button
-          type='submit'
-          disabled={isSubmitting}
-          className='w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed'
-        >
-          {isSubmitting ? 'Sending...' : 'Send Message'}
-        </button>
-      </form>
+            {isSubmitting ? 'Sending...' : 'Send Message'}
+          </PrimaryButton>
+        </form>
+      </div>
     </div>
   );
 }
