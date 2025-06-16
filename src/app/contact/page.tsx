@@ -20,9 +20,9 @@ const subjects = [
 
 export default function ContactPage() {
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [isOpen, setIsOpen] = useState(false);
-  const [selectedSubject, setSelectedSubject] = useState('');
-  const [submitStatus, setSubmitStatus] = useState<{
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [selectedContactSubject, setSelectedContactSubject] = useState('');
+  const [formSubmissionStatus, setFormSubmissionStatus] = useState<{
     type: 'success' | 'error' | null;
     message: string;
   }>({ type: null, message: '' });
@@ -37,7 +37,7 @@ export default function ContactPage() {
 
   const onSubmit = async (data: ContactFormData) => {
     setIsSubmitting(true);
-    setSubmitStatus({ type: null, message: '' });
+    setFormSubmissionStatus({ type: null, message: '' });
 
     try {
       const response = await fetch('/api/contact', {
@@ -54,14 +54,14 @@ export default function ContactPage() {
         throw new Error(result.error || 'Failed to send message');
       }
 
-      setSubmitStatus({
+      setFormSubmissionStatus({
         type: 'success',
         message: 'Message sent successfully! We will get back to you soon.',
       });
       reset();
-      setSelectedSubject('');
+      setSelectedContactSubject('');
     } catch (error) {
-      setSubmitStatus({
+      setFormSubmissionStatus({
         type: 'error',
         message:
           error instanceof Error ? error.message : 'Failed to send message',
@@ -71,10 +71,10 @@ export default function ContactPage() {
     }
   };
 
-  const handleSubjectSelect = (subject: string) => {
-    setSelectedSubject(subject);
+  const handleContactSubjectSelect = (subject: string) => {
+    setSelectedContactSubject(subject);
     setValue('subject', subject);
-    setIsOpen(false);
+    setIsDropdownOpen(false);
   };
 
   return (
@@ -82,15 +82,15 @@ export default function ContactPage() {
       <div className='bg-zinc-900 p-8 border border-zinc-800'>
         <h1 className='text-2xl font-bold mb-6'>Contact Us</h1>
 
-        {submitStatus.type && (
+        {formSubmissionStatus.type && (
           <div
             className={`p-4 mb-6 ${
-              submitStatus.type === 'success'
+              formSubmissionStatus.type === 'success'
                 ? 'bg-green-900/50 text-green-400 border border-green-800'
                 : 'bg-red-900/50 text-red-400 border border-red-800'
             }`}
           >
-            {submitStatus.message}
+            {formSubmissionStatus.message}
           </div>
         )}
 
@@ -154,18 +154,18 @@ export default function ContactPage() {
             <div className='relative'>
               <button
                 type='button'
-                onClick={() => setIsOpen(!isOpen)}
+                onClick={() => setIsDropdownOpen(!isDropdownOpen)}
                 className='w-full px-4 py-2 bg-zinc-800 border border-zinc-700 text-zinc-100 text-left focus:border-zinc-600 focus:outline-none flex justify-between items-center'
               >
                 <span
                   className={
-                    selectedSubject ? 'text-zinc-100' : 'text-zinc-500'
+                    selectedContactSubject ? 'text-zinc-100' : 'text-zinc-500'
                   }
                 >
-                  {selectedSubject || 'Select a subject'}
+                  {selectedContactSubject || 'Select a subject'}
                 </span>
                 <svg
-                  className={`w-4 h-4 transition-transform ${isOpen ? 'rotate-180' : ''}`}
+                  className={`w-4 h-4 transition-transform ${isDropdownOpen ? 'rotate-180' : ''}`}
                   fill='none'
                   stroke='currentColor'
                   viewBox='0 0 24 24'
@@ -182,13 +182,13 @@ export default function ContactPage() {
                 type='hidden'
                 {...register('subject', { required: 'Subject is required' })}
               />
-              {isOpen && (
+              {isDropdownOpen && (
                 <div className='absolute z-10 w-full mt-1 bg-zinc-800 border border-zinc-700'>
                   {subjects.map((subject) => (
                     <button
                       key={subject}
                       type='button'
-                      onClick={() => handleSubjectSelect(subject)}
+                      onClick={() => handleContactSubjectSelect(subject)}
                       className='w-full px-4 py-2 text-left text-zinc-100 hover:bg-zinc-700 focus:outline-none'
                     >
                       {subject}

@@ -9,7 +9,7 @@ export async function POST(request: Request) {
 
     if (!name || !email || !subject || !message) {
       return new Response(
-        JSON.stringify({ error: 'Missing required fields' }),
+        JSON.stringify({ error: 'Please fill in all required fields' }),
         { status: 400 }
       );
     }
@@ -31,7 +31,7 @@ export async function POST(request: Request) {
     });
   } catch (error) {
     return new Response(
-      JSON.stringify({ error: 'Failed to send email' }),
+      JSON.stringify({ error: 'Unable to send contact form email' }),
       { status: 500 }
     );
   }

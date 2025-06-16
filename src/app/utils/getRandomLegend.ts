@@ -1,30 +1,30 @@
 import type { Legend } from '@/types/legend'
 
-let lastResultIndex: number | null = null
+let lastSelectedLegendIndex: number | null = null
 
 export function getRandomLegend(legends: Legend[]): Legend {
   const legendCount = legends.length
-  const randomIndices: number[] = []
+  const possibleLegendIndices: number[] = []
 
-  let prev: number | null = null
+  let previousIndex: number | null = null
 
   // Step 1: Fill array with random numbers without repeating a number twice in a row
   for (let i = 0; i < legendCount; i++) {
-    let next: number
+    let nextIndex: number
     do {
-      next = Math.floor(Math.random() * legendCount)
-    } while (next === prev)
-    randomIndices.push(next)
-    prev = next
+      nextIndex = Math.floor(Math.random() * legendCount)
+    } while (nextIndex === previousIndex)
+    possibleLegendIndices.push(nextIndex)
+    previousIndex = nextIndex
   }
 
   // Step 2: Pick one value that isn't the same as last time
-  let finalIndex: number
+  let selectedLegendIndex: number
   do {
-    finalIndex = randomIndices[Math.floor(Math.random() * randomIndices.length)]
-  } while (finalIndex === lastResultIndex && legendCount > 1)
+    selectedLegendIndex = possibleLegendIndices[Math.floor(Math.random() * possibleLegendIndices.length)]
+  } while (selectedLegendIndex === lastSelectedLegendIndex && legendCount > 1)
 
-  lastResultIndex = finalIndex
+  lastSelectedLegendIndex = selectedLegendIndex
 
-  return legends[finalIndex]
+  return legends[selectedLegendIndex]
 }
