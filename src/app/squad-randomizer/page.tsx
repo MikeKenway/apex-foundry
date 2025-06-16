@@ -85,9 +85,9 @@ export default function SquadRandomizerPage() {
   }
 
   return (
-    <div className='max-w-6xl mx-auto px-4 py-12 text-white'>
+    <div className='relative space-y-10 text-white'>
       {/* Header */}
-      <div className='relative space-y-10 max-w-5xl mx-auto mb-12 px-4'>
+      <div className='relative space-y-10'>
         <div>
           <div className='flex items-center gap-4 mb-4'>
             <h1 className='text-6xl font-[Duke] tracking-tight'>
