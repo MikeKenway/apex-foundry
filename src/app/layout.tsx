@@ -11,10 +11,9 @@ import type { Metadata } from 'next';
 // -------------------------------
 const siteName = 'Apex Foundry';
 const siteDescription =
-  'Browse detailed info for every Apex Legend, filter by class, and randomize your squad for your next match. Fan maintained site. Non-Official.';
+  'An Unofficial Apex Legends Toolkit. Browse detailed info for every Apex Legend, filter by class, and randomize your squad for your next match.';
 const siteURL = 'https://apexfoundry.gg';
 const ogImage = '/images/og-image.png';
-const themeColor = '#FF4655'; // Apex red
 
 // -------------------------------
 // 📦 Global metadata config
@@ -52,7 +51,6 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
-  themeColor,
 };
 
 // -------------------------------
