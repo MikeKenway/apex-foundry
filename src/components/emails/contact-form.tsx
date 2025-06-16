@@ -95,10 +95,10 @@ const styles = {
     margin: '0 auto',
     overflow: 'hidden',
     borderRadius: '0',
-    padding: '0 24px', // Even horizontal padding
+    padding: '24px', 
   },
   header: {
-    padding: '24px 0 0', // now aligns with container padding
+    padding: '24px 0 0', 
     textAlign: 'left' as const,
   },
   title: {
@@ -114,7 +114,7 @@ const styles = {
     letterSpacing: '0.5px',
   },
   section: {
-    padding: '24px 0',
+    padding: '0',
   },
   label: {
     fontSize: '13px',
@@ -137,7 +137,7 @@ const styles = {
   },
   messageBox: {
     backgroundColor: '#1f1f22',
-    padding: '20px 24px', // increased padding
+    padding: '20px 24px', 
     border: '1px solid #3f3f46',
     borderRadius: '0',
     marginTop: '8px',
