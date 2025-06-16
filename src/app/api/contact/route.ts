@@ -1,5 +1,5 @@
 import { Resend } from 'resend';
-import ContactFormEmail from '@/emails/contact-form';
+import ContactFormEmail from '@/components/emails/contact-form';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -15,7 +15,7 @@ export async function POST(request: Request) {
     }
 
     const data = await resend.emails.send({
-      from: 'Apex Foundry <hello@notifications.apexfoundry.gg>',
+      from: 'Apex Foundry <noreply@notifications.apexfoundry.gg>',
       to: 'hello@apexfoundry.gg',
       subject: `New Contact Form Submission: ${subject}`,
       react: ContactFormEmail({
