@@ -37,7 +37,6 @@ export const ContactConfirmation = ({
             <Img
               src='https://apexfoundry.gg/images/logo-white.png'
               alt='Apex Foundry Logo'
-              width='144'
               style={styles.logo}
             />
           </Section>
@@ -69,6 +68,8 @@ export const ContactConfirmation = ({
               <Text style={styles.message}>{message}</Text>
             </div>
           </Section>
+
+          {/* Social Footer */}
           <Section style={styles.footer}>
             <Text style={styles.footerLabel}>Find us online</Text>
             <div style={styles.socialIcons}>
@@ -79,9 +80,9 @@ export const ContactConfirmation = ({
               >
                 <Img
                   src='https://cdn.simpleicons.org/x/ffffff'
-                  width='24'
-                  height='24'
-                  alt='Twitter'
+                  width='20'
+                  height='20'
+                  alt='X (formerly Twitter)'
                   style={styles.socialIcon}
                 />
               </a>
@@ -92,8 +93,8 @@ export const ContactConfirmation = ({
               >
                 <Img
                   src='https://cdn.simpleicons.org/bluesky/ffffff'
-                  width='24'
-                  height='24'
+                  width='20'
+                  height='20'
                   alt='Bluesky'
                   style={styles.socialIcon}
                 />
@@ -108,7 +109,7 @@ export const ContactConfirmation = ({
 
 // Field layout component
 const Field = ({ label, value }: { label: string; value: string }) => (
-  <Text style={styles.label}>
+  <Text style={styles.fieldLabel}>
     {label.toUpperCase()}
     <br />
     <span style={styles.value}>{value}</span>
@@ -137,7 +138,8 @@ const styles = {
   },
   logo: {
     display: 'block',
-    margin: 0, // removes auto-centering
+    margin: 0,
+    width: '216px',
   },
   section: {
     padding: '0',
@@ -152,13 +154,23 @@ const styles = {
     color: '#d4d4d8',
     lineHeight: '1.6',
   },
-  label: {
+  fieldLabel: {
     fontSize: '13px',
     fontWeight: 600,
-    color: '#d4d4d8',
+    color: '#f43f1b', // Apex orange
     marginBottom: '4px',
     marginTop: '16px',
     letterSpacing: '0.5px',
+    textTransform: 'uppercase' as const,
+  },
+  label: {
+    fontSize: '13px',
+    fontWeight: 600,
+    color: '#f43f1b', // Apex orange
+    marginBottom: '4px',
+    marginTop: '16px',
+    letterSpacing: '0.5px',
+    textTransform: 'uppercase' as const,
   },
   value: {
     fontSize: '15px',
@@ -192,6 +204,8 @@ const styles = {
     fontSize: '12px',
     color: '#d4d4d8',
     marginBottom: '12px',
+    textTransform: 'uppercase' as const,
+    letterSpacing: '0.5px',
   },
   socialIcons: {
     display: 'flex',
