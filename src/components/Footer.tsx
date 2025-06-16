@@ -94,7 +94,14 @@ export function Footer() {
         <span>Made with</span>
         <FaHeart className='text-red-500' />
         <span>by</span>
-        <span className='text-white font-medium'>Ekkolyth</span>
+        <a
+          href='https://github.com/MikeKenway'
+          target='_blank'
+          rel='noopener noreferrer'
+          className='text-white font-medium hover:text-primary transition-colors'
+        >
+          Ekkolyth
+        </a>
       </div>
     </footer>
   );

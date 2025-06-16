@@ -29,9 +29,9 @@ export async function POST(request: Request) {
     return new Response(JSON.stringify({ success: true, data }), {
       status: 200,
     });
-  } catch (error) {
+  } catch {
     return new Response(
-      JSON.stringify({ error: 'Unable to send contact form email' }),
+      JSON.stringify({ error: 'Failed to send message' }),
       { status: 500 }
     );
   }
