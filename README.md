@@ -14,9 +14,7 @@ A fan-built Apex Legends companion app built with Next.js. Features include full
 
 - **Framework**: [Next.js 15 (App Router)](https://nextjs.org/docs/app)
 - **Styling**: Tailwind CSS
-- **Hosting**: Vercel
-- **Analytics**: Vercel Analytics
-- **Email**: Resend + React Email + React Hook Form
+- **Email**: Resend + React Email
 
 ## Getting Started
 
@@ -105,10 +103,15 @@ Pull requests are welcome! Please follow the existing code style and structure. 
 
 ## License
 
-This project is fan-made and not affiliated with Respawn or EA. Use it for learning or inspiration — no commercial use.
+This project is fan-made and not affiliated with Respawn or EA. Use it for learning or inspiration.
 
 MIT License.
 
 ## Credits
 
 Built and maintained by Ekkolyth. Contributions and feedback welcome.
+
+Find me on:
+
+- [X (Twitter)](https://twitter.com/ekkolyth) - @ekkolyth
+- [Bluesky](https://bsky.app/profile/ekkolyth.bsky.social) - @ekkolyth.bsky.social

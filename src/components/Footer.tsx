@@ -1,107 +1,171 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { FaHeart } from 'react-icons/fa';
+import { FaHeart, FaTwitter } from 'react-icons/fa';
 import { FiExternalLink } from 'react-icons/fi';
+import { SiBluesky } from 'react-icons/si';
+import { HiEnvelope } from 'react-icons/hi2';
 
 export function Footer() {
   return (
-    <footer className='w-full bg-black border-t border-zinc-800 text-white px-4 pt-12 pb-6 font-sans'>
-      <div className='container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 items-start'>
-        {/* Logo + Short Description */}
-        <div className='flex flex-col items-start space-y-2'>
-          <Link href='/'>
-            <Image
-              src='/images/logo.png'
-              alt='Logo'
-              width={80}
-              height={80}
-              className='invert'
-            />
-          </Link>
-          <p className='text-sm text-zinc-400 max-w-xs'>
-            A Hardstuck-Gold-Wattson main couldn&rsquo;t learn to win the 1v3 so
-            instead he built this app to have fun with his friends. Hope you
-            enjoy!
-          </p>
+    <footer className='w-full bg-black text-white px-4 py-8 border-t border-zinc-800'>
+      <div className='max-w-7xl mx-auto px-6'>
+        {/* Top section with logo and links */}
+        <div className='flex flex-col md:flex-row justify-between items-start mb-8'>
+          {/* Logo and description */}
+          <div className='mb-6 md:mb-0 md:max-w-sm'>
+            <Link
+              href='/'
+              className='inline-block mb-4'
+            >
+              <Image
+                src='/images/logo.png'
+                alt='Apex Foundry Logo'
+                width={175}
+                height={100}
+                className='object-contain invert'
+              />
+            </Link>
+            <p className='text-zinc-400 text-sm'>
+              A Hardstuck-Gold-Wattson main couldn&rsquo;t learn to win the 1v3
+              so instead he built this app to have fun with his friends. Hope
+              you enjoy!
+            </p>
+          </div>
+
+          {/* Links sections */}
+          <div className='grid grid-cols-1 md:grid-cols-3 gap-12'>
+            {/* App Links */}
+            <div>
+              <h3 className='text-white font-semibold mb-2 text-sm'>Apex Foundry</h3>
+              <ul className='space-y-1'>
+                <li>
+                  <Link
+                    href='/'
+                    className='text-zinc-400 hover:text-white transition-colors text-sm'
+                  >
+                    Home
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href='/legends'
+                    className='text-zinc-400 hover:text-white transition-colors text-sm'
+                  >
+                    Legends
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href='/squad-randomizer'
+                    className='text-zinc-400 hover:text-white transition-colors text-sm'
+                  >
+                    Squad Randomizer
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
+            {/* Resources */}
+            <div>
+              <h3 className='text-white font-semibold mb-4 text-sm'>
+                Resources
+              </h3>
+              <ul className='space-y-1'>
+                <li>
+                  <Link
+                    href='/terms'
+                    className='text-zinc-400 hover:text-white transition-colors text-sm'
+                  >
+                    Terms of Service
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href='/privacy'
+                    className='text-zinc-400 hover:text-white transition-colors text-sm'
+                  >
+                    Privacy Policy
+                  </Link>
+                </li>
+                <li>
+                  <a
+                    href='https://www.ea.com/games/apex-legends/about'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    className='text-zinc-400 hover:text-white transition-colors flex items-center gap-1 text-sm'
+                  >
+                    Official Site
+                    <FiExternalLink className='w-3 h-3' />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href='https://apexlegends.fandom.com/wiki/Apex_Legends_Wiki'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    className='text-zinc-400 hover:text-white transition-colors flex items-center gap-1 text-sm'
+                  >
+                    Apex Wiki
+                    <FiExternalLink className='w-3 h-3' />
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            {/* Connect */}
+            <div>
+              <h3 className='text-white font-semibold mb-4 text-sm'>Connect</h3>
+              <ul className='space-y-2'>
+                <li>
+                  <Link
+                    href='/contact'
+                    className='text-zinc-400 hover:text-white transition-colors flex items-center gap-2 text-sm'
+                  >
+                    <HiEnvelope className='w-4 h-4' />
+                    Contact
+                  </Link>
+                </li>
+                <li>
+                  <a
+                    href='https://twitter.com/ApexFoundry'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    className='text-zinc-400 hover:text-white transition-colors flex items-center gap-2 text-sm'
+                  >
+                    <FaTwitter className='w-4 h-4' />
+                    Twitter
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href='https://bsky.app/profile/apexfoundry.bsky.social'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    className='text-zinc-400 hover:text-white transition-colors flex items-center gap-2 text-sm'
+                  >
+                    <SiBluesky className='w-4 h-4' />
+                    Bluesky
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
 
-        {/* Navigation Links */}
-        <div className='flex flex-col space-y-2 text-sm'>
-          <p className='uppercase text-zinc-500 font-semibold tracking-wide'>
-            Navigation
-          </p>
-          <Link
-            href='/'
-            className='hover:text-red-400 transition'
-          >
-            Home
-          </Link>
-          <Link
-            href='/legends'
-            className='hover:text-red-400 transition'
-          >
-            Legends
-          </Link>
-          <Link
-            href='/squad-randomizer'
-            className='hover:text-red-400 transition'
-          >
-            Squad Randomizer
-          </Link>
-          <Link
-            href='/about'
-            className='hover:text-red-400 transition'
-          >
-            About
-          </Link>
-          <Link
-            href='/contact'
-            className='hover:text-red-400 transition'
-          >
-            Contact
-          </Link>
-        </div>
-
-        {/* Optional Extras (Socials or Legal) */}
-        <div className='flex flex-col space-y-2 text-sm'>
-          <p className='uppercase text-zinc-500 font-semibold tracking-wide'>
-            More
-          </p>
-          <Link
-            href='/terms'
-            className='hover:text-red-400 transition'
-          >
-            Terms
-          </Link>
-          <Link
-            href='/privacy'
-            className='hover:text-red-400 transition'
-          >
-            Privacy
-          </Link>
-          <Link
-            href='https://ea.com/games/apex-legends'
+        {/* Bottom section with copyright and disclaimer */}
+        <div className='pt-8 border-t border-zinc-800 text-center text-sm text-zinc-500'>
+          © {new Date().getFullYear()} Apex Foundry. Not affiliated with
+          Respawn or EA. Made with{' '}
+          <FaHeart className='text-red-500 inline mx-1' /> by{' '}
+          <a
+            href='https://twitter.com/ekkolyth'
             target='_blank'
-            className='hover:text-red-400 transition flex items-center gap-1'
+            rel='noopener noreferrer'
+            className='text-zinc-400 hover:text-white transition-colors'
           >
-            Apex Official Site <FiExternalLink size={14} />
-          </Link>
+            Ekkolyth
+          </a>
         </div>
-      </div>
-
-      {/* Bottom Line */}
-      <div className='mt-12 text-center text-sm text-zinc-500 flex justify-center items-center gap-1'>
-        <span>Made with</span>
-        <FaHeart className='text-red-500' />
-        <span>by</span>
-        <a
-          href='https://github.com/MikeKenway'
-          target='_blank'
-          rel='noopener noreferrer'
-          className='text-white font-medium hover:text-primary transition-colors'
-        >
-          Ekkolyth
-        </a>
       </div>
     </footer>
   );
