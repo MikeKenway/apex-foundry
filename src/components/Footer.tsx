@@ -67,7 +67,7 @@ export function Footer() {
 
             {/* Resources */}
             <div>
-              <h3 className='text-white font-semibold mb-4 text-sm'>
+              <h3 className='text-white font-semibold mb-2 text-sm'>
                 Resources
               </h3>
               <ul className='space-y-1'>
@@ -114,7 +114,7 @@ export function Footer() {
 
             {/* Connect */}
             <div>
-              <h3 className='text-white font-semibold mb-4 text-sm'>Connect</h3>
+              <h3 className='text-white font-semibold mb-2 text-sm'>Connect</h3>
               <ul className='space-y-2'>
                 <li>
                   <Link
