@@ -1,69 +1,86 @@
-import { Legend } from '@/types/legend'
-import { LegendCard } from './LegendCard'
-import { useState, useRef, useEffect } from 'react'
-import { FiPlus, FiMinus, FiRefreshCw } from 'react-icons/fi'
-import { OverlayButton } from './OverlayButton'
-import { getRandomLegend } from '@/app/utils/getRandomLegend'
-import legends from '@/data/legends.json'
+import { Legend } from '@/types/legend';
+import { LegendCard } from './legend-card';
+import { useState, useRef, useEffect } from 'react';
+import { FiPlus, FiMinus, FiRefreshCw } from 'react-icons/fi';
+import { OverlayButton } from './overlay-button';
+import { getRandomLegend } from '@/app/utils/getRandomLegend';
+import legends from '@/data/legends.json';
 
-type LegendClass = 'Assault' | 'Skirmisher' | 'Support' | 'Controller' | 'Recon' | 'Any'
+type LegendClass =
+  | 'Assault'
+  | 'Skirmisher'
+  | 'Support'
+  | 'Controller'
+  | 'Recon'
+  | 'Any';
 
 interface RandomizerCardProps {
-  legend: Legend | null
-  selectedClass: LegendClass
-  onClassChange: (legendClass: LegendClass) => void
-  onAdd?: () => void
-  onRemove?: () => void
-  onReroll?: (newLegend: Legend) => void
-  canAdd?: boolean
-  canRemove?: boolean
+  legend: Legend | null;
+  selectedClass: LegendClass;
+  onClassChange: (legendClass: LegendClass) => void;
+  onAdd?: () => void;
+  onRemove?: () => void;
+  onReroll?: (newLegend: Legend) => void;
+  canAdd?: boolean;
+  canRemove?: boolean;
 }
 
-const legendClasses: LegendClass[] = ['Any', 'Assault', 'Skirmisher', 'Support', 'Controller', 'Recon']
+const legendClasses: LegendClass[] = [
+  'Any',
+  'Assault',
+  'Skirmisher',
+  'Support',
+  'Controller',
+  'Recon',
+];
 
-export function RandomizerCard({ 
-  legend, 
-  selectedClass, 
+export function RandomizerCard({
+  legend,
+  selectedClass,
   onClassChange,
   onAdd,
   onRemove,
   onReroll,
   canAdd = false,
-  canRemove = false
+  canRemove = false,
 }: RandomizerCardProps) {
-  const [isOpen, setIsOpen] = useState(false)
-  const dropdownRef = useRef<HTMLDivElement>(null)
+  const [isOpen, setIsOpen] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
-        setIsOpen(false)
+      if (
+        dropdownRef.current &&
+        !dropdownRef.current.contains(event.target as Node)
+      ) {
+        setIsOpen(false);
       }
     }
 
-    document.addEventListener('mousedown', handleClickOutside)
-    return () => document.removeEventListener('mousedown', handleClickOutside)
-  }, [])
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
 
   const handleReroll = () => {
     if (onReroll) {
-      const filteredLegends = selectedClass === 'Any' 
-        ? legends 
-        : legends.filter(l => l.class === selectedClass)
-      const newLegend = getRandomLegend(filteredLegends as Legend[])
-      onReroll(newLegend)
+      const filteredLegends =
+        selectedClass === 'Any'
+          ? legends
+          : legends.filter((l) => l.class === selectedClass);
+      const newLegend = getRandomLegend(filteredLegends as Legend[]);
+      onReroll(newLegend);
     }
-  }
+  };
 
   return (
-    <div className="w-[350px] bg-black/50 border-2 border-white/10 rounded-none group hover:border-white/20 transition-colors">
-      <div className="relative">
+    <div className='w-[350px] bg-black/50 border-2 border-white/10 rounded-none group hover:border-white/20 transition-colors'>
+      <div className='relative'>
         {legend ? (
-          <div className="group relative">
+          <div className='group relative'>
             <LegendCard legend={legend} />
             {onRemove && (
               <OverlayButton
-                position="top-left"
+                position='top-left'
                 onClick={onRemove}
                 disabled={!canRemove}
               >
@@ -72,7 +89,7 @@ export function RandomizerCard({
             )}
             {onAdd && (
               <OverlayButton
-                position="top-right"
+                position='top-right'
                 onClick={onAdd}
                 disabled={!canAdd}
               >
@@ -81,7 +98,7 @@ export function RandomizerCard({
             )}
             {onReroll && (
               <OverlayButton
-                position="bottom-right"
+                position='bottom-right'
                 onClick={handleReroll}
               >
                 <FiRefreshCw size={20} />
@@ -89,15 +106,15 @@ export function RandomizerCard({
             )}
           </div>
         ) : (
-          <div className="bg-gradient-to-b from-zinc-900 to-black text-white overflow-hidden flex flex-col group">
-            <div className="relative w-full aspect-square bg-gradient-to-br from-zinc-900 via-black to-zinc-900 flex items-center justify-center">
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.1)_0%,transparent_70%)] opacity-0 group-hover:opacity-100 transition-opacity" />
-              <div className="text-zinc-400 font-[ElectronicArtsText] text-lg group-hover:text-white transition-colors">
+          <div className='bg-gradient-to-b from-zinc-900 to-black text-white overflow-hidden flex flex-col group'>
+            <div className='relative w-full aspect-square bg-gradient-to-br from-zinc-900 via-black to-zinc-900 flex items-center justify-center'>
+              <div className='absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.1)_0%,transparent_70%)] opacity-0 group-hover:opacity-100 transition-opacity' />
+              <div className='text-zinc-400 font-[ElectronicArtsText] text-lg group-hover:text-white transition-colors'>
                 Random {selectedClass !== 'Any' ? selectedClass : 'Legend'}
               </div>
               {onRemove && (
                 <OverlayButton
-                  position="top-left"
+                  position='top-left'
                   onClick={onRemove}
                   disabled={!canRemove}
                 >
@@ -106,7 +123,7 @@ export function RandomizerCard({
               )}
               {onAdd && (
                 <OverlayButton
-                  position="top-right"
+                  position='top-right'
                   onClick={onAdd}
                   disabled={!canAdd}
                 >
@@ -114,44 +131,56 @@ export function RandomizerCard({
                 </OverlayButton>
               )}
             </div>
-            <div className="p-4 text-left space-y-1">
-              <h2 className="text-xl font-[ElectronicArtsText] uppercase tracking-wider font-semibold text-white">
+            <div className='p-4 text-left space-y-1'>
+              <h2 className='text-xl font-[ElectronicArtsText] uppercase tracking-wider font-semibold text-white'>
                 Random {selectedClass !== 'Any' ? selectedClass : 'Legend'}
               </h2>
-              <p className="text-sm font-[ElectronicArtsText] tracking-wider text-zinc-400 group-hover:text-zinc-300 transition-colors">
+              <p className='text-sm font-[ElectronicArtsText] tracking-wider text-zinc-400 group-hover:text-zinc-300 transition-colors'>
                 The Apex Legend
               </p>
             </div>
           </div>
         )}
       </div>
-      
-      <div className="relative" ref={dropdownRef}>
+
+      <div
+        className='relative'
+        ref={dropdownRef}
+      >
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="w-full bg-gradient-to-b from-zinc-900 to-black text-white px-4 py-3 text-left font-[ElectronicArtsText] text-sm hover:from-zinc-800 hover:to-zinc-900 transition-all duration-200 flex items-center justify-between group/button"
+          className='w-full bg-gradient-to-b from-zinc-900 to-black text-white px-4 py-3 text-left font-[ElectronicArtsText] text-sm hover:from-zinc-800 hover:to-zinc-900 transition-all duration-200 flex items-center justify-between group/button'
         >
-          <span className="text-zinc-400 group-hover/button:text-white transition-colors">
-            {selectedClass === 'Any' ? 'Choose a Class (optional)' : selectedClass}
+          <span className='text-zinc-400 group-hover/button:text-white transition-colors'>
+            {selectedClass === 'Any'
+              ? 'Choose a Class (optional)'
+              : selectedClass}
           </span>
-          <svg 
-            className={`w-4 h-4 transition-all duration-200 ${isOpen ? 'rotate-180 text-white' : 'text-zinc-400 group-hover/button:text-white'}`} 
-            fill="none" 
-            stroke="currentColor" 
-            viewBox="0 0 24 24"
+          <svg
+            className={`w-4 h-4 transition-all duration-200 ${isOpen ? 'rotate-180 text-white' : 'text-zinc-400 group-hover/button:text-white'}`}
+            fill='none'
+            stroke='currentColor'
+            viewBox='0 0 24 24'
           >
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+            <path
+              strokeLinecap='round'
+              strokeLinejoin='round'
+              strokeWidth={2}
+              d='M19 9l-7 7-7-7'
+            />
           </svg>
         </button>
-        
-        <div className={`absolute left-0 right-0 z-50 ${isOpen ? 'block' : 'hidden'}`}>
-          <div className="mt-1 bg-gradient-to-b from-zinc-900 to-black border-2 border-white/10 shadow-[0_0_15px_rgba(0,0,0,0.5)]">
+
+        <div
+          className={`absolute left-0 right-0 z-50 ${isOpen ? 'block' : 'hidden'}`}
+        >
+          <div className='mt-1 bg-gradient-to-b from-zinc-900 to-black border-2 border-white/10 shadow-[0_0_15px_rgba(0,0,0,0.5)]'>
             {legendClasses.map((legendClass) => (
               <button
                 key={legendClass}
                 onClick={() => {
-                  onClassChange(legendClass)
-                  setIsOpen(false)
+                  onClassChange(legendClass);
+                  setIsOpen(false);
                 }}
                 className={`w-full px-4 py-2.5 text-left font-[ElectronicArtsText] text-sm transition-all duration-200 ${
                   selectedClass === legendClass
@@ -166,5 +195,5 @@ export function RandomizerCard({
         </div>
       </div>
     </div>
-  )
-} 
+  );
+}

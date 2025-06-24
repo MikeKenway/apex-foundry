@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { HiMenu } from 'react-icons/hi';
-import { PrimaryButton } from './PrimaryButton';
+import { PrimaryButton } from './primary-button';
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);

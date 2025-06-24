@@ -4,7 +4,7 @@ import { useState } from 'react';
 import legends from '@/data/legends.json';
 import type { Legend } from '@/types/legend';
 import { getRandomLegend } from '@/app/utils/getRandomLegend';
-import { PrimaryButton } from '@/components/PrimaryButton';
+import { PrimaryButton } from '@/components/primary-button';
 import { RandomizerCard } from '@/components/RandomizerCard';
 
 // Define the possible legend classes in the game
