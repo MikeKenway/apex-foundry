@@ -11,7 +11,7 @@ import type { Metadata } from 'next';
 // -------------------------------
 const siteName = 'Apex Foundry';
 const siteDescription =
-  'An Unofficial Apex Legends Toolkit. Browse detailed info for every Apex Legend, filter by class, and randomize your squad for your next match.';
+  'An Unofficial Apex Legends Toolkit. Browse detailed info for every Apex Legend, filter by class, and randomize your squad for complete chaos inyour next match.';
 const siteURL = 'https://apexfoundry.gg';
 const ogImage = '/images/og-image.png';
 
