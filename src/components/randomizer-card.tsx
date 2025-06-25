@@ -1,4 +1,4 @@
-import { Legend } from '@/types/legend';
+import { Legend, LegendClass } from '@/types/legend';
 import { LegendCard } from './legend-card';
 import { useState, useRef, useEffect } from 'react';
 import { FiPlus, FiMinus, FiRefreshCw } from 'react-icons/fi';
@@ -7,14 +7,6 @@ import { getRandomLegend } from '@/lib/getRandomLegend';
 import legends from '@/data/legends.json';
 import { Badge } from '@/components/ui/badge';
 import { getLegendClassBadgeVariant } from '@/lib/getLegendClassBadge';
-
-type LegendClass =
-  | 'Assault'
-  | 'Skirmisher'
-  | 'Support'
-  | 'Controller'
-  | 'Recon'
-  | 'Any';
 
 interface RandomizerCardProps {
   legend: Legend | null;

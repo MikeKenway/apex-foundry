@@ -5,6 +5,7 @@ import type { Legend } from '@/types/legend';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { getLegendClassBadgeVariant } from '@/lib/getLegendClassBadge';
+import type { LegendClass } from '@/types/legend';
 
 type Props = {
   params: Promise<Record<string, string>>;
@@ -26,7 +27,7 @@ export default async function LegendPage({ params }: Props) {
         <Card className='order-1'>
           <CardContent className='relative'>
             <Badge
-              variant={getLegendClassBadgeVariant(legend.class)}
+              variant={getLegendClassBadgeVariant(legend.class as LegendClass)}
               className='absolute top-4 right-8'
             >
               {legend.class}
@@ -206,7 +207,9 @@ export default async function LegendPage({ params }: Props) {
           <Card>
             <CardContent className='relative'>
               <Badge
-                variant={getLegendClassBadgeVariant(legend.class)}
+                variant={getLegendClassBadgeVariant(
+                  legend.class as LegendClass
+                )}
                 className='absolute top-4 right-8'
               >
                 {legend.class}

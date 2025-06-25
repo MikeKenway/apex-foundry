@@ -1,8 +1,10 @@
+import type { LegendClass } from '@/types/legend';
+
 export function getLegendClassBadgeVariant(
-  legendClass: string
+  legendClass: LegendClass
 ): 'assault' | 'controller' | 'recon' | 'skirmisher' | 'support' | 'default' {
   const classMap: Record<
-    string,
+    LegendClass,
     'assault' | 'controller' | 'recon' | 'skirmisher' | 'support' | 'default'
   > = {
     Assault: 'assault',
@@ -10,6 +12,7 @@ export function getLegendClassBadgeVariant(
     Recon: 'recon',
     Skirmisher: 'skirmisher',
     Support: 'support',
+    Any: 'default',
   };
 
   return classMap[legendClass] || 'default';

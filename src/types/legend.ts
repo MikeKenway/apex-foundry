@@ -9,6 +9,13 @@ export type Abilities = {
   ultimate: AbilityDetails;
 };
 
+export type LegendClass =
+  | 'Assault'
+  | 'Skirmisher'
+  | 'Support'
+  | 'Controller'
+  | 'Recon'
+  | 'Any';
 
 export type Legend = {
   name: string;

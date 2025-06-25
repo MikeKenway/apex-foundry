@@ -2,19 +2,10 @@
 
 import { useState } from 'react';
 import legends from '@/data/legends.json';
-import type { Legend } from '@/types/legend';
+import type { Legend, LegendClass } from '@/types/legend';
 import { getRandomLegend } from '@/lib/getRandomLegend';
 import { Button } from '@/components/ui/button';
 import { RandomizerCard } from '@/components/randomizer-card';
-
-// Define the possible legend classes in the game
-type LegendClass =
-  | 'Assault'
-  | 'Skirmisher'
-  | 'Support'
-  | 'Controller'
-  | 'Recon'
-  | 'Any';
 
 interface SquadMember {
   legend: Legend | null;
