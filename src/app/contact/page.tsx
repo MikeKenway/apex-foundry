@@ -2,7 +2,7 @@
 
 import { useForm } from 'react-hook-form';
 import { useState } from 'react';
-import { PrimaryButton } from '@/components/primary-button';
+import { Button } from '@/components/ui/button';
 
 interface ContactFormData {
   name: string;
@@ -229,14 +229,13 @@ export default function ContactPage() {
             )}
           </div>
 
-          <PrimaryButton
-            variant='button'
+          <Button
             type='submit'
             disabled={isSubmitting}
             className='w-full'
           >
             {isSubmitting ? 'Sending...' : 'Send Message'}
-          </PrimaryButton>
+          </Button>
         </form>
       </div>
     </div>

@@ -123,7 +123,7 @@ export default async function LegendPage({ params }: Props) {
                     <span className='font-semibold text-white'>
                       {ability.name}
                     </span>
-                    <div className='text-zinc-300 text-xs mt-1'>
+                    <div className='text-zinc-300 text-sm mt-1'>
                       {ability.description}
                     </div>
                   </div>
