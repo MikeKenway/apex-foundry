@@ -1,6 +1,6 @@
 # Apex Foundry
 
-A fan-built Apex Legends companion app built with Next.js. Features include full legend data, a team randomizer with class filters, and stat exploration. Built to be fast, minimal, and easy to contribute to.
+A fan-built Apex Legends companion app built with Next.js. 
 
 ## Stack
 
@@ -12,7 +12,7 @@ A fan-built Apex Legends companion app built with Next.js. Features include full
 
 ### Prerequisites
 
-This project uses Bun as its package manager. You'll need to install it globally:
+This project uses Bun as its package manager. 
 
 ```bash
 curl -fsSL https://bun.sh/install | bash
@@ -49,16 +49,6 @@ The app will be available at [http://localhost:3000](http://localhost:3000)
 - `bun run build` - Build for production
 - `bun run start` - Start production server
 - `bun run lint` - Run ESLint
-
-### Code Style
-
-These are all things I'm actively working on myself, so feedback is appreciated!
-
-- TypeScript for type safety
-- Follow the existing component structure in `/components`
-- Use Tailwind CSS for styling
-- Keep components small and focused
-- Write meaningful commit messages
 
 ## Project Structure
 
