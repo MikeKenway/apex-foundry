@@ -2,14 +2,6 @@
 
 A fan-built Apex Legends companion app built with Next.js. Features include full legend data, a team randomizer with class filters, and stat exploration. Built to be fast, minimal, and easy to contribute to.
 
-## Features
-
-- View complete legend profiles and abilities
-- Randomize squad composition with class-based filters
-- Fully responsive with mobile support
-- Static site generation with flexible metadata for SEO
-- Clean, organized codebase built in Next.js 15 + Bun
-
 ## Stack
 
 - **Framework**: [Next.js 15 (App Router)](https://nextjs.org/docs/app)
