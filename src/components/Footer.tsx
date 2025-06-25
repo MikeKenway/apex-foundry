@@ -5,7 +5,7 @@ import { FiExternalLink } from 'react-icons/fi';
 import { SiBluesky } from 'react-icons/si';
 import { HiEnvelope } from 'react-icons/hi2';
 
-export function Footer() {
+export default function Footer() {
   return (
     <footer className='w-full bg-black text-white px-4 py-8 border-t border-zinc-800'>
       <div className='max-w-7xl mx-auto px-6'>

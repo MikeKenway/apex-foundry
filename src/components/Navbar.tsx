@@ -12,7 +12,7 @@ import {
   NavigationMenuList,
 } from './ui/navigation-menu';
 
-export function Navbar() {
+export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleClose = () => setIsOpen(false);
