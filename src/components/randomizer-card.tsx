@@ -3,10 +3,10 @@ import { LegendCard } from './legend-card';
 import { useState, useRef, useEffect } from 'react';
 import { FiPlus, FiMinus, FiRefreshCw } from 'react-icons/fi';
 import { OverlayButton } from './overlay-button';
-import { getRandomLegend } from '@/app/utils/getRandomLegend';
+import { getRandomLegend } from '@/lib/getRandomLegend';
 import legends from '@/data/legends.json';
 import { Badge } from '@/components/ui/badge';
-import { getLegendClassBadgeVariant } from '@/lib/utils';
+import { getLegendClassBadgeVariant } from '@/lib/getLegendClassBadge';
 
 type LegendClass =
   | 'Assault'

@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import legends from '@/data/legends.json';
 import type { Legend } from '@/types/legend';
-import { getRandomLegend } from '@/app/utils/getRandomLegend';
+import { getRandomLegend } from '@/lib/getRandomLegend';
 import { Button } from '@/components/ui/button';
 import { RandomizerCard } from '@/components/randomizer-card';
 

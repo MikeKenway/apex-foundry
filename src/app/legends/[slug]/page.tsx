@@ -4,7 +4,7 @@ import legends from '@/data/legends.json';
 import type { Legend } from '@/types/legend';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { getLegendClassBadgeVariant } from '@/lib/utils';
+import { getLegendClassBadgeVariant } from '@/lib/getLegendClassBadge';
 
 type Props = {
   params: Promise<Record<string, string>>;
