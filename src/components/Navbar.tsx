@@ -35,8 +35,8 @@ export function Navbar() {
           />
         </Link>
 
-        {/* Main Nav Links */}
-        <div className='hidden md:block'>
+        {/* Right side navigation and contact button */}
+        <div className='hidden md:flex items-center space-x-6'>
           <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>
@@ -44,9 +44,7 @@ export function Navbar() {
                   href='/'
                   passHref
                 >
-                  <NavigationMenuLink>
-                    Home
-                  </NavigationMenuLink>
+                  <NavigationMenuLink>Home</NavigationMenuLink>
                 </Link>
               </NavigationMenuItem>
               <NavigationMenuItem>
@@ -54,9 +52,7 @@ export function Navbar() {
                   href='/legends'
                   passHref
                 >
-                  <NavigationMenuLink>
-                    Legends
-                  </NavigationMenuLink>
+                  <NavigationMenuLink>Legends</NavigationMenuLink>
                 </Link>
               </NavigationMenuItem>
               <NavigationMenuItem>
@@ -64,17 +60,11 @@ export function Navbar() {
                   href='/squad-randomizer'
                   passHref
                 >
-                  <NavigationMenuLink>
-                    Squad Randomizer
-                  </NavigationMenuLink>
+                  <NavigationMenuLink>Squad Randomizer</NavigationMenuLink>
                 </Link>
               </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
-        </div>
-
-        {/* Contact Button */}
-        <div className='hidden md:block'>
           <PrimaryButton href='/contact'>Contact</PrimaryButton>
         </div>
 
@@ -112,9 +102,18 @@ export function Navbar() {
           >
             Squad Randomizer
           </Link>
-
-          {/* Contact Button */}
-          <Button variant='outline'> Contact</Button>
+          <Link
+            href='/contact'
+            onClick={handleClose}
+            className='block'
+          >
+            <Button
+              variant='outline'
+              className='w-full'
+            >
+              Contact
+            </Button>
+          </Link>
         </div>
       )}
     </nav>

@@ -45,10 +45,6 @@ export default async function LegendPage({ params }: Props) {
             </CardHeader>
             <CardContent className='space-y-2'>
               <div>
-                <div className='subtitle'>Class</div>
-                <Badge variant={getLegendClassBadgeVariant(legend.class)}>{legend.class}</Badge>
-              </div>
-              <div>
                 <div className='subtitle'>Introduced</div>
                 <p>{legend.appearance_season}</p>
               </div>
@@ -66,16 +62,41 @@ export default async function LegendPage({ params }: Props) {
               </div>
             </CardContent>
           </Card>
+          {/* Voice Actor */}
+          <Card>
+            <CardHeader>
+              <CardTitle className='text-xl font-semibold text-primary'>
+                Voice Actor
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p className='text-md text-zinc-300'>
+                {legend.voice_actor || 'Unknown'}
+              </p>
+            </CardContent>
+          </Card>
         </div>
         {/* RIGHT COLUMN: Main Content */}
         <div className='flex-1 flex flex-col gap-6'>
-          {/* Name & Title */}
-          <div>
-            <h1 className='text-7xl font-extrabold font-[Duke] tracking-wide text-primary drop-shadow-md'>
-              {legend.name}
-            </h1>
-            <p className='text-xl italic text-zinc-300'>{legend.title}</p>
-          </div>
+          {/* Header Card */}
+          <Card>
+            <CardContent className='relative'>
+              <Badge
+                variant={getLegendClassBadgeVariant(legend.class)}
+                className='absolute top-4 right-8'
+              >
+                {legend.class}
+              </Badge>
+              <h1 className='text-7xl font-bold font-[Duke] tracking-wide text-primary drop-shadow-md'>
+                {legend.name}
+              </h1>
+              <p className='text-lg uppercase text-zinc-400'>{legend.title}</p>
+
+              <p className='text-sm italic text-zinc-300 mt-4'>
+                {legend.catchphrase}
+              </p>
+            </CardContent>
+          </Card>
           {/* Backstory */}
           <Card>
             <CardHeader>
@@ -83,11 +104,14 @@ export default async function LegendPage({ params }: Props) {
                 Backstory
               </CardTitle>
             </CardHeader>
-            <CardContent className='space-y-4'>
+            <CardContent className=''>
               <div>
                 <p className='text-sm text-zinc-300'>
                   {legend.backstory?.split('\n\n').map((paragraph, i) => (
-                    <p key={i} className='mb-4'>
+                    <p
+                      key={i}
+                      className='mb-4'
+                    >
                       {paragraph}
                     </p>
                   )) || 'Unknown'}
@@ -124,19 +148,6 @@ export default async function LegendPage({ params }: Props) {
                   </div>
                 );
               })}
-            </CardContent>
-          </Card>
-          {/* Voice Actor */}
-          <Card>
-            <CardHeader>
-              <CardTitle className='text-xl font-semibold text-primary mb-2'>
-                Voice Actor
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className='text-sm text-zinc-300'>
-                {legend.voice_actor || 'Unknown'}
-              </p>
             </CardContent>
           </Card>
         </div>
