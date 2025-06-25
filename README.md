@@ -92,8 +92,3 @@ MIT License.
 ## Credits
 
 Built and maintained by Ekkolyth. Contributions and feedback welcome.
-
-Find me on:
-
-- [X (Twitter)](https://twitter.com/ekkolyth) - @ekkolyth
-- [Bluesky](https://bsky.app/profile/ekkolyth.bsky.social) - @ekkolyth.bsky.social
