@@ -45,6 +45,14 @@ export default async function LegendPage({ params }: Props) {
             </CardHeader>
             <CardContent className='space-y-2'>
               <div>
+                <div className='subtitle'>Class</div>
+                <Badge variant={getLegendClassBadgeVariant(legend.class)}>{legend.class}</Badge>
+              </div>
+              <div>
+                <div className='subtitle'>Introduced</div>
+                <p>{legend.appearance_season}</p>
+              </div>
+              <div>
                 <div className='subtitle'> Real Name </div>
                 <p>{legend.real_name}</p>
               </div>
@@ -53,16 +61,8 @@ export default async function LegendPage({ params }: Props) {
                 <p> {legend.homeworld || 'Unknown'}</p>
               </div>
               <div>
-                <div className='subtitle'>Class</div>
-                <Badge variant={getLegendClassBadgeVariant(legend.class)}>{legend.class}</Badge>
-              </div>
-              <div>
                 <div className='subtitle'>Age</div>
                 <p>{legend.age || 'Unknown'}</p>
-              </div>
-              <div>
-                <div className='subtitle'>Introduced</div>
-                <p>{legend.appearance_season}</p>
               </div>
             </CardContent>
           </Card>

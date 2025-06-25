@@ -23,12 +23,8 @@
         "description": "Deploy a device that your squad can teleport back to via a one‑way portal."
       }
     },
-    "backstory": {
-      "early_life": "Born in an alternate dimension, YingLing Lui traveled across worlds drawn to their destruction.",
-      "career_before_games": "She stole, fought, and took mercenary work across realities, remaining a mystery even to her victims.",
-      "joining_apex": "Entered the Apex Games to track Horizon and her connection to world‑ending events."
-    },
-      "image": "/images/legend-portraits/alter.webp"
+    "backstory": "When Alter emerged from her dimension into another (with her past held close to the chest), she had only two things: her interdimensional traveling Void tech, and a desire to have fun. She stole the fanciest of foods, learned to fight through dicey situations, and took on odd jobs for personal favors–though she didn't have a problem double-crossing her clients if it was more beneficial or amusing. Never needing to stick around for the consequences of her actions eroded any sense of morality or responsibility she had. She could focus on what was important: making sure life was never mundane.\n\nAlter was drawn to worlds on the edge of complete destruction. Whether something devastating was already happening or she helped usher in the apocalypse herself, she was there to watch whatever catastrophe ensued. It was only in those moments, after all, that people took off the masks they always wore and she could see their true selves.\n\nFinding these world-ending events was a toss up. Sometimes she'd find what she was looking for, and on others, she'd have missed the main event in worlds already ruined. But in some of these ruined worlds, Alter began to notice an interesting commonality…\n\nMany of these worlds hadn't met their end by some random event; they had been destroyed by the same person.",
+    "image": "/images/legend-portraits/alter.webp"
   },
 
   {
@@ -55,11 +51,7 @@
         "description": "Tear open a one-way portal to a targeted location."
       }
     },
-    "backstory": {
-      "early_life": "Dr. Ashleigh Reid was a brilliant scientist working with Horizon on gravitational research. Her ambition and betrayal led to her transformation into the simulacrum assassin known as Ash.",
-      "career_before_games": "Worked for the IMC and became a top-level scientist before being presumed dead and later rebuilt as a simulacrum by Vinson Dynamics.",
-      "joining_apex": "After regaining fragments of her past, Ash entered the Apex Games to assert control over her dual identities and prove her dominance."
-    },
+    "backstory": "Dr. Ashleigh Reid was a brilliant scientist working with Horizon on gravitational research. Her ambition and betrayal led to her transformation into the simulacrum assassin known as Ash. After regaining fragments of her past, Ash entered the Apex Games to assert control over her dual identities and prove her dominance.",
     "image": "/images/legend-portraits/ash.webp"
   },
   {
@@ -86,11 +78,7 @@
         "description": "Grants faster reloads, faster armed move speed, and unlimited ammo to Ballistic and nearby teammates. The sling weapon is equipped and upgraded to gold."
       }
     },
-    "backstory": {
-      "early_life": "Born into a wealthy family on Gaea, August Brinkman lived a privileged but rebellious life, drawn to the thrill of combat sports.",
-      "career_before_games": "Joined the Thunderdome Games in his youth, becoming a famous and reckless competitor. Retired after the death of his brother-in-law due to his actions.",
-      "joining_apex": "Came out of retirement to protect his son from joining the Games. Joined the Apex Games himself in a last attempt to keep his family safe."
-    },
+    "backstory": "Born into a wealthy family on Gaea, August Brinkman lived a privileged but rebellious life, drawn to the thrill of combat sports. He joined the Thunderdome Games in his youth, becoming a famous and reckless competitor. After retiring due to the death of his brother-in-law, he came out of retirement to protect his son from joining the Games, joining the Apex Games himself in a last attempt to keep his family safe.",
     "image": "/images/legend-portraits/ballistic.webp"
   },
   {
@@ -117,44 +105,36 @@
         "description": "Call in an artillery strike that slowly creeps across the landscape."
       }
     },
-    "backstory": {
-      "early_life": "Raised in a military family on Gridiron, Anita was one of five siblings trained for combat from a young age.",
-      "career_before_games": "Excelled in the IMC as a top-tier soldier and weapons expert. Went missing after a mission went wrong and her brother disappeared.",
-      "joining_apex": "Entered the Apex Games to earn enough money to return home and find her lost brother."
-    },
+    "backstory": "Raised in a military family on Gridiron, Anita was one of five siblings trained for combat from a young age. She excelled in the IMC as a top-tier soldier and weapons expert, but went missing after a mission went wrong and her brother disappeared. She entered the Apex Games to earn enough money to return home and find her lost brother.",
     "image": "/images/legend-portraits/bangalore.webp"
   },
   {
-  "name": "Bloodhound",
-  "slug": "bloodhound",
-  "real_name": "Blódhundr",
-  "age": "Unknown",
-  "homeworld": "Talos",
-  "class": "Recon",
-  "voice_actor": "Allegra Clark",
-  "appearance_season": "Season 0",
-  "title": "Technological Tracker",
-  "abilities": {
-    "tactical": {
-      "name": "Eye of the Allfather",
-      "description": "Briefly reveal hidden enemies, traps, and clues through all structures in front of you."
+    "name": "Bloodhound",
+    "slug": "bloodhound",
+    "real_name": "Blódhundr",
+    "age": "Unknown",
+    "homeworld": "Talos",
+    "class": "Recon",
+    "voice_actor": "Allegra Clark",
+    "appearance_season": "Season 0",
+    "title": "Technological Tracker",
+    "abilities": {
+      "tactical": {
+        "name": "Eye of the Allfather",
+        "description": "Briefly reveal hidden enemies, traps, and clues through all structures in front of you."
+      },
+      "passive": {
+        "name": "Tracker",
+        "description": "See tracks left behind by your foes."
+      },
+      "ultimate": {
+        "name": "Beast of the Hunt",
+        "description": "Enhance your senses, allowing you to move faster and highlight your prey."
+      }
     },
-    "passive": {
-      "name": "Tracker",
-      "description": "See tracks left behind by your foes."
-    },
-    "ultimate": {
-      "name": "Beast of the Hunt",
-      "description": "Enhance your senses, allowing you to move faster and highlight your prey."
-    }
+    "backstory": "Raised on the harsh, volcanic planet of Talos by their uncle after being orphaned by a meltdown, Bloodhound was taught both ancient traditions and modern technologies. They became a skilled hunter revered in their village, combining old ways with new tools and earning a legendary reputation. Bloodhound joined the Apex Games seeking glory and to prove the value of nature, balance, and the Old Norse gods in an increasingly fractured world.",
+    "image": "/images/legend-portraits/bloodhound.webp"
   },
-  "backstory": {
-    "early_life": "Raised on the harsh, volcanic planet of Talos by their uncle after being orphaned by a meltdown, Bloodhound was taught both ancient traditions and modern technologies.",
-    "career_before_games": "Bloodhound became a skilled hunter revered in their village, combining old ways with new tools and earning a legendary reputation.",
-    "joining_apex": "Joined the Apex Games seeking glory and to prove the value of nature, balance, and the Old Norse gods in an increasingly fractured world."
-  },
-  "image": "/images/legend-portraits/bloodhound.webp"
-},
   {
     "name": "Catalyst",
     "slug": "catalyst",
@@ -179,11 +159,7 @@
         "description": "Raise a permeable wall of ferrofluid that slows and blinds enemies who walk through it."
       }
     },
-    "backstory": {
-      "early_life": "Tressa grew up on the moon Boreas, where she faced discrimination as a transgender woman. She found comfort in working with ferrofluid and arcane sciences.",
-      "career_before_games": "Worked as a terraformer to help stabilize the collapsing moon, and was part of a resistance movement against corporate exploitation.",
-      "joining_apex": "Joined the Games to draw attention to Boreas's plight and to take control of her own destiny."
-    },
+    "backstory": "Tressa grew up on the moon Boreas, where she faced discrimination as a transgender woman. She found comfort in working with ferrofluid and arcane sciences. She worked as a terraformer to help stabilize the collapsing moon, and was part of a resistance movement against corporate exploitation. She joined the Games to draw attention to Boreas's plight and to take control of her own destiny.",
     "image": "/images/legend-portraits/catalyst.webp"
   },
   {
@@ -210,11 +186,7 @@
         "description": "Blanket a large area in Nox gas."
       }
     },
-    "backstory": {
-      "early_life": "Alexander Nox was a brilliant scientist working for Humbert Labs, developing pesticides. His obsession with testing on living subjects led him to darker experiments.",
-      "career_before_games": "Worked as a chemical engineer. Faked his own death in a lab fire to escape persecution for unethical experimentation.",
-      "joining_apex": "Joined the Games to continue his research on human exposure to toxic substances in live combat."
-    },
+    "backstory": "Alexander Nox was a brilliant scientist working for Humbert Labs, developing pesticides. His obsession with testing on living subjects led him to darker experiments. He worked as a chemical engineer and faked his own death in a lab fire to escape persecution for unethical experimentation. He joined the Games to continue his research on human exposure to toxic substances in live combat.",
     "image": "/images/legend-portraits/caustic.webp"
   },
   {
@@ -241,11 +213,7 @@
         "description": "Deploy an array of shield jammers that damage and slow enemies."
       }
     },
-    "backstory": {
-      "early_life": "Grew up in a war-torn Solace, where she witnessed firsthand the devastation of the Frontier Wars.",
-      "career_before_games": "Worked odd jobs to support her family, eventually volunteering for experimental IMC tech to gain powers.",
-      "joining_apex": "Joined the Apex Games to provide for her family and redeem her sister's failed dream of heroism."
-    },
+    "backstory": "Grew up in a war-torn Solace, where she witnessed firsthand the devastation of the Frontier Wars. She worked odd jobs to support her family, eventually volunteering for experimental IMC tech to gain powers. She joined the Apex Games to provide for her family and redeem her sister's failed dream of heroism.",
     "image": "/images/legend-portraits/conduit.webp"
   },
   {
@@ -272,11 +240,7 @@
         "description": "Charge up and unleash an EMP blast from your drone, dealing shield damage and disabling traps."
       }
     },
-    "backstory": {
-      "early_life": "Orphaned young, raised in the streets before being adopted. Excelled in tech and hacking.",
-      "career_before_games": "Worked for the Syndicate as a computer engineer before being framed and going on the run.",
-      "joining_apex": "Entered the Games under the alias Crypto to uncover who set him up and to search for Mila."
-    },
+    "backstory": "Orphaned young, Tae Joon Park was raised in the streets before being adopted. He excelled in tech and hacking, eventually working for the Syndicate as a computer engineer before being framed and going on the run. He entered the Games under the alias Crypto to uncover who set him up and to search for Mila.",
     "image": "/images/legend-portraits/crypto.webp"
   },
   {
@@ -303,11 +267,7 @@
         "description": "Launch a bombardment that encircles a target area in a wall of flame."
       }
     },
-    "backstory": {
-      "early_life": "Grew up on Salvo in a rough-and-tumble environment where survival often meant blowing something up.",
-      "career_before_games": "A cage fighter and mercenary, Fuse rose to fame as Salvo's champion before joining the Apex Games.",
-      "joining_apex": "Left Salvo (and Maggie) to join the Games, seeking a bigger stage for his explosive personality."
-    },
+    "backstory": "Grew up on Salvo in a rough-and-tumble environment where survival often meant blowing something up. A cage fighter and mercenary, Fuse rose to fame as Salvo's champion before joining the Apex Games. He left Salvo (and Maggie) to join the Games, seeking a bigger stage for his explosive personality.",
     "image": "/images/legend-portraits/fuse.webp"
   },
   {
@@ -334,11 +294,7 @@
         "description": "Call in a concentrated mortar strike on a marked position."
       }
     },
-    "backstory": {
-      "early_life": "Always a gentle giant, Makoa learned the importance of helping others after a near-death experience with his boyfriend.",
-      "career_before_games": "Worked in search and rescue alongside his father before becoming a legend.",
-      "joining_apex": "Joined the Games not for fame, but to protect the people of the Outlands in his own way."
-    },
+    "backstory": "Always a gentle giant, Makoa learned the importance of helping others after a near-death experience with his boyfriend. He worked in search and rescue alongside his father before becoming a legend. He joined the Games not for fame, but to protect the people of the Outlands in his own way.",
     "image": "/images/legend-portraits/gibraltar.webp"
   },
   {
@@ -365,11 +321,7 @@
         "description": "Deploy NEWT to create a micro black hole that pulls players in and damages them with a gravitational blast."
       }
     },
-    "backstory": {
-      "early_life": "A brilliant astrophysicist from Psamathe who specialized in black hole research.",
-      "career_before_games": "Conducted experiments on gravitational anomalies and developed AI tech with her son Newton.",
-      "joining_apex": "Joined the Apex Games to fund her research and reconnect with Newton, having returned decades after her disappearance due to time dilation."
-    },
+    "backstory": "A brilliant astrophysicist from Psamathe who specialized in black hole research, Dr. Mary Somers conducted experiments on gravitational anomalies and developed AI tech with her son Newton. She joined the Apex Games to fund her research and reconnect with Newton, having returned decades after her disappearance due to time dilation.",
     "image": "/images/legend-portraits/horizon.webp"
   },
   {
@@ -396,11 +348,7 @@
         "description": "Call in a drop pod full of high-quality defensive gear."
       }
     },
-    "backstory": {
-      "early_life": "Born into the wealthy Che family of war profiteers, Lifeline rejected their values and joined the Frontier Corps.",
-      "career_before_games": "Worked as a combat medic providing humanitarian aid in war zones.",
-      "joining_apex": "Entered the Apex Games to fund medical supplies and humanitarian efforts for the Frontier Corps."
-    },
+    "backstory": "Born into the wealthy Che family of war profiteers, Ajay rejected their values and joined the Frontier Corps. She worked as a combat medic providing humanitarian aid in war zones. She entered the Apex Games to fund medical supplies and humanitarian efforts for the Frontier Corps.",
     "image": "/images/legend-portraits/lifeline.webp"
   },
   {
@@ -427,11 +375,7 @@
         "description": "Place a portable device that allows you to teleport nearby loot to your inventory."
       }
     },
-    "backstory": {
-      "early_life": "Witnessed her father's death at the hands of Revenant and grew up in the criminal underworld.",
-      "career_before_games": "Became one of the most accomplished thieves in the Outlands, using her skills to survive.",
-      "joining_apex": "Joined the Apex Games to gain access to powerful technology and seek revenge on Revenant."
-    },
+    "backstory": "Witnessed her father's death at the hands of Revenant and grew up in the criminal underworld. She became one of the most accomplished thieves in the Outlands, using her skills to survive. She joined the Apex Games to gain access to powerful technology and seek revenge on Revenant.",
     "image": "/images/legend-portraits/loba.webp"
   },
   {
@@ -458,11 +402,7 @@
         "description": "Throw a ball that releases speed-boosting pads and detonates near enemies."
       }
     },
-    "backstory": {
-      "early_life": "Grew up impoverished on Salvo and became a freedom fighter against the Syndicate.",
-      "career_before_games": "Led guerrilla campaigns and uprisings on Salvo, earning her a reputation as a ruthless rebel.",
-      "joining_apex": "Was sentenced to death but survived and was forced into the Apex Games as a political pawn."
-    },
+    "backstory": "Grew up impoverished on Salvo and became a freedom fighter against the Syndicate. She led guerrilla campaigns and uprisings on Salvo, earning her a reputation as a ruthless rebel. She was sentenced to death but survived and was forced into the Apex Games as a political pawn.",
     "image": "/images/legend-portraits/mad-maggie.webp"
   },
   {
@@ -489,11 +429,7 @@
         "description": "Deploy a team of decoys to distract enemies."
       }
     },
-    "backstory": {
-      "early_life": "Elliott grew up as the youngest of four brothers. He developed a close relationship with his mother after his father left and his brothers went missing during the Outlands Civil War.",
-      "career_before_games": "Worked as a bartender and night shift manager. Owned the Paradise Lounge.",
-      "joining_apex": "Encouraged by his mother, he joined the Apex Games to showcase his holographic talents and support them both financially."
-    },
+    "backstory": "Elliott grew up as the youngest of four brothers. He developed a close relationship with his mother after his father left and his brothers went missing during the Outlands Civil War. He worked as a bartender and night shift manager, owning the Paradise Lounge. Encouraged by his mother, he joined the Apex Games to showcase his holographic talents and support them both financially.",
     "image": "/images/legend-portraits/mirage.webp"
   },
   {
@@ -520,12 +456,8 @@
         "description": "Leap to an ally or target area and slam down a shielded fortress wall."
       }
     },
-    "backstory": {
-      "early_life": "Grew up in Harris Valley alongside his sister Anita, training to protect his community.",
-      "career_before_games": "Assumed the identity of Newcastle to keep his town safe and repay debts.",
-      "joining_apex": "Entered the Apex Games under the guise of Newcastle to protect his town and eventually revealed his identity to Bangalore."
-    },
-      "image": "/images/legend-portraits/newcastle.webp"
+    "backstory": "Grew up in Harris Valley alongside his sister Anita, training to protect his community. He assumed the identity of Newcastle to keep his town safe and repay debts. He entered the Apex Games under the guise of Newcastle to protect his town and eventually revealed his identity to Bangalore.",
+    "image": "/images/legend-portraits/newcastle.webp"
   },
   {
     "name": "Octane",
@@ -551,11 +483,7 @@
         "description": "Deploy a jump pad that catapults anyone who steps on it into the air."
       }
     },
-    "backstory": {
-      "early_life": "Born into wealth and privilege, Octavio sought thrills from a young age.",
-      "career_before_games": "Lost his legs during a stunt using a grenade to boost a race time. Persuaded Ajay (Lifeline) to forge bionic replacements.",
-      "joining_apex": "Joined the Games for the ultimate thrill-seeking opportunity."
-    },
+    "backstory": "Born into wealth and privilege, Octavio sought thrills from a young age. He lost his legs during a stunt using a grenade to boost a race time and persuaded Ajay (Lifeline) to forge bionic replacements. He joined the Games for the ultimate thrill-seeking opportunity.",
     "image": "/images/legend-portraits/octane.webp"
   },
   {
@@ -582,11 +510,7 @@
         "description": "Create a zipline for everyone to use."
       }
     },
-    "backstory": {
-      "early_life": "Activated decades ago in a now-abandoned laboratory with no memory of his purpose.",
-      "career_before_games": "Wandered the Outlands trying to learn who created him and why.",
-      "joining_apex": "Entered the Games hoping to attract the attention of his creator."
-    },
+    "backstory": "Activated decades ago in a now-abandoned laboratory with no memory of his purpose, Pathfinder wandered the Outlands trying to learn who created him and why. He entered the Games hoping to attract the attention of his creator.",
     "image": "/images/legend-portraits/pathfinder.webp"
   },
   {
@@ -613,11 +537,7 @@
         "description": "Deploy a mounted machine gun that anyone can use. Can also carry and fire it while mobile."
       }
     },
-    "backstory": {
-      "early_life": "Grew up in the underbelly of Gaea, fixing weapons and tech from a young age.",
-      "career_before_games": "Ran a modding shop in Gaea's underground until it was destroyed by a gang. Gained notoriety from underground fight mods.",
-      "joining_apex": "Joined the Apex Games for fame, fortune, and to rebuild her shop—and her name."
-    },
+    "backstory": "Grew up in the underbelly of Gaea, fixing weapons and tech from a young age. She ran a modding shop in Gaea's underground until it was destroyed by a gang. She gained notoriety from underground fight mods and joined the Apex Games for fame, fortune, and to rebuild her shop—and her name.",
     "image": "/images/legend-portraits/rampart.webp"
   },
   {
@@ -644,11 +564,7 @@
         "description": "Create shrouds of hardened shadows around you, blocking damage."
       }
     },
-    "backstory": {
-      "early_life": "Once a human hitman, Kaleb Cross worked for Hammond Robotics until they turned him into a simulacrum without his consent.",
-      "career_before_games": "Top-tier assassin before and after his conversion into a deadly machine.",
-      "joining_apex": "Entered the Games after regaining memory of his human past, now driven by vengeance against his creators."
-    },
+    "backstory": "Once a human hitman, Kaleb Cross worked for Hammond Robotics until they turned him into a simulacrum without his consent. He was a top-tier assassin before and after his conversion into a deadly machine. He entered the Games after regaining memory of his human past, now driven by vengeance against his creators.",
     "image": "/images/legend-portraits/revenant.webp"
   },
   {
@@ -675,11 +591,7 @@
         "description": "Create a sphere that reveals enemies' movements within it."
       }
     },
-    "backstory": {
-      "early_life": "Born during a celestial anomaly, marked as cursed but raised with love.",
-      "career_before_games": "Became a celebrated performer and underground sensation using his drones.",
-      "joining_apex": "Entered the Games to reshape his narrative and prove beauty and truth belong on the battlefield."
-    },
+    "backstory": "Born during a celestial anomaly, Obi was marked as cursed but raised with love. He became a celebrated performer and underground sensation using his drones. He entered the Games to reshape his narrative and prove beauty and truth belong on the battlefield.",
     "image": "/images/legend-portraits/seer.webp"
   },
   {
@@ -706,45 +618,37 @@
         "description": "Creates a destabilized zone that pulls enemies and suppresses abilities."
       }
     },
-    "backstory": {
-      "early_life": "null",
-      "career_before_games": "null",
-      "joining_apex": "null"
-    },
+    "backstory": "Enea Davide Guarino is an interdimensional tracker who emerged from the void with mysterious origins. As Sparrow, they use their unique abilities to track and disrupt enemy abilities across dimensions, bringing chaos to the battlefield with their void-based technology.",
     "image": "/images/legend-portraits/sparrow.webp"
   },
 
   {
-  "name": "Valkyrie",
-  "slug": "valkyrie",
-  "real_name": "Kairi Imahara",
-  "age": "31",
-  "homeworld": "Angelia",
-  "class": "Recon",
-  "voice_actor": "Erika Ishii",
-  "appearance_season": "Season 9",
-  "title": "Winged Avenger",
-  "abilities": {
-    "tactical": {
-      "name": "Missile Swarm",
-      "description": "Fire a swarm of mini-rockets that damage and disorient enemies."
+    "name": "Valkyrie",
+    "slug": "valkyrie",
+    "real_name": "Kairi Imahara",
+    "age": "31",
+    "homeworld": "Angelia",
+    "class": "Recon",
+    "voice_actor": "Erika Ishii",
+    "appearance_season": "Season 9",
+    "title": "Winged Avenger",
+    "abilities": {
+      "tactical": {
+        "name": "Missile Swarm",
+        "description": "Fire a swarm of mini-rockets that damage and disorient enemies."
+      },
+      "passive": {
+        "name": "VTOL Jets",
+        "description": "Use your jetpack to fly. Fuel is limited but refills over time."
+      },
+      "ultimate": {
+        "name": "Skyward Dive",
+        "description": "Launch into the air and skydive to a new location. Squadmates can join the launch."
+      }
     },
-    "passive": {
-      "name": "VTOL Jets",
-      "description": "Use your jetpack to fly. Fuel is limited but refills over time."
-    },
-    "ultimate": {
-      "name": "Skyward Dive",
-      "description": "Launch into the air and skydive to a new location. Squadmates can join the launch."
-    }
+    "backstory": "Kairi Imahara grew up the daughter of notorious Apex Predator pilot Viper. She idolized her father but was left adrift after his death at the hands of Jack Cooper. She took odd jobs as a mechanic and smuggler, eventually rebuilding a modified version of her father's Northstar Titan as a jetpack. She entered the Apex Games seeking revenge, but found new purpose through the competition and the legacy she was building for herself.",
+    "image": "/images/legend-portraits/valkyrie.webp"
   },
-  "backstory": {
-    "early_life": "Kairi Imahara grew up the daughter of notorious Apex Predator pilot Viper. She idolized her father but was left adrift after his death at the hands of Jack Cooper.",
-    "career_before_games": "Took odd jobs as a mechanic and smuggler, eventually rebuilding a modified version of her father’s Northstar Titan as a jetpack.",
-    "joining_apex": "Entered the Apex Games seeking revenge, but found new purpose through the competition and the legacy she was building for herself."
-  },
-  "image": "/images/legend-portraits/valkyrie.webp"
-},
   {
     "name": "Vantage",
     "slug": "vantage",
@@ -769,11 +673,7 @@
         "description": "Mark enemies and apply a damage boost for Vantage and her squad."
       }
     },
-    "backstory": {
-      "early_life": "Raised alone by her mother in the icy wastes of Págos.",
-      "career_before_games": "Trained in survivalism and tracking animals.",
-      "joining_apex": "Joined to help clear her mother's name and find the truth."
-    },
+    "backstory": "Raised alone by her mother in the icy wastes of Págos, Xiomara 'Mara' Contreras was trained in survivalism and tracking animals. She joined the Apex Games to help clear her mother's name and find the truth about her past.",
     "image": "/images/legend-portraits/vantage.webp"
   },
   {
@@ -800,11 +700,7 @@
         "description": "Place an electrified pylon that destroys incoming ordnance and repairs damaged shields."
       }
     },
-    "backstory": {
-      "early_life": "Raised in the Games' arena, close to her father and surrounded by tech.",
-      "career_before_games": "Helped design the Apex Games' ring systems.",
-      "joining_apex": "Entered the Games after her father's death as a way to honor his legacy and find connection."
-    },
+    "backstory": "Raised in the Games' arena, close to her father and surrounded by tech, Natalie Paquette helped design the Apex Games' ring systems. She entered the Games after her father's death as a way to honor his legacy and find connection.",
     "image": "/images/legend-portraits/wattson.webp"
   },
   {
@@ -831,11 +727,7 @@
         "description": "Link two locations with portals for 60 seconds, allowing anyone to use them."
       }
     },
-    "backstory": {
-      "early_life": "Renee Blasey was a senior science pilot for the IMC before being imprisoned and experimented on by the organization she worked for.",
-      "career_before_games": "IMC scientist working on phase technology, later subjected to it in secret experiments.",
-      "joining_apex": "Escaped captivity with the help of a mysterious alternate version of herself. Now fights to uncover her past."
-    },
+    "backstory": "Renee Blasey was a senior science pilot for the IMC before being imprisoned and experimented on by the organization she worked for. She was an IMC scientist working on phase technology, later subjected to it in secret experiments. She escaped captivity with the help of a mysterious alternate version of herself and now fights to uncover her past.",
     "image": "/images/legend-portraits/wraith.webp"
   }
 ]
