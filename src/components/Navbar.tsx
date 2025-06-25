@@ -4,7 +4,6 @@ import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { HiMenu } from 'react-icons/hi';
-import { PrimaryButton } from './primary-button';
 import { Button } from './ui/button';
 import {
   NavigationMenu,
@@ -65,7 +64,12 @@ export function Navbar() {
               </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
-          <PrimaryButton href='/contact'>Contact</PrimaryButton>
+          <Button
+            variant='default'
+            asChild
+          >
+            <Link href='/contact'>Contact</Link>
+          </Button>
         </div>
 
         {/* Hamburger Button */}
@@ -102,18 +106,18 @@ export function Navbar() {
           >
             Squad Randomizer
           </Link>
-          <Link
-            href='/contact'
-            onClick={handleClose}
-            className='block'
+          <Button
+            variant='outline'
+            className='w-full'
+            asChild
           >
-            <Button
-              variant='outline'
-              className='w-full'
+            <Link
+              href='/contact'
+              onClick={handleClose}
             >
               Contact
-            </Button>
-          </Link>
+            </Link>
+          </Button>
         </div>
       )}
     </nav>

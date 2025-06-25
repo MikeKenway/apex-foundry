@@ -4,7 +4,7 @@ import { useState } from 'react';
 import legends from '@/data/legends.json';
 import type { Legend } from '@/types/legend';
 import { getRandomLegend } from '@/app/utils/getRandomLegend';
-import { PrimaryButton } from '@/components/primary-button';
+import { Button } from '@/components/ui/button';
 import { RandomizerCard } from '@/components/randomizer-card';
 
 // Define the possible legend classes in the game
@@ -139,12 +139,12 @@ export default function SquadRandomizerPage() {
 
       {/* Randomize Button */}
       <div className='text-center'>
-        <PrimaryButton
-          variant='button'
+        <Button
           onClick={createRandomSquad}
+          size='lg'
         >
           {numberOfLegends === 1 ? 'Randomize Legend' : 'Randomize Squad'}
-        </PrimaryButton>
+        </Button>
       </div>
     </div>
   );
