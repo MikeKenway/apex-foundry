@@ -5,6 +5,8 @@ import { FiPlus, FiMinus, FiRefreshCw } from 'react-icons/fi';
 import { OverlayButton } from './overlay-button';
 import { getRandomLegend } from '@/app/utils/getRandomLegend';
 import legends from '@/data/legends.json';
+import { Badge } from '@/components/ui/badge';
+import { getLegendClassBadgeVariant } from '@/lib/utils';
 
 type LegendClass =
   | 'Assault'
@@ -182,13 +184,21 @@ export function RandomizerCard({
                   onClassChange(legendClass);
                   setIsOpen(false);
                 }}
-                className={`w-full px-4 py-2.5 text-left font-[ElectronicArtsText] text-sm transition-all duration-200 ${
+                className={`w-full px-4 py-2.5 text-left font-[ElectronicArtsText] text-sm transition-all duration-200 flex items-center justify-between ${
                   selectedClass === legendClass
                     ? 'bg-white text-black'
                     : 'text-zinc-400 hover:text-white hover:bg-white/10'
                 }`}
               >
-                {legendClass === 'Any' ? 'Any Class' : legendClass}
+                <span>{legendClass === 'Any' ? 'Any Class' : legendClass}</span>
+                {legendClass !== 'Any' && (
+                  <Badge
+                    variant={getLegendClassBadgeVariant(legendClass)}
+                    className={`text-xs ${selectedClass === legendClass ? 'text-black' : ''}`}
+                  >
+                    {legendClass}
+                  </Badge>
+                )}
               </button>
             ))}
           </div>

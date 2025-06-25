@@ -5,6 +5,12 @@
   --foreground: #171717;
 }
 
+@theme {
+  --font-title: 'Duke', serif;
+  --font-body: 'ElectronicArtsText', sans-serif;
+  --color-primary: #ed3615;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -41,6 +47,10 @@ body::before {
   z-index: -1;
 }
 
+.subtitle {
+  @apply text-sm uppercase tracking-wide text-zinc-400 mb-2;
+}
+
 @font-face {
   font-family: 'Duke';
   src: url('/fonts/duke/Duke.ttf') format('truetype');
@@ -55,9 +65,3 @@ body::before {
   font-style: normal;
 }
 
-/* Define custom font variables for Tailwind v4 */
-@theme {
-  --font-title: 'Duke', serif;
-  --font-body: 'ElectronicArtsText', sans-serif;
-  --color-primary: #ed3615;
-}
