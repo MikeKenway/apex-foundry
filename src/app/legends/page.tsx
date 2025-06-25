@@ -16,9 +16,8 @@ export default function LegendsPage() {
             <div className='h-1 flex-1 bg-gradient-to-r from-primary to-transparent'></div>
           </div>
           <p className='text-zinc-400 text-lg max-w-2xl font-light tracking-wide'>
-            Assemble the ultimate trio. Pick your squad one legend at a time, or
-            let chaos take the wheel. Filter by class to build the perfect comp
-            or roll the dice and let fate decide.
+            Browse the full roster of Legends available in Apex. Tap a Legend to
+            learn more and build your perfect squad.
           </p>
         </div>
 
