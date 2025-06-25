@@ -19,8 +19,8 @@ export default async function LegendPage({ params }: Props) {
   if (!legend) return notFound();
 
   return (
-    <main className='p-6 max-w-7xl mx-auto text-white space-y-10 font-[ElectronicArtsText]'>
-      {/* Mobile: Single flex container for proper ordering */}
+    <main className='p-2 max-w-7xl mx-auto text-white space-y-10 font-[ElectronicArtsText]'>
+      {/* Mobile Layout */}
       <div className='flex flex-col gap-6 md:hidden'>
         {/* Header */}
         <Card className='order-1'>
@@ -42,18 +42,14 @@ export default async function LegendPage({ params }: Props) {
         </Card>
 
         {/* Portrait */}
-        <Card className='order-2'>
-          <CardContent className='p-0'>
-            <div className='relative w-full aspect-square'>
-              <Image
-                className='shadow-lg object-cover'
-                src={legend.image}
-                alt={`${legend.name} portrait`}
-                fill
-              />
-            </div>
-          </CardContent>
-        </Card>
+        <div className='order-2 border-l-6 border-primary relative w-full aspect-square'>
+          <Image
+            className='shadow-lg object-cover'
+            src={legend.image}
+            alt={`${legend.name} portrait`}
+            fill
+          />
+        </div>
 
         {/* Basic Info */}
         <Card className='order-3'>
@@ -148,23 +144,19 @@ export default async function LegendPage({ params }: Props) {
         </Card>
       </div>
 
-      {/* Desktop: Original column layout */}
+      {/* Desktop Layout */}
       <div className='hidden md:flex md:flex-row gap-6'>
-        {/* LEFT COLUMN */}
+        {/* Left Column */}
         <div className='flex flex-col gap-6 w-full md:w-1/3'>
-          {/* Portrait */}
-          <Card>
-            <CardContent className='p-0'>
-              <div className='relative w-full aspect-square'>
-                <Image
-                  className='shadow-lg object-cover'
-                  src={legend.image}
-                  alt={`${legend.name} portrait`}
-                  fill
-                />
-              </div>
-            </CardContent>
-          </Card>
+          {/* Profile Photo */}
+          <div className='relative border-l-6 border-primary w-full aspect-square'>
+            <Image
+              className=' shadow-lg object-cover'
+              src={legend.image}
+              alt={`${legend.name} portrait`}
+              fill
+            />
+          </div>
 
           {/* Basic Info */}
           <Card>
@@ -208,7 +200,7 @@ export default async function LegendPage({ params }: Props) {
           </Card>
         </div>
 
-        {/* RIGHT COLUMN */}
+        {/* Right Column */}
         <div className='flex flex-col gap-6 w-full md:flex-1'>
           {/* Header */}
           <Card>

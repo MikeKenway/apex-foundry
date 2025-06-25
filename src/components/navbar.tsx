@@ -33,33 +33,24 @@ export default function Navbar() {
             priority
           />
         </Link>
-  {/* Desktop Navigation */}
+        {/* Desktop Navigation */}
         <div className='hidden md:flex items-center space-x-6'>
           <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>
-                <Link
-                  href='/'
-                  passHref
-                >
-                  <NavigationMenuLink>Home</NavigationMenuLink>
-                </Link>
+                <NavigationMenuLink asChild>
+                  <Link href='/'>Home</Link>
+                </NavigationMenuLink>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <Link
-                  href='/legends'
-                  passHref
-                >
-                  <NavigationMenuLink>Legends</NavigationMenuLink>
-                </Link>
+                <NavigationMenuLink asChild>
+                  <Link href='/legends'>Legends</Link>
+                </NavigationMenuLink>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <Link
-                  href='/squad-randomizer'
-                  passHref
-                >
-                  <NavigationMenuLink>Squad Randomizer</NavigationMenuLink>
-                </Link>
+                <NavigationMenuLink asChild>
+                  <Link href='/squad-randomizer'>Squad Randomizer</Link>
+                </NavigationMenuLink>
               </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
@@ -83,7 +74,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className='md:hidden mt-4 px-6 space-y-4'>
+        <div className='md:hidden mt-8 px-6 space-y-4'>
           <Link
             href='/'
             onClick={handleClose}
@@ -101,12 +92,12 @@ export default function Navbar() {
           <Link
             href='/squad-randomizer'
             onClick={handleClose}
-            className='block hover:text-primary'
+            className='block mb-8 hover:text-primary'
           >
             Squad Randomizer
           </Link>
           <Button
-            variant='outline'
+            variant='default'
             className='w-full'
             asChild
           >
