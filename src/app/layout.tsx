@@ -1,7 +1,7 @@
 // This file wraps every page in your app — perfect for a shared Navbar and Footer.
 import './globals.css';
-import { Navbar } from '@/components/navbar';
 import { Footer } from '@/components/footer';
+import { Navbar } from '@/components/navbar';
 import type { ReactNode } from 'react';
 import { Analytics } from '@vercel/analytics/next';
 import type { Metadata } from 'next';
