@@ -183,14 +183,7 @@ export function RandomizerCard({
                 }`}
               >
                 <span>{legendClass === 'Any' ? 'Any Class' : legendClass}</span>
-                {legendClass !== 'Any' && (
-                  <Badge
-                    variant={getLegendClassBadgeVariant(legendClass)}
-                    className={`text-xs ${selectedClass === legendClass ? 'text-black' : ''}`}
-                  >
-                    {legendClass}
-                  </Badge>
-                )}
+                {legendClass !== 'Any'}
               </button>
             ))}
           </div>
