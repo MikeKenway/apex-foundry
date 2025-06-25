@@ -16,72 +16,70 @@ type LegendClass =
   | 'Recon'
   | 'Any';
 
+interface SquadMember {
+  legend: Legend | null;
+  class: LegendClass;
+}
+
 export default function SquadRandomizerPage() {
-  const [selectedLegends, setSelectedLegends] = useState<Legend[]>([]);
-  const [numberOfLegends, setNumberOfLegends] = useState(1);
-  const [legendClassSelections, setLegendClassSelections] = useState<
-    LegendClass[]
-  >(['Any']);
+  const [squad, setSquad] = useState<SquadMember[]>([
+    { legend: null, class: 'Any' },
+  ]);
 
   // Generate a new squad
   function createRandomSquad() {
-    const newSquad: Legend[] = [];
-    const usedLegendIndices = new Set<number>();
+    const newSquad: SquadMember[] = [];
 
-    while (newSquad.length < numberOfLegends) {
-      const currentPositionClass = legendClassSelections[newSquad.length];
+    for (let i = 0; i < squad.length; i++) {
+      const currentClass = squad[i].class;
       const availableLegends =
-        currentPositionClass === 'Any'
+        currentClass === 'Any'
           ? legends
-          : legends.filter((legend) => legend.class === currentPositionClass);
+          : legends.filter((legend) => legend.class === currentClass);
 
       const randomLegend = getRandomLegend(availableLegends as Legend[]);
-      const legendIndex = legends.findIndex(
-        (l) => l.slug === randomLegend.slug
-      );
-
-      if (!usedLegendIndices.has(legendIndex)) {
-        usedLegendIndices.add(legendIndex);
-        newSquad.push(randomLegend);
-      }
+      newSquad.push({ legend: randomLegend, class: currentClass });
     }
 
-    setSelectedLegends(newSquad);
+    setSquad(newSquad);
   }
 
-  // Add a new legend slot (up to 3)
-  function addSquadMember() {
-    if (numberOfLegends < 3) {
-      setNumberOfLegends(numberOfLegends + 1);
-      setLegendClassSelections([...legendClassSelections, 'Any']);
-      setSelectedLegends([]);
+  // Add/remove squad members
+  function updateSquadSize(delta: number) {
+    if (delta > 0 && squad.length < 3) {
+      setSquad([...squad, { legend: null, class: 'Any' }]);
+    } else if (delta < 0 && squad.length > 1) {
+      setSquad(squad.slice(0, -1));
     }
   }
 
-  // Remove the last legend slot (minimum 1)
-  function removeSquadMember() {
-    if (numberOfLegends > 1) {
-      setNumberOfLegends(numberOfLegends - 1);
-      setLegendClassSelections(legendClassSelections.slice(0, -1));
-      setSelectedLegends([]);
-    }
-  }
-
-  // Update the class selection for a slot
+  // Update class selection for a slot
   function updateSquadMemberClass(
     positionIndex: number,
     selectedClass: LegendClass
   ) {
-    const updatedClassSelections = [...legendClassSelections];
-    updatedClassSelections[positionIndex] = selectedClass;
-    setLegendClassSelections(updatedClassSelections);
+    setSquad((prev) =>
+      prev.map((member, index) =>
+        index === positionIndex ? { ...member, class: selectedClass } : member
+      )
+    );
   }
 
   // Reroll a single legend
-  function rerollSquadMember(positionIndex: number, newLegend: Legend) {
-    const updatedSquad = [...selectedLegends];
-    updatedSquad[positionIndex] = newLegend;
-    setSelectedLegends(updatedSquad);
+  function rerollSquadMember(positionIndex: number) {
+    const member = squad[positionIndex];
+    const availableLegends =
+      member.class === 'Any'
+        ? legends
+        : legends.filter((legend) => legend.class === member.class);
+
+    const newLegend = getRandomLegend(availableLegends as Legend[]);
+
+    setSquad((prev) =>
+      prev.map((member, index) =>
+        index === positionIndex ? { ...member, legend: newLegend } : member
+      )
+    );
   }
 
   return (
@@ -110,29 +108,29 @@ export default function SquadRandomizerPage() {
       <div
         className='grid gap-6 mb-8 justify-items-center'
         style={{
-          gridTemplateColumns: `repeat(${numberOfLegends}, 350px)`,
+          gridTemplateColumns: `repeat(${squad.length}, 350px)`,
           justifyContent: 'center',
         }}
       >
-        {Array.from({ length: numberOfLegends }).map((_, positionIndex) => (
+        {squad.map((member, positionIndex) => (
           <RandomizerCard
             key={positionIndex}
-            legend={selectedLegends[positionIndex] || null}
-            selectedClass={legendClassSelections[positionIndex]}
+            legend={member.legend}
+            selectedClass={member.class}
             onClassChange={(legendClass) =>
               updateSquadMemberClass(positionIndex, legendClass)
             }
             onAdd={
-              positionIndex === numberOfLegends - 1 ? addSquadMember : undefined
-            }
-            onRemove={removeSquadMember}
-            onReroll={
-              selectedLegends[positionIndex]
-                ? (newLegend) => rerollSquadMember(positionIndex, newLegend)
+              positionIndex === squad.length - 1
+                ? () => updateSquadSize(1)
                 : undefined
             }
-            canAdd={numberOfLegends < 3}
-            canRemove={numberOfLegends > 1}
+            onRemove={() => updateSquadSize(-1)}
+            onReroll={
+              member.legend ? () => rerollSquadMember(positionIndex) : undefined
+            }
+            canAdd={squad.length < 3}
+            canRemove={squad.length > 1}
           />
         ))}
       </div>
@@ -143,7 +141,7 @@ export default function SquadRandomizerPage() {
           onClick={createRandomSquad}
           size='lg'
         >
-          {numberOfLegends === 1 ? 'Randomize Legend' : 'Randomize Squad'}
+          {squad.length === 1 ? 'Randomize Legend' : 'Randomize Squad'}
         </Button>
       </div>
     </div>
