@@ -2,6 +2,13 @@ import type { LegendClass } from '@/types/legend';
 
 export function getLegendClassBadgeVariant(
   legendClass: LegendClass
-): Exclude<LegendClass, 'Any'> | 'default' {
-  return legendClass === 'Any' ? 'default' : legendClass;
+): 'default' | 'assault' | 'controller' | 'recon' | 'skirmisher' | 'support' {
+  return legendClass === 'Any'
+    ? 'default'
+    : (legendClass.toLowerCase() as
+        | 'assault'
+        | 'controller'
+        | 'recon'
+        | 'skirmisher'
+        | 'support');
 }
