@@ -2,6 +2,7 @@ import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import legends from '@/data/legends.json';
 import type { Legend } from '@/types/legend';
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 
 type Props = {
   params: Promise<Record<string, string>>;
@@ -50,67 +51,6 @@ export default async function LegendPage({ params }: Props) {
               {legend.appearance_season}
             </p>
           </div>
-
-          {/* FAMILY */}
-          {legend.family && Object.values(legend.family).some((val) => val) && (
-            <div className='text-sm text-zinc-300 pt-2 space-y-1 border-t border-zinc-700 mt-4'>
-              <h3 className='text-sm uppercase tracking-wide text-primary mb-1'>
-                Known Family
-              </h3>
-              <ul className='grid grid-cols-1 sm:grid-cols-2 gap-x-8 text-sm'>
-                {legend.family.mother?.name && (
-                  <li>
-                    <strong className='text-white'>Mother:</strong>{' '}
-                    {legend.family.mother.name}
-                    {legend.family.mother.status &&
-                      ` (${legend.family.mother.status})`}
-                    {legend.family.mother.notes &&
-                      ` – ${legend.family.mother.notes}`}
-                  </li>
-                )}
-                {legend.family.father?.name && (
-                  <li>
-                    <strong className='text-white'>Father:</strong>{' '}
-                    {legend.family.father.name}
-                    {legend.family.father.status &&
-                      ` (${legend.family.father.status})`}
-                    {legend.family.father.notes &&
-                      ` – ${legend.family.father.notes}`}
-                  </li>
-                )}
-                {Array.isArray(legend.family.brothers) &&
-                  legend.family.brothers.length > 0 && (
-                    <li>
-                      <strong className='text-white'>Brothers:</strong>{' '}
-                      {legend.family.brothers
-                        .filter((b) => b.name)
-                        .map((b) => b.name)
-                        .join(', ')}
-                    </li>
-                  )}
-                {Array.isArray(legend.family.sisters) &&
-                  legend.family.sisters.length > 0 && (
-                    <li>
-                      <strong className='text-white'>Sisters:</strong>{' '}
-                      {legend.family.sisters
-                        .filter((s) => s.name)
-                        .map((s) => s.name)
-                        .join(', ')}
-                    </li>
-                  )}
-                {Array.isArray(legend.family.others) &&
-                  legend.family.others.length > 0 && (
-                    <li>
-                      <strong className='text-white'>Others:</strong>{' '}
-                      {legend.family.others
-                        .filter((o) => o.name)
-                        .map((o) => o.name)
-                        .join(', ')}
-                    </li>
-                  )}
-              </ul>
-            </div>
-          )}
         </div>
 
         {/* RIGHT: IMAGE */}
@@ -130,63 +70,39 @@ export default async function LegendPage({ params }: Props) {
         {/* LEFT COLUMN (2/3) */}
         <div className='md:col-span-2 space-y-6'>
           {/* BACKSTORY */}
-          <section className='bg-zinc-900 border-l-4 border-primary pl-6 pr-4 py-4 shadow-inner space-y-4'>
-            <h2 className='text-2xl font-bold text-primary'>Backstory</h2>
-            <div>
-              <h3 className='text-sm uppercase tracking-wide text-zinc-400 mb-1'>
-                Early Life
-              </h3>
-              <p className='text-sm text-zinc-300'>
-                {legend.backstory?.early_life || 'Unknown'}
-              </p>
-            </div>
-            <div>
-              <h3 className='text-sm uppercase tracking-wide text-zinc-400 mb-1'>
-                Before Apex
-              </h3>
-              <p className='text-sm text-zinc-300'>
-                {legend.backstory?.career_before_games || 'Unknown'}
-              </p>
-            </div>
-            <div>
-              <h3 className='text-sm uppercase tracking-wide text-zinc-400 mb-1'>
-                Joining Apex
-              </h3>
-              <p className='text-sm text-zinc-300'>
-                {legend.backstory?.joining_apex || 'Unknown'}
-              </p>
-            </div>
-          </section>
-
-          {/* QUOTES */}
-          <section className='bg-zinc-900 border-l-4 border-primary pl-6 pr-4 py-4 shadow-inner'>
-            <h2 className='text-xl font-semibold text-primary mb-2'>
-              Notable Quotes
-            </h2>
-            <ul className='list-disc list-inside text-zinc-300 text-sm space-y-1'>
-              {(legend.notable_quotes || []).map((quote, i) => (
-                <li
-                  key={i}
-                  className='italic'
-                >
-                  &quot;{quote}&quot;
-                </li>
-              ))}
-            </ul>
-          </section>
-
-          {/* FUN FACTS */}
-          <section className='bg-zinc-900 border-l-4 border-primary pl-6 pr-4 py-4 shadow-inner'>
-            <h2 className='text-xl font-semibold text-primary mb-2'>
-              Fun Facts
-            </h2>
-            <ul className='list-disc list-inside text-zinc-300 text-sm space-y-1'>
-              {(legend.fun_facts || []).map((fact, i) => (
-                <li key={i}>{fact}</li>
-              ))}
-            </ul>
-          </section>
-
+          <Card>
+            <CardHeader>
+              <CardTitle className='text-2xl font-bold text-primary'>
+                Backstory
+              </CardTitle>
+            </CardHeader>
+            <CardContent className='space-y-4'>
+              <div>
+                <h3 className='text-sm uppercase tracking-wide text-zinc-400 mb-2'>
+                  Early Life
+                </h3>
+                <p className='text-sm text-zinc-300'>
+                  {legend.backstory?.early_life || 'Unknown'}
+                </p>
+              </div>
+              <div>
+                <h3 className='text-sm uppercase tracking-wide text-zinc-400 mb-2'>
+                  Before Apex
+                </h3>
+                <p className='text-sm text-zinc-300'>
+                  {legend.backstory?.career_before_games || 'Unknown'}
+                </p>
+              </div>
+              <div>
+                <h3 className='text-sm uppercase tracking-wide text-zinc-400 mb-2'>
+                  Joining Apex
+                </h3>
+                <p className='text-sm text-zinc-300'>
+                  {legend.backstory?.joining_apex || 'Unknown'}
+                </p>
+              </div>
+            </CardContent>
+          </Card>
         </div>
 
         {/* RIGHT COLUMN (1/3) */}

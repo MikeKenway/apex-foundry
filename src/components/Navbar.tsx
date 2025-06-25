@@ -5,6 +5,13 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { HiMenu } from 'react-icons/hi';
 import { PrimaryButton } from './primary-button';
+import { Button } from './ui/button';
+import {
+  NavigationMenu,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+} from './ui/navigation-menu';
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,7 +21,6 @@ export function Navbar() {
   return (
     <nav className='w-full bg-black text-white px-4 py-6 border-b border-zinc-800 font-[ElectronicArtsText] text-md tracking-wider'>
       <div className='px-6 mx-auto flex justify-between items-center'>
-        {/* Logo */}
         <Link
           href='/'
           className='flex-shrink-0'
@@ -29,34 +35,50 @@ export function Navbar() {
           />
         </Link>
 
-        {/* Main Nav Links - Desktop */}
-        <div className='hidden md:flex items-center space-x-6'>
-          <Link
-            href='/'
-            className='hover:text-primary transition'
-          >
-            Home
-          </Link>
-          <Link
-            href='/legends'
-            className='hover:text-primary transition'
-          >
-            Legends
-          </Link>
-          <Link
-            href='/squad-randomizer'
-            className='hover:text-primary transition'
-          >
-            Squad Randomizer
-          </Link>
+        {/* Main Nav Links */}
+        <div className='hidden md:block'>
+          <NavigationMenu>
+            <NavigationMenuList>
+              <NavigationMenuItem>
+                <Link
+                  href='/'
+                  passHref
+                >
+                  <NavigationMenuLink>
+                    Home
+                  </NavigationMenuLink>
+                </Link>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <Link
+                  href='/legends'
+                  passHref
+                >
+                  <NavigationMenuLink>
+                    Legends
+                  </NavigationMenuLink>
+                </Link>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <Link
+                  href='/squad-randomizer'
+                  passHref
+                >
+                  <NavigationMenuLink>
+                    Squad Randomizer
+                  </NavigationMenuLink>
+                </Link>
+              </NavigationMenuItem>
+            </NavigationMenuList>
+          </NavigationMenu>
         </div>
 
-        {/* Contact Button - Desktop */}
+        {/* Contact Button */}
         <div className='hidden md:block'>
           <PrimaryButton href='/contact'>Contact</PrimaryButton>
         </div>
 
-        {/* Hamburger Button - Mobile */}
+        {/* Hamburger Button */}
         <button
           aria-label='Toggle menu'
           onClick={() => setIsOpen(!isOpen)}
@@ -91,10 +113,8 @@ export function Navbar() {
             Squad Randomizer
           </Link>
 
-          {/* Contact Button - Mobile*/}
-          <div className='pt-4 border-t border-zinc-700'>
-            <PrimaryButton href='/contact'>Contact</PrimaryButton>
-          </div>
+          {/* Contact Button */}
+          <Button variant='outline'> Contact</Button>
         </div>
       )}
     </nav>
