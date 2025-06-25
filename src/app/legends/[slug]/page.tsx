@@ -80,32 +80,17 @@ export default async function LegendPage({ params }: Props) {
           <Card>
             <CardHeader>
               <CardTitle className='text-2xl font-bold text-primary'>
-                Backstory...wer
+                Backstory
               </CardTitle>
             </CardHeader>
             <CardContent className='space-y-4'>
               <div>
-                <h3 className='text-sm uppercase tracking-wide text-zinc-400 mb-2'>
-                  Early Life
-                </h3>
                 <p className='text-sm text-zinc-300'>
-                  {legend.backstory?.early_life || 'Unknown'}
-                </p>
-              </div>
-              <div>
-                <h3 className='text-sm uppercase tracking-wide text-zinc-400 mb-2'>
-                  Before Apex
-                </h3>
-                <p className='text-sm text-zinc-300'>
-                  {legend.backstory?.career_before_games || 'Unknown'}
-                </p>
-              </div>
-              <div>
-                <h3 className='text-sm uppercase tracking-wide text-zinc-400 mb-2'>
-                  Joining Apex
-                </h3>
-                <p className='text-sm text-zinc-300'>
-                  {legend.backstory?.joining_apex || 'Unknown'}
+                  {legend.backstory?.split('\n\n').map((paragraph, i) => (
+                    <p key={i} className='mb-4'>
+                      {paragraph}
+                    </p>
+                  )) || 'Unknown'}
                 </p>
               </div>
             </CardContent>
