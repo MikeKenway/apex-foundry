@@ -5,8 +5,6 @@ import { FiPlus, FiMinus, FiRefreshCw } from 'react-icons/fi';
 import { OverlayButton } from './overlay-button';
 import { getRandomLegend } from '@/lib/getRandomLegend';
 import legends from '@/data/legends.json';
-import { Badge } from '@/components/ui/badge';
-import { getLegendClassBadgeVariant } from '@/lib/getLegendClassBadge';
 
 interface RandomizerCardProps {
   legend: Legend | null;
