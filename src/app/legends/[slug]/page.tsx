@@ -61,19 +61,19 @@ export default async function LegendPage({ params }: Props) {
           <CardContent className='space-y-2'>
             <div>
               <div className='subtitle'>Introduced</div>
-              <p>{legend.appearance_season}</p>
+              <p className='text-sm mb-6'>{legend.appearance_season}</p>
             </div>
             <div>
               <div className='subtitle'>Real Name</div>
-              <p>{legend.real_name}</p>
+              <p className='text-sm mb-6'>{legend.real_name}</p>
             </div>
             <div>
               <div className='subtitle'>Homeworld</div>
-              <p>{legend.homeworld || 'Unknown'}</p>
+              <p className='text-sm mb-6'>{legend.homeworld || 'Unknown'}</p>
             </div>
             <div>
               <div className='subtitle'>Age</div>
-              <p>{legend.age || 'Unknown'}</p>
+              <p className='text-sm'>{legend.age || 'Unknown'}</p>
             </div>
           </CardContent>
         </Card>
@@ -168,19 +168,19 @@ export default async function LegendPage({ params }: Props) {
             <CardContent className='space-y-2'>
               <div>
                 <div className='subtitle'>Introduced</div>
-                <p>{legend.appearance_season}</p>
+                <p className='text-sm mb-6'>{legend.appearance_season}</p>
               </div>
               <div>
                 <div className='subtitle'>Real Name</div>
-                <p>{legend.real_name}</p>
+                <p className='text-sm mb-6'>{legend.real_name}</p>
               </div>
               <div>
                 <div className='subtitle'>Homeworld</div>
-                <p>{legend.homeworld || 'Unknown'}</p>
+                <p className='text-sm mb-6'>{legend.homeworld || 'Unknown'}</p>
               </div>
               <div>
                 <div className='subtitle'>Age</div>
-                <p>{legend.age || 'Unknown'}</p>
+                <p className='text-sm'>{legend.age || 'Unknown'}</p>
               </div>
             </CardContent>
           </Card>
