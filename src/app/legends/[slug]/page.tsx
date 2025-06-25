@@ -89,7 +89,7 @@ export default async function LegendPage({ params }: Props) {
             {legend.backstory?.split('\n\n').map((paragraph, i) => (
               <p
                 key={i}
-                className='text-sm text-zinc-300 mb-4'
+                className='text-md text-zinc-300 mb-4'
               >
                 {paragraph}
               </p>
@@ -119,7 +119,7 @@ export default async function LegendPage({ params }: Props) {
                     <span className='font-semibold text-white'>
                       {ability.name}
                     </span>
-                    <div className='text-zinc-300 text-sm mt-1'>
+                    <div className='text-zinc-300 text-md mt-1'>
                       {ability.description}
                     </div>
                   </div>
@@ -262,7 +262,7 @@ export default async function LegendPage({ params }: Props) {
                       <span className='font-semibold text-white'>
                         {ability.name}
                       </span>
-                      <div className='text-zinc-300 text-xs mt-1'>
+                      <div className='text-zinc-300 text-sm mt-1'>
                         {ability.description}
                       </div>
                     </div>
