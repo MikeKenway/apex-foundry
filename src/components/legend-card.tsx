@@ -21,7 +21,7 @@ export function LegendCard({ legend }: { legend: Legend }) {
         </div>
       </Link>
 
-      {/* Name + Title + Class */}
+      {/* Info */}
       <div className='p-4 text-left space-y-2'>
         <h2 className='text-xl font-[ElectronicArtsText] uppercase tracking-wider font-semibold'>
           {legend.name}

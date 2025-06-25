@@ -32,7 +32,6 @@ export const ContactConfirmation = ({
       </Preview>
       <Body style={styles.body}>
         <Container style={styles.container}>
-          {/* Logo at top */}
           <Section style={styles.logoWrapper}>
             <Img
               src='https://apexfoundry.gg/images/logo-white.png'
@@ -54,7 +53,6 @@ export const ContactConfirmation = ({
             </Text>
           </Section>
 
-          {/* Message details */}
           <Section style={styles.section}>
             <Field
               label='Subject'
@@ -107,7 +105,6 @@ export const ContactConfirmation = ({
   );
 };
 
-// Field layout component
 const Field = ({ label, value }: { label: string; value: string }) => (
   <Text style={styles.fieldLabel}>
     {label.toUpperCase()}
@@ -157,7 +154,7 @@ const styles = {
   fieldLabel: {
     fontSize: '13px',
     fontWeight: 600,
-    color: '#f43f1b', // Apex orange
+    color: '#f43f1b', 
     marginBottom: '4px',
     marginTop: '16px',
     letterSpacing: '0.5px',
@@ -166,7 +163,7 @@ const styles = {
   label: {
     fontSize: '13px',
     fontWeight: 600,
-    color: '#f43f1b', // Apex orange
+    color: '#f43f1b', 
     marginBottom: '4px',
     marginTop: '16px',
     letterSpacing: '0.5px',

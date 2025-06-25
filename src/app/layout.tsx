@@ -1,4 +1,4 @@
-// This file wraps every page in your app — perfect for a shared Navbar and Footer.
+
 import './globals.css';
 import Footer from '@/components/footer';
 import Navbar from '@/components/navbar';
@@ -6,18 +6,15 @@ import type { ReactNode } from 'react';
 import { Analytics } from '@vercel/analytics/next';
 import type { Metadata } from 'next';
 
-// -------------------------------
-// 🔧 Editable site-wide metadata
-// -------------------------------
+
+// Editable Metadata
 const siteName = 'Apex Foundry';
 const siteDescription =
   'An Unofficial Apex Legends Toolkit. Browse detailed info for every Apex Legend, filter by class, and randomize your squad for complete chaos inyour next match.';
 const siteURL = 'https://apexfoundry.gg';
 const ogImage = '/images/og-image.png';
 
-// -------------------------------
-// 📦 Global metadata config
-// -------------------------------
+// Metadata
 export const metadata: Metadata = {
   title: {
     default: siteName,
@@ -72,9 +69,7 @@ export const metadata: Metadata = {
   manifest: '/site.webmanifest',
 };
 
-// -------------------------------
-// 🧱 Root layout structure
-// -------------------------------
+// Root Layout
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang='en'>

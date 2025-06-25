@@ -8,7 +8,7 @@ export function getRandomLegend(legends: Legend[]): Legend {
 
   let previousIndex: number | null = null;
 
-  // Step 1: Fill array with random numbers without repeating a number twice in a row
+  // Fill array with random numbers without repeating a number twice in a row
   for (let i = 0; i < legendCount; i++) {
     let nextIndex: number;
     do {
@@ -18,7 +18,7 @@ export function getRandomLegend(legends: Legend[]): Legend {
     previousIndex = nextIndex;
   }
 
-  // Step 2: Pick one value that isn't the same as last time
+  // Pick one value that isn't the same as last time
   let selectedLegendIndex: number;
   do {
     selectedLegendIndex =

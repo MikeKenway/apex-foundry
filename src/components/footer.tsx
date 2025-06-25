@@ -9,9 +9,7 @@ export default function Footer() {
   return (
     <footer className='w-full bg-black text-white px-4 py-8 border-t border-zinc-800'>
       <div className='max-w-7xl mx-auto px-6'>
-        {/* Top section with logo and links */}
         <div className='flex flex-col md:flex-row justify-between items-start mb-8'>
-          {/* Logo and description */}
           <div className='mb-6 md:mb-0 md:max-w-sm'>
             <Link
               href='/'
@@ -32,9 +30,7 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Links sections */}
           <div className='grid grid-cols-1 md:grid-cols-3 gap-12'>
-            {/* App Links */}
             <div>
               <h3 className='text-white font-semibold mb-2 text-sm'>Apex Foundry</h3>
               <ul className='space-y-1'>
@@ -152,7 +148,6 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Bottom section with copyright and disclaimer */}
         <div className='pt-8 border-t border-zinc-800 text-center text-sm text-zinc-500'>
           © {new Date().getFullYear()} Apex Foundry. Not affiliated with
           Respawn or EA. Made with{' '}

@@ -33,8 +33,7 @@ export default function Navbar() {
             priority
           />
         </Link>
-
-        {/* Right side navigation and contact button */}
+  {/* Desktop Navigation */}
         <div className='hidden md:flex items-center space-x-6'>
           <NavigationMenu>
             <NavigationMenuList>
