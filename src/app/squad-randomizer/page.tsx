@@ -97,32 +97,34 @@ export default function SquadRandomizerPage() {
 
       {/* Legend cards */}
       <div
-        className='grid gap-6 mb-8 justify-items-center'
-        style={{
-          gridTemplateColumns: `repeat(${squad.length}, 350px)`,
-          justifyContent: 'center',
-        }}
+        className='flex justify-center gap-6 mb-8' 
       >
         {squad.map((member, positionIndex) => (
-          <RandomizerCard
+          <div
             key={positionIndex}
-            legend={member.legend}
-            selectedClass={member.class}
-            onClassChange={(legendClass) =>
-              updateSquadMemberClass(positionIndex, legendClass)
-            }
-            onAdd={
-              positionIndex === squad.length - 1
-                ? () => updateSquadSize(1)
-                : undefined
-            }
-            onRemove={() => updateSquadSize(-1)}
-            onReroll={
-              member.legend ? () => rerollSquadMember(positionIndex) : undefined
-            }
-            canAdd={squad.length < 3}
-            canRemove={squad.length > 1}
-          />
+            className='w-[350px]'
+          >
+            <RandomizerCard
+              legend={member.legend}
+              selectedClass={member.class}
+              onClassChange={(legendClass) =>
+                updateSquadMemberClass(positionIndex, legendClass)
+              }
+              onAdd={
+                positionIndex === squad.length - 1
+                  ? () => updateSquadSize(1)
+                  : undefined
+              }
+              onRemove={() => updateSquadSize(-1)}
+              onReroll={
+                member.legend
+                  ? () => rerollSquadMember(positionIndex)
+                  : undefined
+              }
+              canAdd={squad.length < 3}
+              canRemove={squad.length > 1}
+            />
+          </div>
         ))}
       </div>
 
